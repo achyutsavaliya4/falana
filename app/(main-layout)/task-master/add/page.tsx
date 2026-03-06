@@ -8,13 +8,13 @@ import React, {
 } from "react";
 import CommonForm from "@/components/CommonForm/CommonForm";
 import { addTaskJson } from "@/commonJson/task/addTaskJson";
-import axios from "axios";
 import {
   getFormList,
   getTaskList,
 } from "@/redux/actions/taskMasterAction/taskMasterAction";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "@/redux";
+import { DefaultFunction } from "@/commonJS/interfaces/utilsInterface";
 
 export interface button {
   id: string;
@@ -57,8 +57,6 @@ const TaskAdd = () => {
     dispatch(getFormList());
     dispatch(getTaskList());
   }, []);
-  console.log("forms", formList);
-  console.log("tasks", taskList);
 
   const onChangeInput = (
     e: React.ChangeEvent<HTMLInputElement>,
@@ -68,20 +66,15 @@ const TaskAdd = () => {
     if (field?.inputType === "radio" && field?.optionValue) {
       value = field?.optionValue;
     }
-    // console.log(field);
     setFormData((prev) => ({ ...prev, [name]: value }));
-    // console.log(formData);
   };
 
   const onChangeSelect = (e: any, field: any) => {
     setFormData((prev) => ({ ...prev, [field?.fieldName]: e.target.value }));
   };
-  // console.log(formData);
   const onSearchSelect = (item: any, field: any, repeatChildIndex: number) => {
-    // console.log("item", item, field);
     setFormData((prev) => ({ ...prev, [field?.fieldName]: item }));
   };
-  // console.log(formData);
   const onClickField = (
     e: React.MouseEvent<HTMLButtonElement>,
     field: button,
@@ -89,11 +82,8 @@ const TaskAdd = () => {
     setIsCheckValid(true);
     const isFormValid = validateFormStructure(addTaskJson, formData);
     if (isFormValid) {
-      console.log("SUCCESS: Form is valid", formData);
     } else {
-      console.log("ERROR: Fix validation errors before saving");
     }
-    console.log(formData);
   };
   const validateFormStructure = (json: any[], data: any): boolean => {
     let isValid = true;
@@ -114,7 +104,6 @@ const TaskAdd = () => {
       if (section.validation && section.fieldName) {
         const value = data[section.fieldName];
         const result = section.validation(value, "", data);
-        console.log("result", result);
         if (result && !result.isValid) {
           isValid = false;
         }
@@ -126,7 +115,7 @@ const TaskAdd = () => {
   };
 
   const getConfig = useMemo(() => {
-    let data: any = {};
+    const data: any = {};
     data.type = [
       { label: "quiz", value: "quiz" },
       { label: "form", value: "form" },
@@ -134,7 +123,6 @@ const TaskAdd = () => {
     ];
     data.form = formList;
     data.department = taskList;
-    // console.log(data);
     return data;
   }, [formList, taskList]);
   return (

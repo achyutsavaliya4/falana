@@ -42,7 +42,6 @@ const Navbar = () => {
       setCurrentTenant(matchedTenant);
     }
   }, [userDetails?.tenants]);
-  // console.log("useDetails", userDetails);
 
   return (
     <nav className="navbar top-navbar">

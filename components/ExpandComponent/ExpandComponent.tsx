@@ -1,5 +1,4 @@
 import clsx from "clsx";
-import { useState } from "react";
 
 type ExpandComponentProps<T = any> = {
   rowValue: {
@@ -23,7 +22,6 @@ const ExpandComponent = <T,>({
   expandWrapperClassName,
   expandKey
 }: ExpandComponentProps<T>) => {
-  console.log("rowValuerowValue",rowValue);
     const isExpanded = expandKey
     ? rowValue?._expand?.[expandKey] ?? false
     : rowValue?.showMore ?? false;

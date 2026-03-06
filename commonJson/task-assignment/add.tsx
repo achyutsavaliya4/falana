@@ -1,3 +1,6 @@
+import { mobileNumber_Regex } from "@/commonJS/regexGlobal/regexGlobal";
+import { button } from "@/components/Button/Button";
+
 export const inviteUserModalJson = [
   {
     sectionType: "body",
@@ -107,8 +110,7 @@ export const inviteUserModalJson = [
                     optionKey: "name",
                     id: "id",
                     labelClassName: "col-2 field-label p-0",
-                    validation: (data: string) => {
-                      console.log("rolevallidation",data);
+                    validation: (data: any) => {
                       return {
                         isValid: !!data?.id,
                         message: "Role is required",
@@ -129,8 +131,7 @@ export const inviteUserModalJson = [
                     optionKey: "name",
                     id: "id",
                     labelClassName: "col-2 field-label p-0",
-                    validation: (data: string, compareField:any, fieldData:any, fullFieldData:any, field: any) => {
-                      console.log("validationData",data, field);
+                    validation: (data: any, compareField:any, fieldData:any, fullFieldData:any, field: any) => {
                       return {
                         isValid: !!data?.id || (Array.isArray(data) && data.length > 0),
                         message: "Facility is required",

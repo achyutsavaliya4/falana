@@ -29,7 +29,7 @@ const FacilityMasterEdit = () => {
   const modulePermission = "settings.facility.update";
   const { id: facilityId } = params;
   const getConfig = useMemo(() => {
-    let data: any = {};
+    const data: any = {};
     data.status = [
       { label: "active", value: "active" },
       { label: "Inactive", value: "inactive" },
@@ -78,7 +78,7 @@ const FacilityMasterEdit = () => {
       updateAdditionalDetails(field?.fieldName as string, value);
     }
     setFacilityFieldData((prev: any) => {
-      return {
+      return {      
         ...prev,
         [field?.fieldName as string]: value
       };
@@ -171,7 +171,7 @@ const FacilityMasterEdit = () => {
       const { details, ...rest } = facilityDetails as any;
 
       // set normal fields
-      let updatedState = { ...rest };
+      const updatedState = { ...rest };
 
       // add additional fields directly into form state
       if (Array.isArray(details)) {
@@ -190,9 +190,7 @@ const FacilityMasterEdit = () => {
     }
   }, [customPayload?.facilityUpdateSuccess]);
 
-  // console.log("facilityDetails",facilityFieldData, additionalDetails);
-
-    useEffect(() => {
+useEffect(() => {
       return () => {
         dispatch(resetUiAction());
         dispatch(resetFacilityEnums());

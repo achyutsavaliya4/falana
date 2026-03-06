@@ -34,7 +34,6 @@ import {
   inviteUser,
 } from "@/redux/actions/userMasterAction/userMasterAction";
 import { storage } from "@/utils/storage";
-import { clear } from "console";
 import { usePathname, useRouter } from "next/navigation";
 import React, { MouseEvent, useEffect, useMemo, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -99,7 +98,7 @@ const UserList = () => {
   const [filters, setFilters] = useState<ListQueryState>(initialState);
 
   const getConfigData = useMemo(() => {
-    let data: Record<string, any> = {};
+    const data: Record<string, any> = {};
     data.role_id = rolesList;
     data.facility_ids = facilityList;
     return data;
@@ -109,7 +108,7 @@ const UserList = () => {
   const onChangeQuery = () => {
     const query = QueryUtilityFunc(
       filters.search,
-      filters.column,
+      filters.column as any,
       filters.filters,
       filters?.sort,
       filters?.page,
@@ -130,7 +129,6 @@ const UserList = () => {
     fieldIndex: number,
     repeatChildIndex: number,
   ) => {
-    console.log("fieldIndex", repeatChildIndex, field);
     if (field?.id === "invite-user") {
       setShowInviteUserModal(true);
     } else if (field?.id === "remove_role") {
@@ -177,7 +175,7 @@ const UserList = () => {
     setInviteUserFieldData((prev: any) => {
       return {
         ...prev,
-        [field?.fieldName]: e.target.value,
+        [field?.fieldName as string]: e.target.value,
       };
     });
   };
@@ -308,7 +306,6 @@ const UserList = () => {
     e: React.ChangeEvent<HTMLInputElement>,
     field: any,
   ) => {
-    console.log("searchDipal", e.target.value, field);
     if (e?.target?.value) {
       if (field?.fieldName === "role_id") {
         dispatch(
@@ -373,15 +370,15 @@ const UserList = () => {
   const onClickShowMore = (
     rowValue: any,
     showMore: boolean,
-    expandKey: string,
-    actionField: any,
-    rowIdx: number,
+    expandKey?: string,
+    actionField?: any,
+    rowIdx?: number,
   ) => {
     setUserMasterListData((prevData: any[]) => {
       const updatedData = [...prevData];
-      const currentRow = updatedData[rowIdx];
+      const currentRow = updatedData[rowIdx as number];
 
-      updatedData[rowIdx] = expandKey
+      updatedData[rowIdx as number] = expandKey
         ? {
             ...currentRow,
             _expand: {
@@ -399,7 +396,6 @@ const UserList = () => {
   };
 
   const onClickActionField = (fieldId: string, rowValue: any) => {
-    console.log("actionFieldId", fieldId, rowValue);
     dispatch(getToaster({
       type: "success",
       message: `Clicked on action: ${fieldId}`,
@@ -467,16 +463,14 @@ const UserList = () => {
     }
   }, [userRolePermission]);
 
-  
-  useEffect(() => {
+useEffect(() => {
     if (filtersLoaded) {
       onChangeQuery();
       storage?.setFilters({ [moduleName]: filters });
     }
   }, [filtersLoaded, filters]);
 
-
-  useEffect(() => {
+useEffect(() => {
     if (checkString(moduleName)) {
       const storageItem = storage?.getFilters();
       if (hasKeys(storageItem) && storageItem[moduleName]) {
@@ -512,16 +506,14 @@ const UserList = () => {
     }
   }, [moduleName]);
 
-
-  useEffect(() => {
+useEffect(() => {
     setUserMasterListData(userMasterList);
   }, [userMasterList]);
 
-
-  useEffect(() => {
+useEffect(() => {
     if (customPayload?.userInviteSuccess) {
       setShowInviteUserModal(false);
-      onChangeQuery(1);
+      onChangeQuery();
       setInviteUserFieldData({
         roles: [
           {
@@ -555,22 +547,22 @@ const UserList = () => {
             columns={userMasterJson?.columns ?? []}
             expandControlClick={onClickShowMore}
             dropdownData={userMasterJson?.searchColumns ?? []}
-            selectColumnSearch={filters?.column ?? {}}
-            onChangeSearch={(e) => {
-              setFilters((prev) => ({
+            selectColumnSearch={filters?.column as any ?? {}}
+            onChangeSearch={(e: any) => {
+              setFilters((prev: any) => ({
                 ...prev,
                 search: e.target.value,
                 page: 1,
               }));
             }}
             moveTo={(pageNo: number) => {
-              setFilters((prev) => ({
+              setFilters((prev: any) => ({
                 ...prev,
                 page: pageNo,
               }));
             }}
-            onSelectColumn={(e) => {
-              setFilters((prev) => ({
+            onSelectColumn={(e: any) => {
+              setFilters((prev: any) => ({
                 ...prev,
                 column: e || {},
                 search: "",
@@ -578,14 +570,14 @@ const UserList = () => {
             }}
             sortingColumnData={userMasterJson?.sortingColumn ?? []}
             onSelectSortType={(order: string) => {
-              setFilters((prev) => ({
+              setFilters((prev: any) => ({
                 ...prev,
                 sort: { ...prev.sort, type: order },
                 page: 1,
               }));
             }}
             onSelectSortColumn={(e: any) => {
-              setFilters((prev) => ({
+              setFilters((prev: any) => ({
                 ...prev,
                 sort: { ...prev.sort, val: e?.field },
                 page: 1,

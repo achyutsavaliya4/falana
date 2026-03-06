@@ -43,7 +43,7 @@ const FilterSection: React.FC<FilterSection> = ({
     <div className="">
       <div className="ps-3 filter-section d-flex poition-relative">
         {filterColumn?.map((columnData, columnInd) => {
-          let dropdownTitle = (
+          const dropdownTitle = (
             <span className="customTitle">
               {`${columnData.title}`}
               {!columnData?.isHideLabel && (
@@ -348,12 +348,7 @@ const FilterSection: React.FC<FilterSection> = ({
                     type: "text",
                     value: filterInputQuery?.[columnData?.fieldName] ?? "",
                   };
-            // console.log(
-            //   "filterInputQueryfilterInputQuery",
-            //   filterInputQuery,
-            //   filterInputQuery?.[columnData?.fieldName],
-            //   dynamicProps,
-            // );
+            // 
             return (
               <div
                 key={"columnFilter" + columnInd}
@@ -484,7 +479,7 @@ const FilterSection: React.FC<FilterSection> = ({
                   onClick={async () => {
                     onClickFilterTitle?.(columnData, columnInd);
                     await sleep(500);
-                    let idInput = document.getElementById(
+                    const idInput = document.getElementById(
                       "drop-down-input-cursor-active" + columnData?.field,
                     );
                     if (idInput) {
@@ -542,10 +537,10 @@ const FilterSection: React.FC<FilterSection> = ({
                     ? valueData[columnData.field]?.length > 0
                       ? valueData[columnData.field]?.map(
                           (val: any, ind: number) => {
-                            let dropdownval = columnData.valueKey
+                            const dropdownval = columnData.valueKey
                               ? val[columnData.valueKey]
                               : val;
-                            let str = dropdownval
+                            const str = dropdownval
                               ? dropdownval?.length > 20
                                 ? dropdownval.slice(0, 20) + "..."
                                 : dropdownval

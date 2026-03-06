@@ -1,5 +1,4 @@
 import { CSSProperties } from "react";
-import { onClickFieldResolver } from "../Button/Button";
 import clsx from "clsx";
 
 export type Props = {

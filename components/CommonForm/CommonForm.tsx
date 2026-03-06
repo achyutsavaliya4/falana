@@ -10,7 +10,6 @@ import {
 } from "@/commonJS/commonHelper/commonHelper";
 import { Tab, Tabs } from "react-bootstrap";
 import clsx from "clsx";
-import { wrapperFunction } from "@/utils/helpder_functions";
 
 export type Props = {
   formJson: any[];
@@ -56,7 +55,6 @@ const CommonForm = ({
   return (
     <>
       {formJson?.map((section: any, sectionIndex: number) => {
-        // console.log("section", section?.sectionType);
         return (
           <React.Fragment key={"main-section" + sectionIndex}>
             {section?.sectionType === "body" &&

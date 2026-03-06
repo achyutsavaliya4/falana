@@ -2,7 +2,7 @@ import {
   RoleAddPayload,
   RoleUpdatePayload,
 } from "@/redux/actions/roleMasterAction/roleMasterActionInterface";
-import { get, post, put, remove } from "@/redux/apiWrapper";
+import { get, post, put } from "@/redux/apiWrapper";
 export const getRolesListApi = (query?: string) => {
   return get(`/roles${query ? `?${query}` : ""}`);
 };
@@ -18,7 +18,6 @@ export const updateRoleApi = (payload: RoleUpdatePayload) => {
 export const deleteRoleApi = async (roleId: number) => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      console.log("Removing role", `/roles/${roleId}`);
       resolve({status: 200});
     }, 5000);
   });

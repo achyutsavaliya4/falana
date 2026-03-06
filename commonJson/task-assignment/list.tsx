@@ -1,7 +1,3 @@
-import { mobileNumber_Regex } from "@/commonJS/regexGlobal/regexGlobal";
-import { button } from "@/components/Button/Button";
-import StatusChip from "@/components/StatusChip/StatusChip";
-import { FacilityItem } from "@/redux/sagas/handlers/facilityMasterHandler/facilityMasterHandlerInterface";
 
 export const assignTaskBtnJson = [
   {

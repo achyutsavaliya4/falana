@@ -6,7 +6,6 @@ import {
   addQuestionModal,
   publishFormJson,
 } from "@/commonJson/form-management/add";
-import BreadCrumbs from "@/components/BreadCrumbs/BreadCrumbs";
 import {
   ChangeEvent,
   MouseEvent,
@@ -16,7 +15,7 @@ import {
   useState,
 } from "react";
 import CommonMasterModal from "@/components/CommonMasterModal/CommonMasterModal";
-import Button, { button } from "@/components/Button/Button";
+import { button } from "@/components/Button/Button";
 import forms from "@/dummyJsona/masterExtractedShort.json";
 import { RenderEngine } from "@/components/RenderEngine/RenderEngine";
 import formModalJson from "@/commonJson/formModalJson";
@@ -174,7 +173,6 @@ const AddForm = () => {
     fieldIndex?: number,
     sectionIndex?: number,
   ) => {
-    console.log("fieldIndex", field, fieldData, fieldIndex, sectionIndex);
     if (field?.fieldName === "copy_question") {
       setProperties((prev: any) => {
         const updatedProperties = [...prev];
@@ -184,7 +182,9 @@ const AddForm = () => {
     } else if (field?.fieldName === "delete_question") {
       setProperties((prev: any) => {
         const updatedProperties = [...prev];
-        updatedProperties.splice(sectionIndex, 1);
+        if (sectionIndex !== undefined) {
+          updatedProperties.splice(sectionIndex, 1);
+        }
         return updatedProperties;
       });
     } else if (field?.fieldName === "settings") {
@@ -199,10 +199,12 @@ const AddForm = () => {
   ) => {
     setProperties((prev: any) => {
       const updated = [...prev];
-      updated[sectionIndex] = {
-        ...updated[sectionIndex],
-        [field?.fieldName]: e?.target?.checked,
-      };
+      if (sectionIndex !== undefined) {
+        updated[sectionIndex] = {
+          ...updated[sectionIndex],
+          [field?.fieldName]: e?.target?.checked,
+        };
+      }
       return updated;
     });
   };
@@ -210,8 +212,7 @@ const AddForm = () => {
     e: ChangeEvent<HTMLInputElement>,
     field: any,
   ) => {
-    // console.log("eeetestet", e.target.value, field?.fieldName, field);
-    setFormConfigurations((prev) => ({
+    setFormConfigurations((prev: any) => ({
       ...prev,
       [field?.fieldName]: e.target.value,
     }));
@@ -220,8 +221,7 @@ const AddForm = () => {
     e: ChangeEvent<HTMLSelectElement>,
     field: any,
   ) => {
-    // console.log("eeetestet", e.target.value, field?.fieldName, field);
-    setFormConfigurations((prev) => ({
+    setFormConfigurations((prev: any) => ({
       ...prev,
       [field?.fieldName]: e.target.value,
     }));
@@ -231,7 +231,6 @@ const AddForm = () => {
     field: any,
   ) => {
     if (field?.id === "publish-form") {
-      console.log("publishform");
       const isValid = await checkValidation(addFormJson, formConfigurations);
       setIsCheckValid(true);
       if (isValid) {
@@ -240,9 +239,6 @@ const AddForm = () => {
       }
     }
   };
-  console.log("formConfigurations", formConfigurations?.properties);
-  console.log("propertiesproperties", properties);
-  console.log("configModalFieldData", configModalFieldData);
   useEffect(() => {
     setProperties(forms);
   }, []);

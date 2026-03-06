@@ -1,4 +1,3 @@
-import { RoleListItem } from "@/redux/sagas/handlers/roleMasterHandler/roleMasterHandlerInterface";
 
 export const rolesListingJson = {
   columns: [
@@ -35,7 +34,7 @@ export const rolesListingJson = {
       customField: (
         field: any,
         columnValue: any,
-        rowValue: RoleListItem,
+        rowValue: any,
       ) => {
         return (
           <div>
@@ -53,7 +52,7 @@ export const rolesListingJson = {
       customField: (
         field: any,
         columnValue: any,
-        rowValue: RoleListItem,
+        rowValue: any,
       ) => {
         return (
           <div>

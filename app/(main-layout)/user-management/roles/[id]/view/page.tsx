@@ -55,8 +55,7 @@ const FacilityMasterView = () => {
 
   // Effects
 
-  
-  useEffect(() => {
+useEffect(() => {
     if (
       hasKeys(userRolePermission) &&
       !userRolePermission?.[modulePermission]
@@ -71,7 +70,7 @@ const FacilityMasterView = () => {
 
   useEffect(() => {
     if (!facilityId) return;
-    dispatch(getFacilityDetails(Number(facilityId)));
+    dispatch(getFacilityDetails({ facilityId: Number(facilityId) }));
   }, [facilityId]);
 
   // useEffect(() => {
@@ -81,10 +80,10 @@ const FacilityMasterView = () => {
   // }, [facilityDetails]);
   useEffect(() => {
     if (hasKeys(facilityDetails)) {
-      const { details, ...rest } = facilityDetails;
+      const { details, ...rest } = facilityDetails as any;
 
       // set normal fields
-      let updatedState = { ...rest };
+      const updatedState: any = { ...rest };
 
       // add additional fields directly into form state
       if (Array.isArray(details)) {

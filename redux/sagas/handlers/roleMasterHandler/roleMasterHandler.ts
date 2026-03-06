@@ -12,7 +12,6 @@ import {
   RoleCreateResponse,
   RoleDefinitions,
   RoleDeleteResponse,
-  RoleListResponse,
 } from "./roleMasterHandlerInterface";
 import {
   RoleAddPayload,

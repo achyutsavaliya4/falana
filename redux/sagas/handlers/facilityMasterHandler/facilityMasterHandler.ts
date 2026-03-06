@@ -1,6 +1,4 @@
-import { PaginationMeta } from "@/commonJS/interfaces/utilsInterface";
 import { responseInterface } from "../masterHandlerInterface";
-import { FacilityItem } from "./facilityMasterHandlerInterface";
 import { call, put } from "redux-saga/effects";
 import {
   getFacilityListApi,

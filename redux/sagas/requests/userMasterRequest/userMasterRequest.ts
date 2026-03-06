@@ -1,4 +1,4 @@
-import { get, post, put, remove } from "@/redux/apiWrapper";
+import { get, post, put } from "@/redux/apiWrapper";
 export const getUserMasterListApi = (query?: string) => {
   return get(`/users${query ? `?${query}` : ""}`);
 };

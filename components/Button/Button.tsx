@@ -3,7 +3,6 @@ import { clsx } from "clsx";
 import Image from "next/image";
 import { DefaultFunction } from "@/commonJS/interfaces/utilsInterface";
 import { CSSProperties, memo, MouseEvent } from "react";
-import { Spinner } from "react-bootstrap";
 import { useSelector } from "react-redux";
 import { RootState } from "@/redux";
 import Loader from "../Loader/Loader";

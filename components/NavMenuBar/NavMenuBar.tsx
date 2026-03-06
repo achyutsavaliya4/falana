@@ -43,7 +43,7 @@ const NavMenuBar = () => {
     const allowedModules: any[] = [];
 
     mainMenu.map((ele) => {
-      let sub_mod: any[] = [];
+      const sub_mod: any[] = [];
       let isAllowed = false;
 
       if (checkArray(ele?.child)) {

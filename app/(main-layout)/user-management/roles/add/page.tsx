@@ -35,7 +35,7 @@ const RoleMasterAdd = () => {
   // page state
   const [roleFieldData, setRoleFieldData] = useState<RoleAddPayload>();
   const [isCheckValid, setIsCheckValid] = useState<boolean>(false);
-  const [modulePermissions, setModulePermissions] = useState([]);
+  const [modulePermissions, setModulePermissions] = useState<any[]>([]);
 
   const getConfig = useMemo(
     () => ({
@@ -54,7 +54,7 @@ const RoleMasterAdd = () => {
     setRoleFieldData((prev: any) => {
       return {
         ...prev,
-        [field?.fieldName]: value,
+        [field?.fieldName as string]: value,
       };
     });
   };
@@ -66,7 +66,6 @@ const RoleMasterAdd = () => {
     if (field?.id === "save" && hasKeys(roleFieldData)) {
       setIsCheckValid(true);
       const isValid = await checkValidation(roleMasterJson, roleFieldData);
-      console.log("isValid", isValid);
       
       if (isValid) {
         dispatch(
@@ -87,7 +86,7 @@ const RoleMasterAdd = () => {
 
     setRoleFieldData((prev: any) => ({
       ...prev,
-      [field?.fieldName]: value,
+      [field?.fieldName as string]: value,
     }));
   };
 
@@ -99,15 +98,15 @@ const RoleMasterAdd = () => {
     const { fieldName } = field;
 
     if (fieldName === "action_permission") {
-      setRoleFieldData((prev) => {
+      setRoleFieldData((prev: any) => {
         const moduleIdx = prev?.modules?.findIndex(
-          (m) => m.id === fieldData.module_id,
+          (m: any) => m.id === fieldData.module_id,
         );
 
         if (moduleIdx === -1) return prev;
 
         const subModuleIdx = prev?.modules[moduleIdx].sub_modules.findIndex(
-          (sM) => sM.id === fieldData.sub_module_id,
+          (sM: any) => sM.id === fieldData.sub_module_id,
         );
 
         if (subModuleIdx === -1) return prev;
@@ -115,28 +114,28 @@ const RoleMasterAdd = () => {
         const actionsIdx = prev?.modules[moduleIdx].sub_modules?.[
           subModuleIdx
         ]?.actions?.findIndex(
-          (sM) => sM.module_action_id === fieldData.module_action_id,
+          (sM: any) => sM.module_action_id === fieldData.module_action_id,
         );
 
         return {
           ...prev,
-          modules: prev?.modules.map((module, mIdx) =>
+          modules: prev?.modules.map((module: any, mIdx: number) =>
             mIdx !== moduleIdx
               ? module
               : {
                   ...module,
-                  sub_modules: module.sub_modules.map((subModule, sIdx) =>
+                  sub_modules: module.sub_modules.map((subModule: any, sIdx: number) =>
                     sIdx !== subModuleIdx
                       ? subModule
                       : {
                           ...subModule,
                           sub_module_permission: subModule.actions.every(
-                            (action, aIdx) =>
+                            (action: any, aIdx: number) =>
                               aIdx === actionsIdx
                                 ? e.target.checked
                                 : Boolean(action?.[fieldName]),
                           ),
-                          actions: subModule.actions.map((actions, aIdx) =>
+                          actions: subModule.actions.map((actions: any, aIdx: number) =>
                             aIdx !== actionsIdx
                               ? actions
                               : {
@@ -153,33 +152,33 @@ const RoleMasterAdd = () => {
 
       return;
     } else if (fieldName === "sub_module_permission") {
-      setRoleFieldData((prev) => {
+      setRoleFieldData((prev: any) => {
         const moduleIdx = prev?.modules?.findIndex(
-          (m) => m.id === fieldData.module_id,
+          (m: any) => m.id === fieldData.module_id,
         );
 
         if (moduleIdx === -1) return prev;
 
         const subModuleIdx = prev?.modules[moduleIdx].sub_modules.findIndex(
-          (sM) => sM.id === fieldData.id,
+          (sM: any) => sM.id === fieldData.id,
         );
 
         if (subModuleIdx === -1) return prev;
 
         return {
           ...prev,
-          modules: prev?.modules.map((module, mIdx) =>
+          modules: prev?.modules.map((module: any, mIdx: number) =>
             mIdx !== moduleIdx
               ? module
               : {
                   ...module,
-                  sub_modules: module.sub_modules.map((subModule, sIdx) =>
+                  sub_modules: module.sub_modules.map((subModule: any, sIdx: number) =>
                     sIdx !== subModuleIdx
                       ? subModule
                       : {
                           ...subModule,
                           sub_module_permission: e.target.checked,
-                          actions: subModule.actions.map((action) => ({
+                          actions: subModule.actions.map((action: any) => ({
                             ...action,
                             action_permission: e.target.checked,
                           })),
@@ -193,7 +192,7 @@ const RoleMasterAdd = () => {
       return;
     }
 
-    setRoleFieldData((prev) => ({
+    setRoleFieldData((prev: any) => ({
       ...prev,
       [fieldName]: e.target.value,
     }));
@@ -205,7 +204,7 @@ const RoleMasterAdd = () => {
   ) => {
     setRoleFieldData((prev: any) => ({
       ...prev,
-      [field?.fieldName]: e.target.checked,
+      [field?.fieldName as string]: e.target.checked,
     }));
   };
 
@@ -225,7 +224,7 @@ const RoleMasterAdd = () => {
 
   useEffect(() => {
     setModulePermissions(roleDefinitions);
-    setRoleFieldData((prev) => ({ modules: roleDefinitions }));
+    setRoleFieldData((prev: any) => ({ ...prev, modules: roleDefinitions }));
   }, [roleDefinitions]);
 
   useEffect(() => {
@@ -240,11 +239,6 @@ const RoleMasterAdd = () => {
       dispatch(resetRoleDefinitions());
     };
   }, []);
-  console.log(
-    "roleDefinitionsroleDefinitions",
-    modulePermissions,
-    roleFieldData,
-  );
 
   return (
     <div className="page-content">
@@ -257,7 +251,6 @@ const RoleMasterAdd = () => {
             fullFieldData={{
               modulePermissions,
             }}
-            onChangeInput={onChangeInput}
             isCheckValid={isCheckValid}
             configData={getConfig}
             onChangeInput={handleChangeInput}

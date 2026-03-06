@@ -118,8 +118,7 @@ const EditFormPage = () => {
     e: ChangeEvent<HTMLInputElement>,
     field: any,
   ) => {
-    // console.log("eeetestet", e.target.value, field?.fieldName, field);
-    setFormConfigurations((prev) => ({
+    setFormConfigurations((prev: any) => ({
       ...prev,
       [field?.fieldName]: e.target.value,
     }));
@@ -128,15 +127,13 @@ const EditFormPage = () => {
     e: ChangeEvent<HTMLSelectElement>,
     field: any,
   ) => {
-    // console.log("eeetestet", e.target.value, field?.fieldName, field);
-    setFormConfigurations((prev) => ({
+    setFormConfigurations((prev: any) => ({
       ...prev,
       [field?.fieldName]: e.target.value,
     }));
   };
   const onClickPublishForm = async () => {
     const isValid = await checkValidation(addFormJson, formConfigurations);
-    console.log("isValidisValid", isValid, formConfigurations);
     setIsCheckValid(true);
     if (isValid) {
       setIsCheckValid(false);
@@ -148,11 +145,9 @@ const EditFormPage = () => {
   useEffect(() => {
     dispatch(getFormList({ workspaceId: 9 }));
   }, []);
-  console.log("idid", id);
   useEffect(() => {
     const { properties, ...form } =
       formsList?.find((form) => form?.slug === id) || {};
-    console.log("formform", form);
     setProperties(properties || []);
     setFormConfigurations(form || {});
   }, [id, formsList]);
@@ -160,7 +155,7 @@ const EditFormPage = () => {
     <>
       <BreadCrumbs />
       <Button
-        field={publishFormJson}
+        field={publishFormJson as any}
         fieldData={formConfigurations}
         fullFieldData={{}}
         configData={{}}

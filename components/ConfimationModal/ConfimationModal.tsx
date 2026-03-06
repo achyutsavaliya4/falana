@@ -1,13 +1,13 @@
 import { Modal } from "react-bootstrap";
 import Button, { button, onClickFieldResolver } from "../Button/Button";
-import { checkArray, hasKeys } from "@/commonJS/commonHelper/commonHelper";
+import { hasKeys } from "@/commonJS/commonHelper/commonHelper";
 import clsx from "clsx";
 
 export type Props = {
   size?: "lg" | "sm" | "xl";
   showModal?: boolean;
   handleToggle: Function;
-  title?: String;
+  title?: string;
   message: string;
   customData?: Function;
   className?: string;

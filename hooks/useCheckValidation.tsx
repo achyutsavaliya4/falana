@@ -67,7 +67,6 @@ const useCheckValidation = (tabsValidation: boolean = false) => {
           childData?.sectionType !== "body" &&
           childData?.sectionType !== "body-repeat"
         ) {
-          console.log("childData entered", childData?.fieldType);
           if (
             childData.isDisabled
               ? !childData.isDisabled

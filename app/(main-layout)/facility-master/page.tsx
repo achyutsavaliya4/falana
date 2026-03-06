@@ -13,12 +13,9 @@ import {
   addNewFacilityBtnJson,
   facilityListingJson,
 } from "@/commonJson/facility-master/list";
-import { addNewFormJson } from "@/commonJson/form-management/list";
-import { button } from "@/components/Button/Button";
 import ConfirmationModal from "@/components/ConfimationModal/ConfimationModal";
 import ListingComponents from "@/components/ListingComponents/ListingComponents";
 import PageHeader from "@/components/PageHeader/PageHeader";
-import useCheckValidation from "@/hooks/useCheckValidation";
 import { RootState } from "@/redux";
 import {
   deleteFacility,
@@ -38,9 +35,8 @@ const FacilityMaster = () => {
   const pathname = usePathname();
   const moduleName = useMemo(() => convertToModuleName(pathname), [pathname]);
   const modulePermission = "settings.facility.view";
-  
 
-  // redux states
+// redux states
   const { facilityList, facilityMetadata } = useSelector(
     (state: RootState) => state.facility,
   );
@@ -60,9 +56,8 @@ const FacilityMaster = () => {
     type: "asc",
   });
   const [pageNo, setPageNo] = useState<number>(1);
-  
 
-  // Functions
+// Functions
   const onClickActionField = async (
     fieldId: string,
     rowValue: FacilityItem,
@@ -83,7 +78,7 @@ const FacilityMaster = () => {
       {} as any,
       selectedSortData,
       page,
-      filterJson,
+      filterJson ?? [],
     );
 
     if (checkString(query)) {
@@ -154,10 +149,7 @@ const FacilityMaster = () => {
     }
   }, [customPayload?.facilityDeleteSuccess]);
 
-  // console.log("moduleName", userRolePermission,userRolePermission?.["settings.facility.create"]);
-  
-
-  return (
+return (
     <div className="page-content">
       <PageHeader
         formJson={addNewFacilityBtnJson}

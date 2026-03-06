@@ -1,8 +1,8 @@
 import { call, put } from "redux-saga/effects";
-import { getFacilityDetailsApi, getFacilityListApi } from "../../requests/facilityMasterRequest";
+import { getFacilityDetailsApi } from "../../requests/facilityMasterRequest";
 import { responseInterface } from "../masterHandlerInterface";
 import { hasKeys } from "@/commonJS/commonHelper/commonHelper";
-import { reInviteUser, SET_USER_DETAILS, SET_USER_MASTER_LIST } from "@/redux/actions/userMasterAction/userMasterAction";
+import { SET_USER_DETAILS, SET_USER_MASTER_LIST } from "@/redux/actions/userMasterAction/userMasterAction";
 import { getUserMasterListApi, inviteUserApi, reInviteUserApi, updateUserDetailsApi } from "../../requests/userMasterRequest/userMasterRequest";
 import { SET_UI_ACTION } from "@/redux/actions/uiAction/uiAction";
 import { SET_BTN_LOADER_ACTION } from "@/redux/actions/loaderAction/loaderAction";
