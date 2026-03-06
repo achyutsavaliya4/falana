@@ -348,12 +348,7 @@ const FilterSection: React.FC<FilterSection> = ({
                     type: "text",
                     value: filterInputQuery?.[columnData?.fieldName] ?? "",
                   };
-            // console.log(
-            //   "filterInputQueryfilterInputQuery",
-            //   filterInputQuery,
-            //   filterInputQuery?.[columnData?.fieldName],
-            //   dynamicProps,
-            // );
+            // 
             return (
               <div
                 key={"columnFilter" + columnInd}

@@ -130,7 +130,6 @@ const UserList = () => {
     fieldIndex: number,
     repeatChildIndex: number,
   ) => {
-    console.log("fieldIndex", repeatChildIndex, field);
     if (field?.id === "invite-user") {
       setShowInviteUserModal(true);
     } else if (field?.id === "remove_role") {
@@ -308,7 +307,6 @@ const UserList = () => {
     e: React.ChangeEvent<HTMLInputElement>,
     field: any,
   ) => {
-    console.log("searchDipal", e.target.value, field);
     if (e?.target?.value) {
       if (field?.fieldName === "role_id") {
         dispatch(
@@ -399,7 +397,6 @@ const UserList = () => {
   };
 
   const onClickActionField = (fieldId: string, rowValue: any) => {
-    console.log("actionFieldId", fieldId, rowValue);
     dispatch(getToaster({
       type: "success",
       message: `Clicked on action: ${fieldId}`,
@@ -467,16 +464,14 @@ const UserList = () => {
     }
   }, [userRolePermission]);
 
-  
-  useEffect(() => {
+useEffect(() => {
     if (filtersLoaded) {
       onChangeQuery();
       storage?.setFilters({ [moduleName]: filters });
     }
   }, [filtersLoaded, filters]);
 
-
-  useEffect(() => {
+useEffect(() => {
     if (checkString(moduleName)) {
       const storageItem = storage?.getFilters();
       if (hasKeys(storageItem) && storageItem[moduleName]) {
@@ -512,13 +507,11 @@ const UserList = () => {
     }
   }, [moduleName]);
 
-
-  useEffect(() => {
+useEffect(() => {
     setUserMasterListData(userMasterList);
   }, [userMasterList]);
 
-
-  useEffect(() => {
+useEffect(() => {
     if (customPayload?.userInviteSuccess) {
       setShowInviteUserModal(false);
       onChangeQuery();

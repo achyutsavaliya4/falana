@@ -117,7 +117,7 @@ export default function Home() {
 //                 onUpdate={handleUpdateQuestion}
 //                 onDelete={handleDeleteQuestion}
 //                 onDuplicate={handleDuplicateQuestion}
-//                 onSettingsClick={(id) => console.log("Settings clicked:", id)}
+//                 onSettingsClick={(id) => }
 //               />
 //             ))}
 //           </SortDraggableContainer>

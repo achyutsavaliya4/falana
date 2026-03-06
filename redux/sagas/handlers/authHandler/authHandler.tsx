@@ -103,7 +103,6 @@ export function* handleSetNewPassword(action: {
     );
 
     if (response.data) {
-      console.log("Login New Password", response);
     }
   } catch (err) {
     console.error(err);
@@ -121,7 +120,6 @@ export function* handleSendResetLink(action: {
     );
 
     if (response.data) {
-      console.log("Send Reset Password Link", response);
     }
   } catch (err) {
     console.error(err);
@@ -139,7 +137,6 @@ export function* handleResetNewPassword(action: {
     );
 
     if (response.data) {
-      console.log("Login New Password", response);
     }
   } catch (err) {
     console.error(err);

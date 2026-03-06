@@ -337,7 +337,6 @@ export const inviteUserModalJson = [
                     id: "id",
                     labelClassName: "col-2 field-label p-0",
                     validation: (data: any) => {
-                      console.log("rolevallidation",data);
                       return {
                         isValid: !!data?.id,
                         message: "Role is required",
@@ -359,7 +358,6 @@ export const inviteUserModalJson = [
                     id: "id",
                     labelClassName: "col-2 field-label p-0",
                     validation: (data: any, compareField:any, fieldData:any, fullFieldData:any, field: any) => {
-                      console.log("validationData",data, field);
                       return {
                         isValid: !!data?.id || (Array.isArray(data) && data.length > 0),
                         message: "Facility is required",

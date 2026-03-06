@@ -56,7 +56,6 @@ const CommonForm = ({
   return (
     <>
       {formJson?.map((section: any, sectionIndex: number) => {
-        // console.log("section", section?.sectionType);
         return (
           <React.Fragment key={"main-section" + sectionIndex}>
             {section?.sectionType === "body" &&

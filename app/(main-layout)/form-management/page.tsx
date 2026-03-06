@@ -25,7 +25,6 @@ const FormList = () => {
   );
   const onClickActionFieldFormList = useCallback(
     (fieldId: string, rowValue: any) => {
-      console.log("fieldIdfieldId", fieldId);
 
       if (fieldId === "edit_form") {
         router?.push(`/form-management/${rowValue?.slug}/edit`);
@@ -51,7 +50,6 @@ const FormList = () => {
   }, []);
   useEffect(() => {
     onChangeQuery();
-    console.log("TestingMain", new Set(fields?.map((f) => f?.type)));
   }, [filters]);
   return (
     <div className="page-content">

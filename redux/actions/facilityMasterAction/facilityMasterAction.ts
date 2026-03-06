@@ -40,7 +40,6 @@ export const updateFacility = (data: any) => {
   };
 };
 
-
 export const deleteFacility = ( facilityId : { facilityId: number | string }) => {
   return {
     type: DELETE_FACILITY,

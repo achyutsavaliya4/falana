@@ -39,7 +39,6 @@ const ValidationTooltip = ({
     errors,
     bodyChild,
   )?.isValid;
-  // console.log("bodyChild",bodyChild, isValidData);
   if (isValidData) return;
   const message =
     bodyChild?.validation?.(
@@ -53,7 +52,6 @@ const ValidationTooltip = ({
       errors,
       bodyChild,
     )?.message ?? "";
-  // console.log("ValidationTooltip bodyChild", bodyChild, isValidData, message);
 
   return (
     <OverlayTrigger

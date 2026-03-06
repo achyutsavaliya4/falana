@@ -55,8 +55,7 @@ const FacilityMasterView = () => {
 
   // Effects
 
-  
-  useEffect(() => {
+useEffect(() => {
     if (
       hasKeys(userRolePermission) &&
       !userRolePermission?.[modulePermission]

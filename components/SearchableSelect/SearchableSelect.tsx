@@ -176,8 +176,7 @@ const isMulti =
         ? (value as any)?.[field.optionKey] ?? ""
         : value ?? "";
 
-
-  const dropdownData = field?.fieldName
+const dropdownData = field?.fieldName
     ? configData[field?.fieldName] || []
     : [];
   const disabled = field?.onDisabled
@@ -207,8 +206,7 @@ const isMulti =
 // }, [fieldData, field]);
 }, [fieldData, field, isMulti]);
 
-
-  return (
+return (
     <Dropdown
       drop="down"
       className={clsx(
