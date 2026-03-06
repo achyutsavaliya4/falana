@@ -1,0 +1,20 @@
+[
+  {
+    "type": "files",
+    "name": "Upload Premises",
+    "id": "670103df-f192-41f6-87ac-72b7b4c2670b",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "priority": "HIGH",
+    "src": "Image Upload",
+    "multiple": true,
+    "allowed_file_types": "jpg,jpeg,png",
+    "help": "Image Upload"
+  }
+]

@@ -1,0 +1,14 @@
+@use "../variables" as *;
+.field-label{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: $text-primary;
+}
+
+.header-label{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: $text-primary;
+}

@@ -1,0 +1,193 @@
+[
+  {
+    "type": "number",
+    "name": "Employee ID",
+    "id": "8e3b80d9-52fe-406c-9fc6-2533cc4bffae",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "required": true
+  },
+  {
+    "type": "select",
+    "name": "Minimum eligibility criteria store wise quantity for DERMATOUCH incentive:",
+    "id": "a5f4a931-3f27-48e4-b77e-cf5bb282ac73",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "15",
+          "id": "15"
+        },
+        {
+          "name": "10",
+          "id": "10"
+        },
+        {
+          "name": "5",
+          "id": "5"
+        },
+        {
+          "name": "20",
+          "id": "20"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true
+  },
+  {
+    "type": "select",
+    "name": "What % of sales amount is calculated for 3000-7500 sales of Kapiva.",
+    "id": "bcba346a-fd0b-4d8d-80af-3238b9ad32cd",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "2.5%",
+          "id": "2.5%"
+        },
+        {
+          "name": "7.5%",
+          "id": "7.5%"
+        },
+        {
+          "name": "5%",
+          "id": "5%"
+        },
+        {
+          "name": "10%",
+          "id": "10%"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true
+  },
+  {
+    "type": "select",
+    "name": "What is incentive amount on Avimee per quantity.",
+    "id": "3f5b6673-f8de-4fdd-8021-27c762236d94",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "15",
+          "id": "15"
+        },
+        {
+          "name": "20",
+          "id": "20"
+        },
+        {
+          "name": "10",
+          "id": "10"
+        },
+        {
+          "name": "None",
+          "id": "None"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true
+  },
+  {
+    "type": "select",
+    "name": "What is minimum eligibility criteria store wise quantity for BRIYO incentive",
+    "id": "ca8f2457-3a03-4569-b5cd-7ba3278311a4",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "12",
+          "id": "12"
+        },
+        {
+          "name": "15",
+          "id": "15"
+        },
+        {
+          "name": "10",
+          "id": "10"
+        },
+        {
+          "name": "20",
+          "id": "20"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true
+  },
+  {
+    "type": "select",
+    "name": "The highest % of sales incentive you can earn in Kapiva",
+    "id": "3b1004b9-2de0-4cad-a524-4ff32f0605c7",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "10%",
+          "id": "10%"
+        },
+        {
+          "name": "7.5%",
+          "id": "7.5%"
+        },
+        {
+          "name": "15%",
+          "id": "15%"
+        },
+        {
+          "name": "None of the above",
+          "id": "None of the above"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "type": "nf-text",
+    "name": "Text Block",
+    "content": "<p>This is a text block.</p>",
+    "id": "b21d55cb-7c67-4a1f-a7b0-baa558ce5584",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    }
+  },
+  {
+    "type": "nf-page-break",
+    "name": "Page Break",
+    "next_btn_text": "Next",
+    "previous_btn_text": "Previous",
+    "id": "eb555bcb-09b6-454b-bd41-6473daff9c86",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    }
+  },
+  {
+    "type": "nf-divider",
+    "name": "Divider",
+    "id": "81ff8e8f-80d7-4824-bad2-d68fb18a71ab",
+    "hidden": true,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": false
+  }
+]

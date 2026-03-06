@@ -1,0 +1,65 @@
+const formJsonData = [
+  {
+    sectionType: "body",
+    rowClassName: "d-flex col-12 align-items-center pb-1",
+    child: [
+      {
+        fieldType: "input",
+        fieldName: "customer_name",
+        inputType: "text",
+        fieldContainerClassName: "col",
+        inputPlaceholder: "Enter Customer Name",
+        showLabel: true,
+        isRequired: true,
+        label: "Customer Name",
+        className: "prescription-modal-input",
+      },
+      {
+        fieldType: "select",
+        fieldName: "options",
+        optionKey: "label",
+        optionValue: "value",
+        showLabel: true,
+        label: "Age Range",
+      },
+      {
+        fieldType: "label",
+        fieldName: "label_text",
+        showLabel: true,
+        label: "Description",
+        labelText: "Text with Label",
+      },
+      {
+        label: "Cancel",
+        fieldType: "button",
+        fieldName: "cancel",
+        imageWidth: "14",
+        imageHeight: "14",
+        imageClassName: "me-2",
+        url: process.env.NEXT_PUBLIC_IMAGES_ASSETS + "/assets/icons/close-red-icon.svg",
+        isDisabled: false,
+        showLabel: true,
+        buttonText: "Button Hai Bhai",
+      },
+      {
+        fieldType: "input",
+        fieldName: "checkbox",
+        inputType: "checkbox",
+        inputPlaceholder: "Enter Customer Name",
+        showLabel: true,
+        isRequired: false,
+        label: "Check Box",
+      },
+      {
+        fieldType: "input",
+        fieldName: "radio",
+        inputType: "radio",
+        showLabel: true,
+        isRequired: false,
+        label: "Radio Grp",
+      },
+    ],
+  },
+];
+
+export default formJsonData;

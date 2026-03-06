@@ -1,0 +1,174 @@
+[
+  {
+    "type": "number",
+    "name": "employee ID",
+    "id": "b0d5152e-98c4-41ac-b77b-6b69636b30be",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "required": true
+  },
+  {
+    "type": "select",
+    "name": "Incentive on VITANOURISH 30 tablets",
+    "id": "0fd85793-8e50-4f6a-877a-717f63ed0979",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "20",
+          "id": "20"
+        },
+        {
+          "name": "30",
+          "id": "30"
+        },
+        {
+          "name": "10",
+          "id": "10"
+        },
+        {
+          "name": "None",
+          "id": "None"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true
+  },
+  {
+    "type": "select",
+    "name": "What would you suggest the customer if their skin gets dry after using DERMATOUCH BRIGHT AND EVEN TONE FACE WASH:",
+    "id": "0c8ccbd2-3c00-4a9a-bc56-0eca0f78f309",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Moisturiser",
+          "id": "Moisturiser"
+        },
+        {
+          "name": "Serum",
+          "id": "Serum"
+        },
+        {
+          "name": "Toner",
+          "id": "Toner"
+        },
+        {
+          "name": "None",
+          "id": "None"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true
+  },
+  {
+    "type": "select",
+    "name": "What is incentive on Pure Nutrition quantity wise",
+    "id": "306b218d-5b5f-4cba-8616-f21109dfd79f",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "15",
+          "id": "15"
+        },
+        {
+          "name": "20",
+          "id": "20"
+        },
+        {
+          "name": "10",
+          "id": "10"
+        },
+        {
+          "name": "25",
+          "id": "25"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true
+  },
+  {
+    "type": "select",
+    "name": "Which alternative product of partner brand you can pitch for Diabetic patients",
+    "id": "5423cf96-e0ac-4426-8f15-b053c7f1cdc4",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Kapiva Dia Free Juice",
+          "id": "Kapiva Dia Free Juice"
+        },
+        {
+          "name": "Kapiva Liver Care Juice",
+          "id": "Kapiva Liver Care Juice"
+        },
+        {
+          "name": "Kapiva ACV",
+          "id": "Kapiva ACV"
+        },
+        {
+          "name": "Kapiva BP Care Juice",
+          "id": "Kapiva BP Care Juice"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true
+  },
+  {
+    "type": "text",
+    "name": "Name any 5 products of  BRIYO",
+    "id": "47a6c477-d6ea-47a3-a771-6ea198e5b551",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "required": true
+  }
+]

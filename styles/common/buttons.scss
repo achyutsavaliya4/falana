@@ -1,0 +1,30 @@
+@use "../variables";
+
+.button {
+  padding: 7px;
+  font-size: 14px;
+  &:focus-visible {
+    outline: none;
+  }
+}
+.default-button {
+  border: 1px solid red;
+  border-radius: 4px;
+}
+
+.primary-button {
+  color: white;
+  background-color: #202149;
+  border-radius: 4px;
+}
+.secondary-button {
+  color: variables.$primary;
+  border: 1px solid variables.$primary;
+  border-radius: 4px;
+}
+
+.base-button{
+  color: variables.$default;
+  background-color: #EBEEF0;
+  border-radius: 3px;
+}

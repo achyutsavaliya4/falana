@@ -1,0 +1,16 @@
+.render-engine {
+  color: var(--text);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .question-section {
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 12px 16px;
+    border: 1px solid #eee !important;
+    box-shadow: 0px 0px 10px 0px #0000000f;
+  }
+}

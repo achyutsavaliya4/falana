@@ -1,0 +1,51 @@
+@use "./../variables";
+
+.searchable-select {
+  .searchable-select-button {
+    border: 1px solid variables.$primary-border;
+    border-radius: 4px;
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: transparent;
+      border: 1px solid variables.$primary-border;
+    }
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .searchable-select-input {
+    border: none;
+    width: 100%;
+    &.as-dropdown {
+      cursor: pointer;
+      caret-color: transparent;
+    }
+  }
+
+  .searchable-menu {
+    min-width: 100% !important;
+  }
+
+  .multi-select-chip{
+    background-color: variables.$surface-tertiary;
+    color: #101828;
+    padding: 4px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    max-width: 90%;
+
+    .chip-text {
+      flex: 1;
+      min-width: 0;      
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+  }
+}

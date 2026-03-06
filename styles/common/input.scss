@@ -1,0 +1,73 @@
+@use "../variables";
+
+.primary-input {
+  border: 1px solid #ccced1;
+  border-radius: 4px;
+  padding: 7px 12px;
+  &::placeholder {
+    color: #8E95A4;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  &:focus {
+    outline: none;
+  }
+
+  // remove that arrow which appears in number input fields
+
+  /* Chrome, Safari, Edge, Opera */
+  &[type="number"]::-webkit-outer-spin-button,
+  &[type="number"]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  &[type="number"] {
+    -moz-appearance: textfield;
+  }
+}
+
+.primary-checkbox {
+  border: 1px solid variables.$primary-border;
+  border-radius: 6px;
+  height: 20px;
+  width: 20px;
+  accent-color: variables.$primary;
+  &:focus {
+    outline: none;
+  }
+}
+
+.upload-wrapper {
+  width: 100%;
+  .upload-input {
+    display: none;
+  }
+  .upload-ui {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    width: 100%;
+    padding: 14px 16px;
+
+    border: 2px dashed #287adf;
+    border-radius: 10px;
+
+    color: #1957a4;
+    font-weight: 500;
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background: rgba(37, 99, 235, 0.06);
+    }
+  }
+
+  .upload-text {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "type": "date",
+    "name": "Date",
+    "id": "fa410de7-7eba-4e3b-8377-1f6aca15f789",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "date_range": false,
+    "with_time": false,
+    "prefill_today": false,
+    "prefill": null,
+    "disable_future_dates": false,
+    "disable_past_dates": false,
+    "required": false,
+    "disabled": false,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false,
+    "priority": "HIGH",
+    "src": "HIGH"
+  },
+  {
+    "type": "date",
+    "name": "Date Range",
+    "id": "5bf6fa22-65a8-4324-8f25-1f79529aca35",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "date_range": true,
+    "with_time": false,
+    "prefill_today": false,
+    "prefill": ["2026-01-05", "2026-01-15"],
+    "disable_future_dates": true,
+    "disable_past_dates": false,
+    "required": false,
+    "disabled": false,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false,
+    "priority": "HIGH",
+    "src": "date range",
+    "help": "date range"
+  },
+  {
+    "type": "date",
+    "name": "DAte with Time Zone",
+    "id": "7e6dd57f-cd27-49ad-a8eb-702ad6772a67",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "date_range": false,
+    "with_time": true,
+    "prefill_today": true,
+    "prefill": "Pre-filled with current date",
+    "disable_future_dates": false,
+    "disable_past_dates": false,
+    "required": false,
+    "disabled": false,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false,
+    "priority": "HIGH",
+    "src": "America/Chicago",
+    "help": "date range",
+    "timezone": "America/Chicago"
+  }
+]

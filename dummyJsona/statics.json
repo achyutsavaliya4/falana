@@ -1,0 +1,61 @@
+{
+  "width": [
+    { "name": "Full", "value": "full" },
+    { "name": "1/2 (half width)", "value": "1/2" },
+    { "name": "1/3 (a third of the width)", "value": "1/3" },
+    { "name": "2/3 (two thirds of the width)", "value": "2/3" },
+    { "name": "1/4 (a quarter of the width)", "value": "1/4" },
+    { "name": "3/4 (three quarters of the width)", "value": "3/4" }
+  ],
+  "priority": [
+    { "name": "Left", "value": "left" },
+    { "name": "Center", "value": "center" },
+    { "name": "Right", "value": "right" },
+    { "name": "Justify", "value": "justify" }
+  ],
+  "help_position": [
+    { "name": "Below input", "value": "below_input" },
+    { "name": "Above input", "value": "above_input" }
+  ],
+  "actions": [
+    { "name": "Require answer", "value": "require-answer" },
+    { "name": "Make it optional", "value": "make-it-optional" },
+    { "name": "Disable Block", "value": "disable-block" },
+    { "name": "Hide Block", "value": "hide-block" },
+    { "name": "Enable Block", "value": "enable-block" },
+    { "name": "Show Block", "value": "show-block" }
+  ],
+  "sectionPriority": [
+    {
+      "name": "High Priority",
+      "value": "HIGH",
+      "showImage": true,
+      "imageUrl": "/icons/dot-red.svg",
+      "imageAlt": "High Priority",
+      "width": 14,
+      "height": 14,
+      "isDisabled": false
+    },
+    {
+      "name": "Medium Priority",
+      "value": "MEDIUM",
+      "showImage": true,
+      "imageUrl": "/icons/dot-dark-yellow.svg",
+      "imageAlt": "Medium Priority",
+      "width": 14,
+      "height": 14,
+      "isDisabled": false
+    },
+    {
+  
+      "name": "Low Priority",
+      "value": "LOW",
+      "showImage": true,
+      "imageUrl": "/icons/dot-yellow.svg",
+      "imageAlt": "Low Priority",
+      "width": 14,
+      "height": 14,
+      "isDisabled": false
+    }
+  ]
+}

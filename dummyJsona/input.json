@@ -1,0 +1,243 @@
+{
+    "title": "All Input Forms",
+    "description": null,
+    "visibility": "public",
+    "workspace_id": 9,
+    "properties": [
+        {
+            "name": "Normal Input Label",
+            "type": "text",
+            "hidden": false,
+            "required": false,
+            "id": "0495843c-8918-4494-8140-001d6a9583ad",
+            "placeholder": null,
+            "prefill": null,
+            "help": null,
+            "help_position": "below_input",
+            "width": "full",
+            "align": "left",
+            "show_char_limit": false,
+            "logic": {
+                "conditions": null,
+                "actions": []
+            },
+            "max_char_limit": 2000,
+            "generates_uuid": false,
+            "generates_auto_increment_id": false,
+            "disabled": false,
+            "hide_field_name": false
+        },
+        {
+            "name": "Hidden Input",
+            "type": "text",
+            "hidden": true,
+            "required": false,
+            "id": "242b499c-92d7-437d-af1d-f329544fbe32",
+            "placeholder": null,
+            "prefill": null,
+            "help": null,
+            "help_position": "below_input",
+            "width": "full",
+            "align": "left",
+            "show_char_limit": false,
+            "logic": {
+                "conditions": null,
+                "actions": []
+            },
+            "max_char_limit": 2000,
+            "generates_uuid": false,
+            "generates_auto_increment_id": false,
+            "disabled": false,
+            "hide_field_name": false
+        },
+        {
+            "name": "Disabled Input",
+            "type": "text",
+            "hidden": false,
+            "required": false,
+            "id": "415f870f-7aa3-4a7e-a0ec-44315289525c",
+            "placeholder": null,
+            "prefill": null,
+            "help": null,
+            "help_position": "below_input",
+            "width": "full",
+            "align": "left",
+            "show_char_limit": false,
+            "logic": {
+                "conditions": null,
+                "actions": []
+            },
+            "max_char_limit": 2000,
+            "generates_uuid": false,
+            "generates_auto_increment_id": false,
+            "disabled": true,
+            "hide_field_name": false
+        },
+        {
+            "name": "Multi line Input",
+            "type": "text",
+            "hidden": false,
+            "required": false,
+            "id": "84450baf-a9a9-4b06-8d79-53ab54bd2efa",
+            "placeholder": "All Field",
+            "prefill": "test",
+            "help": "This is help text given",
+            "help_position": "below_input",
+            "width": "1/2",
+            "align": "left",
+            "show_char_limit": true,
+            "logic": {
+                "conditions": {
+                    "operatorIdentifier": "and",
+                    "children": [
+                        {
+                            "identifier": "0495843c-8918-4494-8140-001d6a9583ad",
+                            "value": {
+                                "operator": "equals",
+                                "property_meta": {
+                                    "id": "0495843c-8918-4494-8140-001d6a9583ad",
+                                    "type": "text"
+                                },
+                                "value": "yagnik"
+                            }
+                        },
+                        {
+                            "operatorIdentifier": "and",
+                            "children": [
+                                {
+                                    "identifier": "0495843c-8918-4494-8140-001d6a9583ad",
+                                    "value": {
+                                        "operator": "equals",
+                                        "property_meta": {
+                                            "id": "0495843c-8918-4494-8140-001d6a9583ad",
+                                            "type": "text"
+                                        },
+                                        "value": "test"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "actions": [
+                    "hide-block"
+                ]
+            },
+            "max_char_limit": 69,
+            "generates_uuid": false,
+            "generates_auto_increment_id": false,
+            "disabled": false,
+            "hide_field_name": false,
+            "multi_lines": false
+        },
+        {
+            "name": "All Value Filled Input",
+            "type": "text",
+            "hidden": false,
+            "required": false,
+            "id": "7862f7f7-c7e8-4718-ae88-943d1ac4b452",
+            "placeholder": "multi line placeholder",
+            "prefill": "",
+            "help": null,
+            "help_position": "below_input",
+            "width": "full",
+            "align": "left",
+            "show_char_limit": false,
+            "logic": {
+                "conditions": null,
+                "actions": []
+            },
+            "max_char_limit": 2000,
+            "generates_uuid": false,
+            "generates_auto_increment_id": false,
+            "disabled": false,
+            "hide_field_name": false,
+            "multi_lines": true
+        },
+        {
+            "name": "Auto Increament ",
+            "type": "text",
+            "hidden": true,
+            "required": false,
+            "id": "647f4bc0-7210-41c7-80e9-77926fe18013",
+            "placeholder": null,
+            "prefill": null,
+            "help": null,
+            "help_position": "below_input",
+            "width": "full",
+            "align": "left",
+            "show_char_limit": false,
+            "logic": {
+                "conditions": null,
+                "actions": []
+            },
+            "max_char_limit": 2000,
+            "generates_uuid": false,
+            "generates_auto_increment_id": true,
+            "disabled": false,
+            "hide_field_name": false
+        },
+        {
+            "name": "UUID",
+            "type": "text",
+            "hidden": true,
+            "required": false,
+            "id": "0b314dc6-6427-4b62-b65b-43782fea6642",
+            "placeholder": null,
+            "prefill": null,
+            "help": null,
+            "help_position": "below_input",
+            "width": "full",
+            "align": "left",
+            "show_char_limit": false,
+            "logic": {
+                "conditions": null,
+                "actions": []
+            },
+            "max_char_limit": 2000,
+            "generates_uuid": true,
+            "generates_auto_increment_id": false,
+            "disabled": false,
+            "hide_field_name": false
+        }
+    ],
+    "notifies": false,
+    "slack_notifies": false,
+    "send_submission_confirmation": false,
+    "webhook_url": null,
+    "notification_settings": {},
+    "theme": "default",
+    "width": "centered",
+    "dark_mode": "auto",
+    "color": "#3B82F6",
+    "hide_title": false,
+    "no_branding": false,
+    "uppercase_labels": true,
+    "transparent_background": false,
+    "closes_at": null,
+    "closed_text": "This form has now been closed by its owner and does not accept submissions anymore.",
+    "auto_save": true,
+    "submit_button_text": "Submit",
+    "re_fillable": false,
+    "re_fill_button_text": "Fill Again",
+    "submitted_text": "Amazing, we saved your answers. Thank you for your time and have a great day!",
+    "notification_sender": "Medkart",
+    "notification_subject": "We saved your answers",
+    "notification_body": "Hello there 👋 <br>This is a confirmation that your submission was successfully saved.",
+    "notifications_include_submission": true,
+    "use_captcha": false,
+    "is_rating": false,
+    "rating_max_value": 5,
+    "max_submissions_count": null,
+    "max_submissions_reached_text": "This form has now reached the maximum number of allowed submissions and is now closed.",
+    "editable_submissions_button_text": "Edit submission",
+    "confetti_on_submission": false,
+    "can_be_indexed": true,
+    "seo_meta": {
+        "page_title": null,
+        "page_description": null,
+        "page_thumbnail": null
+    },
+    "redirect_url": null,
+    "database_fields_update": null
+}

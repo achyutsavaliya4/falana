@@ -1,0 +1,4 @@
+To Create Empty Redux Setup Files
+
+1. chmod +x create-redux.sh
+2. ./create-redux.sh {{module_name}}

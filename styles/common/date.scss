@@ -1,0 +1,23 @@
+@use "../variables";
+
+.primary-date-wrapper {
+  border: 1px solid variables.$primary-border;
+  padding-right: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  .primary-date {
+    input {
+      border: none;
+      padding: 6px 12px;
+      height: fit-content;
+      cursor: inherit;
+      &:focus-within,
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+  .calender-icon {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,76 @@
+.filterSorting {
+  .sorting-section,
+  .filter-section {
+    button {
+      padding: 6px 24px;
+      background-color: rgb(255, 255, 255);
+      color: #202223;
+      border-width: 1px 0px 1px 1px;
+      border-style: solid;
+      border-color: #dadddf;
+      border-radius: 3px 0px 0px 3px;
+      font-size: 12px;
+      line-height: 15px;
+
+      &.borderRight {
+        border-width: 1px 1px 1px 1px;
+        border-radius: 0px 3px 3px 0px;
+      }
+
+      &.borderRightSingle {
+        border-width: 1px 1px 1px 1px;
+        border-radius: 3px 3px 3px 3px;
+      }
+
+      &:active,
+      &:focus {
+        border-style: solid;
+        border-color: #dadddf;
+        background-color: rgb(255, 255, 255);
+        color: #202223;
+        padding: 6px 24px;
+        outline: none;
+        box-shadow: none;
+      }
+
+      &:hover {
+        border-color: #dadddf;
+        background-color: rgb(235, 238, 240, 0.3);
+      }
+      &::after {
+        content: none;
+      }
+    }
+  }
+
+  .sorting-section {
+    .dropdown-menu {
+      box-shadow: 0 5px 10px 0 rgba(183, 192, 206, 0.2);
+      border-radius: 0.25rem;
+      border: none;
+      transform: translate(-54px, 35px) !important;
+    }
+    .sortMenu {
+      padding: 0;
+      transform: translate(0px, 38px);
+
+      label {
+        margin-left: 2px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        cursor: pointer;
+      }
+
+      .sortMenufooter {
+        border-top: 1px solid #dadddf;
+        padding: 10px 10px 10px 10px;
+
+        label {
+          padding-left: 4.5px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

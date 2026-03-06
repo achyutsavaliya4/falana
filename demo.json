@@ -1,0 +1,472 @@
+{
+    "title": "Form with most customizations.",
+    "description": "This is description for the FORM.",
+    "visibility": "public",
+    "workspace_id": 9,
+    "properties": [
+        {
+            "name": "First Name",
+            "type": "text",
+            "hidden": false,
+            "required": true,
+            "id": "a597c51b-fa2e-4d0f-83e8-e7c584311bad",
+            "placeholder": "Enter First Name (Placeholder)",
+            "prefill": "This is prefilled value",
+            "help": "This field help",
+            "help_position": "below_input",
+            "width": "full",
+            "align": "left",
+            "show_char_limit": true,
+            "src": true,
+            "logic": {
+                "conditions": null,
+                "actions": []
+            },
+            "max_char_limit": 2000,
+            "disabled": true,
+            "priority": "HIGH",
+            "multi_lines": true,
+            "hide_field_name": true,
+            "generates_uuid": false,
+            "generates_auto_increment_id": false
+        },
+        {
+            "name": "Email",
+            "type": "email",
+            "hidden": false,
+            "id": "3e63fbbd-e8dd-4552-9f70-9cfe1e990962",
+            "placeholder": null,
+            "prefill": null,
+            "help": null,
+            "help_position": "below_input"
+        },
+        {
+            "name": "Message",
+            "type": "text",
+            "hidden": true,
+            "multi_lines": true,
+            "id": "73c6ff8b-6bc8-490f-9700-99cb54bd526d",
+            "placeholder": null,
+            "prefill": null,
+            "help": null,
+            "help_position": "below_input",
+            "width": "full",
+            "align": "left",
+            "show_char_limit": false,
+            "src": "Message",
+            "logic": {
+                "conditions": null,
+                "actions": []
+            },
+            "max_char_limit": 2000,
+            "required": false,
+            "disabled": false,
+            "priority": "MEDIUM",
+            "generates_auto_increment_id": true,
+            "generates_uuid": false
+        },
+        {
+            "type": "date",
+            "name": "Date Range",
+            "id": "007f3ab4-0f30-4e30-9ded-b7e04c52534c",
+            "hidden": false,
+            "help_position": "below_input",
+            "width": "full",
+            "align": "left",
+            "logic": {
+                "conditions": null,
+                "actions": []
+            },
+            "date_range": true,
+            "with_time": false,
+            "prefill_today": false,
+            "prefill": null,
+            "disable_future_dates": false,
+            "disable_past_dates": false,
+            "src": "Date Range"
+        },
+        {
+            "type": "date",
+            "name": "Date with TIme",
+            "id": "860eee0f-4dda-43ab-9ce1-649bfa25d427",
+            "hidden": false,
+            "help_position": "below_input",
+            "width": "full",
+            "align": "left",
+            "logic": {
+                "conditions": null,
+                "actions": []
+            },
+            "with_time": true,
+            "date_range": false,
+            "prefill": "2026-01-07T09:27:00.000Z",
+            "src": "2026-01-07T09:27:00.000Z"
+        },
+        {
+            "type": "date",
+            "name": "Date Prefill with today",
+            "id": "d6521e69-94f2-4629-be62-869435af8e82",
+            "hidden": false,
+            "help_position": "below_input",
+            "width": "full",
+            "align": "left",
+            "logic": {
+                "conditions": null,
+                "actions": []
+            },
+            "prefill_today": true,
+            "prefill": "Pre-filled with current date",
+            "date_range": false,
+            "disable_future_dates": false,
+            "disable_past_dates": false
+        },
+        {
+            "type": "date",
+            "name": "Disable Past Dates",
+            "id": "3597d518-584a-4fa0-b2c3-f8b355228eda",
+            "hidden": false,
+            "help_position": "below_input",
+            "width": "full",
+            "align": "left",
+            "logic": {
+                "conditions": null,
+                "actions": []
+            },
+            "disable_past_dates": true,
+            "disable_future_dates": false,
+            "prefill_today": false
+        },
+        {
+            "type": "date",
+            "name": "Disable Future Dates",
+            "id": "ab8500cc-5278-4d5c-920f-552582f644ae",
+            "hidden": false,
+            "help_position": "below_input",
+            "width": "full",
+            "align": "left",
+            "logic": {
+                "conditions": null,
+                "actions": []
+            },
+            "disable_future_dates": true,
+            "disable_past_dates": false,
+            "prefill_today": false
+        },
+        {
+            "type": "url",
+            "name": "Link",
+            "id": "5ef54102-3418-4d03-a5c3-a308d1baa7f9",
+            "hidden": false,
+            "help_position": "below_input",
+            "width": "full",
+            "align": "left",
+            "show_char_limit": false,
+            "src": "Link does not have href other config settings.",
+            "logic": {
+                "conditions": null,
+                "actions": []
+            },
+            "max_char_limit": 2000,
+            "prefill": "Why prefill in link?",
+            "placeholder": "Why placeholder in link?",
+            "help": "Link does not have href other config settings."
+        },
+        {
+            "type": "phone_number",
+            "name": "Phone Number",
+            "id": "9034034b-571a-4910-929a-3e94e73b6f9d",
+            "hidden": false,
+            "help_position": "below_input",
+            "width": "full",
+            "align": "left",
+            "logic": {
+                "conditions": null,
+                "actions": []
+            }
+        },
+        {
+            "type": "checkbox",
+            "name": "Checkbox field name",
+            "id": "c13073de-2a8b-4159-8eb2-c819415b2748",
+            "hidden": false,
+            "help_position": "below_input",
+            "width": "full",
+            "align": "left",
+            "logic": {
+                "conditions": null,
+                "actions": []
+            },
+            "hide_field_name": true,
+            "prefill": true,
+            "src": "Checkbox field name"
+        },
+        {
+            "type": "select",
+            "name": "Select",
+            "id": "0598686c-1ad0-4bb7-8c5a-a655d30084f2",
+            "hidden": false,
+            "select": {
+                "options": [
+                    {
+                        "name": "A",
+                        "id": "A",
+                        "is_flag": true,
+                        "is_correct_answer": true
+                    },
+                    {
+                        "name": "B",
+                        "id": "B",
+                        "is_flag": true,
+                        "is_correct_answer": false
+                    },
+                    {
+                        "name": "C",
+                        "id": "C",
+                        "is_flag": false,
+                        "is_correct_answer": true
+                    }
+                ]
+            },
+            "help_position": "below_input",
+            "width": "full",
+            "align": "left",
+            "selectedOptionType": "custom",
+            "logic": {
+                "conditions": null,
+                "actions": []
+            },
+            "src": "C",
+            "is_correct_answer": true
+        },
+        {
+            "type": "multi_select",
+            "name": "Multi Select",
+            "id": "f0aabf69-3cb3-40a7-a7cd-2bce8e419114",
+            "hidden": false,
+            "multi_select": {
+                "options": [
+                    {
+                        "name": "MA",
+                        "id": "MA",
+                        "is_flag": false,
+                        "is_correct_answer": false
+                    },
+                    {
+                        "name": "MB",
+                        "id": "MB",
+                        "is_flag": false,
+                        "is_correct_answer": false
+                    },
+                    {
+                        "name": "MC",
+                        "id": "MC",
+                        "is_flag": false,
+                        "is_correct_answer": false
+                    }
+                ]
+            },
+            "help_position": "below_input",
+            "width": "full",
+            "align": "left",
+            "selectedOptionType": "custom",
+            "logic": {
+                "conditions": null,
+                "actions": []
+            },
+            "selectedOptionForConfig": "MC",
+            "src": "MEDIUM",
+            "is_flag": false,
+            "is_correct_answer": true,
+            "priority": "MEDIUM"
+        },
+        {
+            "type": "number",
+            "name": "Number",
+            "id": "c69dbd49-aca0-4fa2-a808-4846bbc4670b",
+            "hidden": false,
+            "help_position": "below_input",
+            "width": "full",
+            "align": "left",
+            "show_char_limit": false,
+            "src": "Enter Age",
+            "logic": {
+                "conditions": null,
+                "actions": []
+            },
+            "max_char_limit": 2000,
+            "is_rating": false,
+            "is_scale": false,
+            "is_slider": false,
+            "rating_max_value": 5,
+            "prefill": "10",
+            "placeholder": "Enter Age"
+        },
+        {
+            "type": "number",
+            "name": "Number with Rating",
+            "id": "fd800a8a-9758-4b8e-9169-6bebf52ec121",
+            "hidden": false,
+            "help_position": "below_input",
+            "width": "full",
+            "align": "left",
+            "show_char_limit": false,
+            "src": "Number with Rating",
+            "logic": {
+                "conditions": null,
+                "actions": []
+            },
+            "max_char_limit": 2000,
+            "is_rating": true,
+            "is_scale": false,
+            "is_slider": false,
+            "rating_max_value": 5
+        },
+        {
+            "type": "files",
+            "name": "Files",
+            "id": "ba301b50-0060-489e-ae0d-b95a0fd33059",
+            "hidden": false,
+            "help_position": "below_input",
+            "width": "full",
+            "align": "left",
+            "logic": {
+                "conditions": null,
+                "actions": []
+            },
+            "multiple": true,
+            "allowed_file_types": "jpg,jpeg",
+            "src": "jpg,jpeg"
+        },
+        {
+            "type": "location",
+            "name": "Location",
+            "id": "42397d21-823e-46b7-8b1d-887390456a76",
+            "hidden": false,
+            "help_position": "below_input",
+            "width": "full",
+            "align": "left",
+            "logic": {
+                "conditions": null,
+                "actions": []
+            }
+        },
+        {
+            "type": "nf-image",
+            "name": "Image",
+            "src": "https://mre-prod.s3.ap-south-1.amazonaws.com/forms/submissions/90a1b032-6519-4947-bdfe-58449661581b",
+            "alt": "Image",
+            "id": "0610f5a7-2e47-4d25-824d-579cbd1019ac",
+            "hidden": false,
+            "help_position": "below_input",
+            "width": "full",
+            "align": "left",
+            "logic": {
+                "conditions": null,
+                "actions": []
+            },
+            "imageAlign": "left",
+            "nf-image": "https://mre-prod.s3.ap-south-1.amazonaws.com/forms/submissions/90a1b032-6519-4947-bdfe-58449661581b"
+        },
+        {
+            "type": "nf-text",
+            "name": "Text Block",
+            "content": "<p>This is a text block. rendered with html <a>Proof</a></p>",
+            "id": "2ee568e5-fc7c-4cf5-8dcd-6d2b1de00638",
+            "hidden": false,
+            "help_position": "below_input",
+            "width": "full",
+            "align": "left",
+            "logic": {
+                "conditions": null,
+                "actions": []
+            },
+            "src": "<p>This is a text block. rendered with html <a>Proof</a></p>"
+        },
+        {
+            "type": "nf-divider",
+            "name": "Divider",
+            "id": "d27ca624-2841-4178-8141-737b16d8bcf2",
+            "hidden": false,
+            "help_position": "below_input",
+            "width": "full",
+            "align": "left",
+            "logic": {
+                "conditions": null,
+                "actions": []
+            }
+        },
+        {
+            "type": "nf-page-break",
+            "name": "Page Break",
+            "next_btn_text": "Next button",
+            "previous_btn_text": "Previous button",
+            "id": "8227fc3f-33b7-4f2d-9a8d-ad1188493da0",
+            "hidden": false,
+            "help_position": "below_input",
+            "width": "full",
+            "align": "left",
+            "logic": {
+                "conditions": null,
+                "actions": []
+            },
+            "src": "Previous button"
+        },
+        {
+            "type": "nf-text",
+            "name": "This will be in next page",
+            "content": "<p>This is a text block.</p>",
+            "id": "bf3affdc-9ace-4895-9dbe-e8f590de04bb",
+            "hidden": false,
+            "help_position": "below_input",
+            "width": "full",
+            "align": "left",
+            "logic": {
+                "conditions": null,
+                "actions": []
+            }
+        }
+    ],
+    "notifies": false,
+    "slack_notifies": false,
+    "send_submission_confirmation": false,
+    "webhook_url": null,
+    "notification_settings": {},
+    "theme": "default",
+    "width": "centered",
+    "dark_mode": "auto",
+    "color": "#3B82F6",
+    "hide_title": false,
+    "no_branding": false,
+    "uppercase_labels": true,
+    "transparent_background": false,
+    "closes_at": null,
+    "closed_text": "This form has now been closed by its owner and does not accept submissions anymore.",
+    "auto_save": true,
+    "submit_button_text": "Submit",
+    "re_fillable": false,
+    "re_fill_button_text": "Fill Again",
+    "submitted_text": "Amazing, we saved your answers. Thank you for your time and have a great day!",
+    "notification_sender": "Medkart",
+    "notification_subject": "We saved your answers",
+    "notification_body": "Hello there 👋 <br>This is a confirmation that your submission was successfully saved.",
+    "notifications_include_submission": true,
+    "use_captcha": false,
+    "is_rating": false,
+    "rating_max_value": 5,
+    "max_submissions_count": null,
+    "max_submissions_reached_text": "This form has now reached the maximum number of allowed submissions and is now closed.",
+    "editable_submissions_button_text": "Edit submission",
+    "confetti_on_submission": false,
+    "can_be_indexed": true,
+    "seo_meta": {
+        "page_title": null,
+        "page_description": null,
+        "page_thumbnail": null
+    },
+    "redirect_url": null,
+    "database_fields_update": null,
+    "src": "This is description for the FORM.",
+    "tags": [
+        "s"
+    ]
+}

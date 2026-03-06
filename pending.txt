@@ -1,0 +1,35 @@
+1. QueryUtilityFunc refactor
+2. central view permission check at layout
+
+task	store-check-ins
+task	class-room-training
+task	custom-task
+task	store-visit
+task	crt-check-out
+task	crt-check-in
+task	pjp-asm
+task	pjp
+task	core
+users	manage
+users	roles
+users	invites
+settings	facility
+inventory	stock
+forms	forms
+facility UI mismatch
+
+mkdir redux\actions\roleMasterAction
+touch redux\actions\roleMasterAction\roleMasterAction.ts
+touch redux\actions\roleMasterAction\roleMasterActionInterface.ts
+
+mkdir redux\reducers\roleMasterReducer
+touch redux\reducers\roleMasterReducer\roleMasterReducer.ts
+touch redux\reducers\roleMasterReducer\roleMasterReducerInterface.ts
+
+mkdir redux\sagas\handlers\roleMasterHandler
+touch redux\sagas\handlers\roleMasterHandler\roleMasterHandler.ts
+touch redux\sagas\handlers\roleMasterHandler\roleMasterHandlerInterface.ts
+
+mkdir redux\sagas\requests\roleMasterRequest
+touch redux\sagas\requests\roleMasterRequest\roleMasterRequest.ts
+touch redux\sagas\requests\roleMasterRequest\roleMasterRequestInterface.ts

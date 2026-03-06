@@ -1,0 +1,433 @@
+[
+  {
+    "type": "files",
+    "name": "Please upload picture of allocation slip printed",
+    "id": "5d3b39c4-95d8-4d84-a7ce-9c75c3e443ba",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "please upload photo of pending rack location",
+    "id": "392b198c-34c1-438f-9b28-f39e433eba65",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "text",
+    "name": "Count of advance orders pending at store",
+    "id": "10085a6a-97ad-4042-8429-d399aa3f81a0",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "text",
+    "name": "please mention the total COD amount pending at the store",
+    "id": "a0f4dbab-8fb8-4f41-98cc-7192bd2592ad",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "text",
+    "name": "Top performer at the store in terms of otc (mention NAME & VALUE)",
+    "id": "203223da-f11a-4379-83e7-661b751702c1",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "text",
+    "name": "Top performer at the store in terms of Generic (mention NAME & VALUE)",
+    "id": "11d4dbf0-0f85-42f7-8971-3291a7fa74d4",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "text",
+    "name": "Top performer at the store in terms of MSP (mention name & msp sold)",
+    "id": "7c22ff95-d72c-4e77-a718-c3ca6b1bcf25",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "text",
+    "name": "Top performer at the store in terms of COMBO (MENTION THE name & COMBO'S SOLD)",
+    "id": "bc603f94-bf2e-4aa4-9b4a-00c58ef2d259",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "text",
+    "name": "Bottom performer at the store in terms of otc (mention NAME & VALUE)",
+    "id": "fb35d1c5-6582-407f-ad9b-f6cd0374fdc9",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "text",
+    "name": "bottom performer at the store in terms of generic (mention NAME & VALUE)",
+    "id": "e687473f-1043-4015-898f-fed5a675bd0e",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "text",
+    "name": "Bottom performer at the store in terms of MSP (mention name & msp sold)",
+    "id": "b90319ee-c4f2-4c28-935d-ea88d7dab0bc",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "text",
+    "name": "Bottom performer at the store in terms of combo (mention name & Combo's sold)",
+    "id": "a1abaeaf-d8f5-483b-a927-ca20fcc0a65b",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "text",
+    "name": "What is the action taken on bottom performing staff?",
+    "id": "ab7e12f2-61da-4d5a-8c60-dcc83d04db9e",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "text",
+    "name": "GOOGLE REVIEWS COLLECTED BY THE STORE IN LAST 7 DAYS",
+    "id": "9ba4e2f6-ee59-422d-b769-544f6fa70bfb",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "ARE THERE ANY TICKETS PENDING AT THE STORE",
+    "id": "00950947-e8ad-4a62-85bc-2ab777c812c3",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Yes",
+          "id": "Yes"
+        },
+        {
+          "name": "No",
+          "id": "No"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "text",
+    "name": "If yes, please mention the ticket number",
+    "id": "b5aade10-8ec2-4253-bf8a-7eddf635ac5b",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "00950947-e8ad-4a62-85bc-2ab777c812c3",
+            "value": {
+              "operator": "equals",
+              "property_meta": {
+                "id": "00950947-e8ad-4a62-85bc-2ab777c812c3",
+                "type": "select"
+              },
+              "value": "No"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "max_char_limit": 2000,
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "text",
+    "name": "Please mention the calls pending under each category (Key customer, msp, winback, followup, call reminder)",
+    "id": "cc9cdc5a-08ea-4910-9945-b320f5a4aa28",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "text",
+    "name": "Mention the amount of returns at the store in the past 5 days",
+    "id": "76d4431a-d738-484b-9711-1607f4127764",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Is the whatsapp answered properly",
+    "id": "0281ce6a-4080-4317-9a99-1e1f7debe147",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Yes",
+          "id": "Yes"
+        },
+        {
+          "name": "No",
+          "id": "No"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "text",
+    "name": "No.of updates provided in the bounce sheet",
+    "id": "f2d52379-5282-403d-a892-7f7b8114a725",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "text",
+    "name": "No.of items given in min-max addition sheet",
+    "id": "6dbbcec8-f69d-4f71-ae50-eaa6fffaa8ce",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  }
+]

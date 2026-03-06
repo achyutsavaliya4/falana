@@ -1,0 +1,10 @@
+@use "../variables" as *;
+.expand-component {
+  .expand-control {
+    cursor: pointer;
+    color: #5556A6;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

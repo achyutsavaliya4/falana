@@ -1,0 +1,114 @@
+@use "../variables" as *;
+//Grid Table
+.grid-table-head-cell {
+  color: $text-primary;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.grid-table-head {
+  background-color: $surface-secondary;
+  th {
+    padding: 8px 8px;
+  }
+  th.value-should-right {
+    div {
+      justify-content: end;
+    }
+    text-align: end;
+    padding-right: 8;
+  }
+}
+
+.grid-table-body {
+  // min-height: 400px;
+  // max-height: 400px;
+  tr {
+    border-bottom: 1px solid $secondary-border;
+    td {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      padding: 0 8px;
+
+      .no-data-section {
+        height: 209px;
+        display: flex;
+        align-items: center;
+        overflow-y: auto;
+
+        .no-data-heading-message {
+          margin-top: 10px;
+          color: #202223;
+          font-weight: 600;
+          font-size: 12px;
+        }
+        .no-data-message {
+          font-size: 12px;
+          width: 250px;
+          height: 40px;
+          color: #808080;
+          font-weight: 400;
+          line-height: 20px;
+        }
+      }
+    }
+
+    td.value-should-right {
+      text-align: right;
+    }
+  }
+}
+
+.grid-table-main {
+  ::-webkit-scrollbar {
+    width: 5px;
+    border: 1px solid $secondary-border;
+  }
+  ::-webkit-scrollbar-thumb {
+    border: 1px solid $primary-border;
+    border-radius: 10px !important;
+    height: 20px !important;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent !important;
+  }
+}
+
+.grid-table-footer {
+  tr{
+    background-color: #D3E4F8 !important;
+  }
+  td {
+    padding: 5px 8px !important;
+  }
+  td.value-should-right {
+    text-align: right !important;
+  }
+}
+
+.grid-table-footer-dn {
+  td:first-child{
+    padding: 5px 8px 5px 16px !important;
+  }
+  td:last-child{
+    padding: 5px 16px 5px 8px !important;
+  }
+  td {
+    padding: 5px 8px !important;
+  }
+  td.value-should-right {
+    text-align: right !important;
+  }
+}
+
+.footer-table-grid-table {
+  width: 100%;
+  position: sticky;
+  bottom: 0px;
+  z-index: 2;
+}
+
+.max-width-40vw {
+  max-width: 21vw !important;
+}

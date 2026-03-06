@@ -1,0 +1,19 @@
+{
+  "name": "Email Field",
+  "type": "email",
+  "id": "712604a9-ae53-4cae-8d3f-d7ffb4732e70",
+  "hidden": false,
+  "help_position": "above_input",
+  "width": "1/2",
+  "align": "left",
+  "show_char_limit": false,
+  "logic": {
+    "conditions": null,
+    "actions": []
+  },
+  "max_char_limit": 2000,
+  "hide_field_name": false,
+  "prefill": "yagnik@gmail.com",
+  "placeholder": "Enter First Name (Placeholder)",
+  "help": "johndoe@gmail.com"
+}

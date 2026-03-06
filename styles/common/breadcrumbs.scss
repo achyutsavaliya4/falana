@@ -1,0 +1,25 @@
+@use "../variables";
+
+.page-header-common {
+  .breadcums {
+    padding: 0 !important;
+    .home-link {
+      img {
+        height: 24px;
+        width: 24px;
+        align-self: center;
+      }
+    }
+
+    .breadcums-title {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+      color: #202223;
+          text-decoration: none;
+      &.active {
+        color: variables.$primary;
+      }
+    }
+  }
+}

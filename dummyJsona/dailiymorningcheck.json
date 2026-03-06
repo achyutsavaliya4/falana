@@ -1,0 +1,273 @@
+[
+  {
+    "type": "select",
+    "name": "Did all of your stores close after their closing time yesterday? (10:30 for Rajasthan, 11 for Gujarat)",
+    "id": "15d6b957-c2e2-400b-b4f2-7cceb069e013",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Yes",
+          "id": "Yes"
+        },
+        {
+          "name": "No",
+          "id": "No"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "selectedOptionType": "custom",
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "required": true
+  },
+  {
+    "type": "nf-text",
+    "name": "Text Block",
+    "content": "Which store did not close on time?",
+    "id": "1cfb68e7-811d-4e40-a78b-01531669843f",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "15d6b957-c2e2-400b-b4f2-7cceb069e013",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "15d6b957-c2e2-400b-b4f2-7cceb069e013",
+                "type": "select"
+              },
+              "value": "No"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "multi_select",
+    "name": "Select Stores name (You can select multiple stores also)",
+    "id": "34aa8526-35a0-4e3b-95b7-41165af55f9a",
+    "hidden": false,
+    "multi_select": {
+      "options": []
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "15d6b957-c2e2-400b-b4f2-7cceb069e013",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "15d6b957-c2e2-400b-b4f2-7cceb069e013",
+                "type": "select"
+              },
+              "value": "No"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "selectedOptionType": "store",
+    "Field_Name": "store_name",
+    "Field_Id": "store_id",
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "text",
+    "name": "Reason for late closing of the Stores",
+    "id": "788e09c7-84dc-4476-8aa7-88bab13bc298",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "15d6b957-c2e2-400b-b4f2-7cceb069e013",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "15d6b957-c2e2-400b-b4f2-7cceb069e013",
+                "type": "select"
+              },
+              "value": "No"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "max_char_limit": 2000,
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "nf-page-break",
+    "name": "Page Break",
+    "next_btn_text": "Next",
+    "previous_btn_text": "Previous",
+    "id": "815c1f30-90ec-4104-8f2d-7f685a787118",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "nf-text",
+    "name": "Text Block",
+    "content": "Store Opening",
+    "id": "89911e65-1747-4408-a3b6-b705c665e687",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Did all of your stores open on time today? (8 for Rajasthan, 9 for Gujarat?)",
+    "id": "d8f3058b-cfb8-4649-b1eb-719c2d4c8237",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Yes",
+          "id": "Yes"
+        },
+        {
+          "name": "No",
+          "id": "No"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "selectedOptionType": "custom",
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "required": true
+  },
+  {
+    "type": "multi_select",
+    "name": "Select Stores name (You can select multiple stores also)",
+    "id": "aa89fda6-9ecb-4789-9f77-8b27d430e788",
+    "hidden": false,
+    "multi_select": {
+      "options": []
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "d8f3058b-cfb8-4649-b1eb-719c2d4c8237",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "d8f3058b-cfb8-4649-b1eb-719c2d4c8237",
+                "type": "select"
+              },
+              "value": "No"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "selectedOptionType": "store",
+    "Field_Name": "store_name",
+    "Field_Id": "store_id",
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "text",
+    "name": "Reason for late opening of store.",
+    "id": "db178652-438c-43b5-8697-f929d3a1c302",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "d8f3058b-cfb8-4649-b1eb-719c2d4c8237",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "d8f3058b-cfb8-4649-b1eb-719c2d4c8237",
+                "type": "select"
+              },
+              "value": "No"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "max_char_limit": 2000,
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  }
+]

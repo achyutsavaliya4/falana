@@ -1,0 +1,64 @@
+@use "../variables" as *;
+.pill {
+  color: $text-primary;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  border-radius: 12px;
+  padding: 2px 8px;
+
+  .bullet{
+    height: 6px;
+    width: 6px;
+    padding-right: 3px;
+  }
+}
+
+// chip color
+.blue100 {
+  background-color: $blue-100;
+}
+.blue200 {
+  background-color: $blue-100;
+}
+.warning100 {
+  background-color: $warning-100;
+}
+.warning700 {
+  background-color: $warning-700;
+}
+
+.warning700 {
+  background-color: $warning-700;
+}
+
+.error100 {
+  background-color: $error-100;
+}
+.green100 {
+  background-color: $blue-100;
+}
+.orange100 {
+  background-color: $orange-100;
+}
+.green200{
+  background-color: $green-200;
+}
+.orange200{
+  background-color: $orange-200;
+}
+
+.red100 {
+  background-color: $red-100;
+}
+
+// bullet point color
+.bullet-blue100 {
+  color: $blue-100;
+}
+.bullet-green{
+  color: $green-700;
+}
+.bullet-red{
+  color: $red-700;
+}

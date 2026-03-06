@@ -1,0 +1,822 @@
+[
+  {
+    "type": "files",
+    "name": "Please upload photo of Glow Signboard with lights onn",
+    "id": "a1cfb751-36c9-4c88-a51f-0cf4ad64bd62",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Lolipop/LED Board or Standee",
+    "id": "909a79b4-e270-4dbe-b0d5-312ea014ced4",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Are all the instore lights working?",
+    "id": "d4a80732-10ea-40d1-99aa-bf3f309db5b7",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Yes",
+          "id": "Yes"
+        },
+        {
+          "name": "No",
+          "id": "No"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "In Store Lights",
+    "id": "2d12bc36-7a90-47c0-bb01-30f1f966634a",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Glass and Glass Door",
+    "id": "ace06d25-0e17-4426-bff6-018daaf39204",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Clean",
+          "id": "Clean"
+        },
+        {
+          "name": "Not Clean",
+          "id": "Not Clean"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "selectedOptionType": "custom",
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Please Upload Clear Picture of Glass and Glass Door",
+    "id": "531c43b3-6a9e-4e66-9bd5-adb144c46b75",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Counter and Counter Shield",
+    "id": "a6cb7c5f-9ce7-4f71-93d1-40cf9a27d115",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Clean & Hygienic",
+          "id": "Clean & Hygienic"
+        },
+        {
+          "name": "Not Clean",
+          "id": "Not Clean"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "selectedOptionType": "custom",
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Please Upload Clear Picture of Counter and Counter Shield",
+    "id": "abdf7a0b-1354-47ae-903f-5816aad898eb",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "PC Screen, Keyboard, Mouse",
+    "id": "5d3ac897-2a78-493c-8950-eab7a5c8ce6a",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Clean & Hygienic",
+          "id": "Clean & Hygienic"
+        },
+        {
+          "name": "Not Clean",
+          "id": "Not Clean"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "selectedOptionType": "custom",
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Please Upload Clear Picture of Monitor, Keyboard, Mouse",
+    "id": "0d041da9-51b3-4cca-8bfa-69218f1623aa",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Floor",
+    "id": "44c19917-c759-4e92-bb9a-f3c8eb0429fc",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Clean & Hygienic",
+          "id": "Clean & Hygienic"
+        },
+        {
+          "name": "Not Clean",
+          "id": "Not Clean"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "selectedOptionType": "custom",
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Please Upload Clear Picture of Floor",
+    "id": "6708b49f-3833-487f-ae1f-ecbe34752185",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Area Outside The Store(Daily)",
+    "id": "2853a5cf-d92e-43e0-9368-2b6dc4c45e42",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Clean & Hygienic",
+          "id": "Clean & Hygienic"
+        },
+        {
+          "name": "Not Clean",
+          "id": "Not Clean"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "selectedOptionType": "custom",
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Please Upload Clear Picture of Area Outside The Store",
+    "id": "b6515d8b-07a8-43c5-b97d-cc7a6fbe7c60",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Are spider webs visible?",
+    "id": "a14c370a-cc2e-481f-8709-a1dde86de5af",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Yes",
+          "id": "Yes"
+        },
+        {
+          "name": "No",
+          "id": "No"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "selectedOptionType": "custom",
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Please upload clear picture of yourself   in apron",
+    "id": "a801ff23-ade7-4de4-8bde-8375c2d21c14",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "multiple": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "nf-page-break",
+    "name": "Page Break",
+    "next_btn_text": "Next",
+    "previous_btn_text": "Previous",
+    "id": "b1990bbc-397e-4303-939d-e82c432b341d",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "nf-text",
+    "name": "Text Block",
+    "content": "Arrangement &amp; Orderliness",
+    "id": "5a541d9f-710f-46ce-91a1-59aa144fb7e6",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Racks and shelfs are clean",
+    "id": "dbbb0d9f-367d-43ed-8354-ae7d36e04827",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Yes",
+          "id": "Yes"
+        },
+        {
+          "name": "No",
+          "id": "No"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "selectedOptionType": "custom",
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Upload photo of Racks and shelfs",
+    "id": "1a7c1b84-977a-458a-a021-393d545780d2",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "required": true,
+    "disabled": false,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false
+  },
+  {
+    "type": "select",
+    "name": "Arrangement of Bins",
+    "id": "0194169b-fdc9-4a84-b0ff-9290cb14c74a",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Not Proper",
+          "id": "Not Proper"
+        },
+        {
+          "name": "Well Aligned",
+          "id": "Well Aligned"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "selectedOptionType": "custom",
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Are Bins clean?",
+    "id": "8c2823a8-5cf8-4f57-8933-ee238fff8ee2",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Yes",
+          "id": "Yes"
+        },
+        {
+          "name": "No",
+          "id": "No"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "required": true
+  },
+  {
+    "type": "files",
+    "name": "Upload the photos of medicine Bin",
+    "id": "39f6cd97-b554-4238-8ac8-8e2b1f78b1ef",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "required": true,
+    "disabled": false,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false
+  },
+  {
+    "type": "select",
+    "name": "Is the Dustbin and Broomstick is visible to customer?",
+    "id": "bc11f6c3-045a-4f85-b044-f3eebd35adb7",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Yes",
+          "id": "Yes"
+        },
+        {
+          "name": "No",
+          "id": "No"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "selectedOptionType": "custom",
+    "required": true,
+    "placeholder": "Select the value",
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Upload the photo of Dustbin and Broomstick",
+    "id": "605eefa9-cd3a-4f18-90b6-e3337e833fb5",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "multiple": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "nf-page-break",
+    "name": "Page Break",
+    "next_btn_text": "Next",
+    "previous_btn_text": "Previous",
+    "id": "82351eaf-4bd1-4473-bd32-d4c5350aa6bb",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "nf-text",
+    "name": "Text Block",
+    "content": "Quick Checks",
+    "id": "cd736fdf-eed9-4b65-9fd8-52b6e34c2cc0",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Are all IT Systems Working?",
+    "id": "4fef678d-635c-4762-8e2e-e57651748c94",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Yes",
+          "id": "Yes"
+        },
+        {
+          "name": "No",
+          "id": "No"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "selectedOptionType": "custom",
+    "required": true,
+    "placeholder": "Select the value",
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Which IT system is not working properly?",
+    "id": "2dd7e92e-dc22-4da7-9af4-28482256dc7f",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "CCTV",
+          "id": "CCTV"
+        },
+        {
+          "name": "Printer",
+          "id": "Printer"
+        },
+        {
+          "name": "TV",
+          "id": "TV"
+        },
+        {
+          "name": "Keyboard",
+          "id": "Keyboard"
+        },
+        {
+          "name": "Mouse",
+          "id": "Mouse"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "4fef678d-635c-4762-8e2e-e57651748c94",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "4fef678d-635c-4762-8e2e-e57651748c94",
+                "type": "select"
+              },
+              "value": "No"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Have you raised a ticket for the same?",
+    "id": "7f53902f-49fe-429f-8a3a-95bf1a017bfc",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Yes",
+          "id": "Yes"
+        },
+        {
+          "name": "No",
+          "id": "No"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "4fef678d-635c-4762-8e2e-e57651748c94",
+            "value": {
+              "operator": "equals",
+              "property_meta": {
+                "id": "4fef678d-635c-4762-8e2e-e57651748c94",
+                "type": "select"
+              },
+              "value": "Yes"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Have you checked the email of short items & informed it to customer ?",
+    "id": "947678fc-e60a-4f7a-87e8-c681b41f148a",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Yes",
+          "id": "Yes"
+        },
+        {
+          "name": "No",
+          "id": "No"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Callyzer data Screenshot for the Day",
+    "id": "80c81e31-2640-4a5b-889e-e9725bf96d43",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Have you placed the expired medicines in the expiry box as per the compliance.",
+    "id": "bf64452e-b686-4dec-995b-a377b7f919e5",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Yes",
+          "id": "Yes"
+        },
+        {
+          "name": "No",
+          "id": "No"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "required": true
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "type": "url",
+    "name": "Link Input Field",
+    "id": "79189a5c-ae35-4528-8646-7db9b4204ae6",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "1/2",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "required": false,
+    "disabled": false,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false,
+    "hide_field_name": false,
+    "prefill": "NumberFieldPrefiled",
+    "placeholder": "NumberFieldProperty",
+    "help": "http://medkart.in"
+  }
+]

@@ -1,0 +1,559 @@
+[
+  {
+    "type": "nf-text",
+    "name": "Text Block",
+    "content": "<p>This is a text block.</p>",
+    "id": "b21d55cb-7c67-4a1f-a7b0-baa558ce5584",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    }
+  },
+  {
+    "type": "nf-page-break",
+    "name": "Page Break",
+    "next_btn_text": "Next",
+    "previous_btn_text": "Previous",
+    "id": "eb555bcb-09b6-454b-bd41-6473daff9c86",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    }
+  },
+  {
+    "type": "nf-divider",
+    "name": "Divider",
+    "id": "81ff8e8f-80d7-4824-bad2-d68fb18a71ab",
+    "hidden": true,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": false
+  },
+  {
+    "name": "Normal Input Label",
+    "type": "text",
+    "hidden": false,
+    "required": false,
+    "id": "0495843c-8918-4494-8140-001d6a9583ad",
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false,
+    "disabled": false,
+    "hide_field_name": false
+  },
+  {
+    "name": "Hidden Input",
+    "type": "text",
+    "hidden": true,
+    "required": false,
+    "id": "242b499c-92d7-437d-af1d-f329544fbe32",
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false,
+    "disabled": false,
+    "hide_field_name": false
+  },
+  {
+    "name": "Disabled Input",
+    "type": "text",
+    "hidden": false,
+    "required": false,
+    "id": "415f870f-7aa3-4a7e-a0ec-44315289525c",
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false,
+    "disabled": true,
+    "hide_field_name": false
+  },
+  {
+    "name": "Multi line Input",
+    "type": "text",
+    "hidden": false,
+    "required": false,
+    "id": "84450baf-a9a9-4b06-8d79-53ab54bd2efa",
+    "placeholder": "All Field",
+    "prefill": "test",
+    "help": "This is help text given",
+    "help_position": "below_input",
+    "width": "1/2",
+    "align": "left",
+    "show_char_limit": true,
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "0495843c-8918-4494-8140-001d6a9583ad",
+            "value": {
+              "operator": "equals",
+              "property_meta": {
+                "id": "0495843c-8918-4494-8140-001d6a9583ad",
+                "type": "text"
+              },
+              "value": "yagnik"
+            }
+          },
+          {
+            "operatorIdentifier": "and",
+            "children": [
+              {
+                "identifier": "0495843c-8918-4494-8140-001d6a9583ad",
+                "value": {
+                  "operator": "equals",
+                  "property_meta": {
+                    "id": "0495843c-8918-4494-8140-001d6a9583ad",
+                    "type": "text"
+                  },
+                  "value": "test"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "max_char_limit": 69,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false,
+    "disabled": false,
+    "hide_field_name": false,
+    "multi_lines": false
+  },
+  {
+    "name": "All Value Filled Input",
+    "type": "text",
+    "hidden": false,
+    "required": false,
+    "id": "7862f7f7-c7e8-4718-ae88-943d1ac4b452",
+    "placeholder": "multi line placeholder",
+    "prefill": "",
+    "help": null,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false,
+    "disabled": false,
+    "hide_field_name": false,
+    "multi_lines": true
+  },
+  {
+    "name": "Auto Increament ",
+    "type": "text",
+    "hidden": true,
+    "required": false,
+    "id": "647f4bc0-7210-41c7-80e9-77926fe18013",
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "generates_uuid": false,
+    "generates_auto_increment_id": true,
+    "disabled": false,
+    "hide_field_name": false
+  },
+  {
+    "name": "UUID",
+    "type": "text",
+    "hidden": true,
+    "required": false,
+    "id": "0b314dc6-6427-4b62-b65b-43782fea6642",
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "generates_uuid": true,
+    "generates_auto_increment_id": false,
+    "disabled": false,
+    "hide_field_name": false
+  },
+  {
+    "type": "files",
+    "name": "Upload Premises",
+    "id": "670103df-f192-41f6-87ac-72b7b4c2670b",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "priority": "HIGH",
+    "src": "Image Upload",
+    "multiple": true,
+    "allowed_file_types": "jpg,jpeg,png",
+    "help": "Image Upload"
+  },
+  {
+    "name": "Email Field",
+    "type": "email",
+    "id": "712604a9-ae53-4cae-8d3f-d7ffb4732e70",
+    "hidden": false,
+    "help_position": "above_input",
+    "width": "1/2",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "hide_field_name": false,
+    "prefill": "yagnik@gmail.com",
+    "placeholder": "Enter First Name (Placeholder)",
+    "help": "johndoe@gmail.com"
+  },
+  {
+    "type": "date",
+    "name": "Date",
+    "id": "fa410de7-7eba-4e3b-8377-1f6aca15f789",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "date_range": false,
+    "with_time": false,
+    "prefill_today": false,
+    "prefill": null,
+    "disable_future_dates": false,
+    "disable_past_dates": false,
+    "required": false,
+    "disabled": false,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false,
+    "priority": "HIGH",
+    "src": "HIGH"
+  },
+  {
+    "type": "date",
+    "name": "Date Range",
+    "id": "5bf6fa22-65a8-4324-8f25-1f79529aca35",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "date_range": true,
+    "with_time": false,
+    "prefill_today": false,
+    "prefill": ["2026-01-05", "2026-01-15"],
+    "disable_future_dates": true,
+    "disable_past_dates": false,
+    "required": false,
+    "disabled": false,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false,
+    "priority": "HIGH",
+    "src": "date range",
+    "help": "date range"
+  },
+  {
+    "type": "date",
+    "name": "DAte with Time Zone",
+    "id": "7e6dd57f-cd27-49ad-a8eb-702ad6772a67",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "date_range": false,
+    "with_time": true,
+    "prefill_today": true,
+    "prefill": "Pre-filled with current date",
+    "disable_future_dates": false,
+    "disable_past_dates": false,
+    "required": false,
+    "disabled": false,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false,
+    "priority": "HIGH",
+    "src": "America/Chicago",
+    "help": "date range",
+    "timezone": "America/Chicago"
+  },
+  {
+    "type": "checkbox",
+    "name": "Checkbox Value",
+    "id": "4d855099-de96-4687-ac1c-b5e272aa36f1",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "1/3",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "prefill": true,
+    "hide_field_name": false,
+    "src": "check only main",
+    "use_toggle_switch": true,
+    "priority": "HIGH",
+    "help": "check only main",
+    "required": true,
+    "disabled": false
+  },
+  {
+    "type": "url",
+    "name": "Link Input Field",
+    "id": "79189a5c-ae35-4528-8646-7db9b4204ae6",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "1/2",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "required": false,
+    "disabled": false,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false,
+    "hide_field_name": false,
+    "prefill": "NumberFieldPrefiled",
+    "placeholder": "NumberFieldProperty",
+    "help": "http://medkart.in"
+  },
+  {
+    "type": "select",
+    "name": "Select",
+    "id": "044df6bd-35e1-43bd-aba0-5a88bf067431",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "yagnik",
+          "id": "yagnik",
+          "is_flag": true,
+          "is_correct_answer": true
+        },
+        {
+          "name": "test",
+          "id": "test",
+          "is_flag": true,
+          "is_correct_answer": false
+        },
+        {
+          "name": "again",
+          "id": "again",
+          "is_flag": false,
+          "is_correct_answer": true
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "src": "MEDIUM",
+    "is_correct_answer": true,
+    "priority": "MEDIUM"
+  },
+  {
+    "type": "multi_select",
+    "name": "Multi Select",
+    "id": "45c1b3ce-611a-4a02-91f9-baca19f5b243",
+    "hidden": false,
+    "multi_select": {
+      "options": [
+        {
+          "name": "yagnik",
+          "id": "yagnik",
+          "is_flag": false,
+          "is_correct_answer": false
+        },
+        {
+          "name": "again",
+          "id": "again",
+          "is_flag": false,
+          "is_correct_answer": false
+        },
+        {
+          "name": "main",
+          "id": "main",
+          "is_flag": false,
+          "is_correct_answer": false
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "priority": "LOW",
+    "src": "main",
+    "Field_Name": "store_name",
+    "Field_Id": "store_id",
+    "selectedOptionForConfig": "main"
+  },
+  {
+    "type": "phone_number",
+    "name": "Phone Number Field",
+    "id": "e1d1c66e-ad86-468c-9c64-439aec9a49db",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "priority": "HIGH",
+    "src": "phone for hint",
+    "prefill": "6549879653",
+    "placeholder": "6352416352",
+    "help": "phone for hint"
+  },
+  {
+    "type": "number",
+    "name": "Number Input with rating",
+    "id": "a31dd38e-12c0-474e-9c93-030221f0680a",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "is_rating": true,
+    "is_scale": false,
+    "is_slider": false,
+    "rating_max_value": 5,
+    "prefill": "0",
+    "placeholder": "123",
+    "hide_field_name": false,
+    "required": false,
+    "disabled": true
+  },
+  {
+    "type": "number",
+    "name": "Number INput",
+    "id": "1e94da76-5f13-4319-b1df-06041545934e",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "disabled": false
+  },
+  {
+    "type": "url",
+    "name": "Link Input Field",
+    "id": "79189a5c-ae35-4528-8646-7db9b4204ae6",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "1/2",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "required": false,
+    "disabled": false,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false,
+    "hide_field_name": false,
+    "prefill": "NumberFieldPrefiled",
+    "placeholder": "NumberFieldProperty",
+    "help": "http://medkart.in"
+  }
+]

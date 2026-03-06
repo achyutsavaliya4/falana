@@ -1,0 +1,10 @@
+@use "./../variables";
+
+.c-pagination {
+  list-style: none;
+  .pagination-button {
+    border: 1px solid variables.$primary;
+    border-radius: 4px;
+    padding: 7px 14px;
+  }
+}

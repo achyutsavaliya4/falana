@@ -1,0 +1,42 @@
+[
+  {
+    "type": "number",
+    "name": "Number Input with rating",
+    "id": "a31dd38e-12c0-474e-9c93-030221f0680a",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "is_rating": true,
+    "is_scale": false,
+    "is_slider": false,
+    "rating_max_value": 5,
+    "prefill": "0",
+    "placeholder": "123",
+    "hide_field_name": false,
+    "required": false,
+    "disabled": true
+  },
+  {
+    "type": "number",
+    "name": "Number INput",
+    "id": "1e94da76-5f13-4319-b1df-06041545934e",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "disabled": false
+  }
+]

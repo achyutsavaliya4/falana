@@ -1,0 +1,334 @@
+﻿app/(main-layout)/facility-master/[id]/edit/page.tsx(78,31): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+app/(main-layout)/facility-master/[id]/edit/page.tsx(83,9): error TS2464: A computed property name must be of type 'string', 'number', 'symbol', or 'any'.
+app/(main-layout)/facility-master/[id]/edit/page.tsx(160,33): error TS2345: Argument of type 'number' is not assignable to parameter of type '{ facilityId: string | number; }'.
+app/(main-layout)/facility-master/[id]/edit/page.tsx(171,15): error TS2339: Property 'details' does not exist on type 'Facility | Record<string, never>'.
+app/(main-layout)/facility-master/[id]/edit/page.tsx(179,11): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{ facility_id: number; facility_slug: string; latitude: string; longitude: string; role_id: number; } | { [x: string]: never; }'.
+app/(main-layout)/facility-master/[id]/edit/page.tsx(200,30): error TS2345: Argument of type '{}' is not assignable to parameter of type 'SetStateAction<{ key: string; value: string; }[]>'.
+  Type '{}' is not assignable to type '(prevState: { key: string; value: string; }[]) => { key: string; value: string; }[]'.
+    Type '{}' provides no match for the signature '(prevState: { key: string; value: string; }[]): { key: string; value: string; }[]'.
+app/(main-layout)/facility-master/[id]/edit/page.tsx(208,12): error TS2741: Property 'nesting' is missing in type '{ formJson: { sectionType: string; rowClassName: string; child: ({ sectionType: string; rowClassName: string; child: ({ fieldType: string; labelText: () => string; fieldContainerClassName: string; labelClassName: string; ... 4 more ...; imagePosition?: undefined; } | { ...; })[]; ... 5 more ...; hiddenFor?: undefine...' but required in type 'Props'.
+app/(main-layout)/facility-master/[id]/view/page.tsx(74,33): error TS2345: Argument of type 'number' is not assignable to parameter of type '{ facilityId: string | number; }'.
+app/(main-layout)/facility-master/[id]/view/page.tsx(84,15): error TS2339: Property 'details' does not exist on type 'Facility | Record<string, never>'.
+app/(main-layout)/facility-master/[id]/view/page.tsx(92,11): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{ facility_id: number; facility_slug: string; latitude: string; longitude: string; role_id: number; } | { [x: string]: never; }'.
+app/(main-layout)/facility-master/[id]/view/page.tsx(104,12): error TS2741: Property 'nesting' is missing in type '{ formJson: { sectionType: string; rowClassName: string; child: ({ sectionType: string; rowClassName: string; child: ({ fieldType: string; labelText: () => string; fieldContainerClassName: string; labelClassName: string; ... 4 more ...; imagePosition?: undefined; } | { ...; })[]; ... 5 more ...; hiddenFor?: undefine...' but required in type 'Props'.
+app/(main-layout)/facility-master/add/page.tsx(62,31): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+app/(main-layout)/facility-master/add/page.tsx(67,9): error TS2464: A computed property name must be of type 'string', 'number', 'symbol', or 'any'.
+app/(main-layout)/facility-master/add/page.tsx(151,28): error TS2345: Argument of type '{}' is not assignable to parameter of type 'SetStateAction<FacilityAddFormData>'.
+app/(main-layout)/facility-master/add/page.tsx(152,28): error TS2345: Argument of type '{}' is not assignable to parameter of type 'SetStateAction<{ key: string; value: string; }[]>'.
+  Type '{}' is not assignable to type '(prevState: { key: string; value: string; }[]) => { key: string; value: string; }[]'.
+    Type '{}' provides no match for the signature '(prevState: { key: string; value: string; }[]): { key: string; value: string; }[]'.
+app/(main-layout)/facility-master/add/page.tsx(160,12): error TS2741: Property 'nesting' is missing in type '{ formJson: { sectionType: string; rowClassName: string; child: ({ sectionType: string; rowClassName: string; child: ({ fieldType: string; labelText: () => string; fieldContainerClassName: string; labelClassName: string; ... 4 more ...; imagePosition?: undefined; } | { ...; })[]; ... 5 more ...; hiddenFor?: undefine...' but required in type 'Props'.
+app/(main-layout)/facility-master/page.tsx(82,7): error TS2345: Argument of type '{}' is not assignable to parameter of type '{ field: string; isMillieSearch?: boolean | undefined; requestValue?: string | undefined; customSearch?: boolean | undefined; }'.
+  Property 'field' is missing in type '{}' but required in type '{ field: string; isMillieSearch?: boolean | undefined; requestValue?: string | undefined; customSearch?: boolean | undefined; }'.
+app/(main-layout)/form-management/[id]/edit/page.tsx(100,11): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{ text: { type: string; name: string; id: string; hidden: boolean; help_position: string; width: string; align: string; show_char_limit: boolean; src: boolean; logic: { conditions: null; actions: never[]; }; max_char_limit: number; }; ... 13 more ...; "nf-divider": { ...; }; }'.
+app/(main-layout)/form-management/[id]/edit/page.tsx(144,38): error TS2339: Property 'id' does not exist on type '{ tags: string; visibility: string; }'.
+app/(main-layout)/form-management/[id]/edit/page.tsx(144,42): error TS2345: Argument of type '{ properties: never[]; tags: string; visibility: string; }' is not assignable to parameter of type 'CreateForm'.
+  Type '{ properties: never[]; tags: string; visibility: string; }' is missing the following properties from type 'CreateForm': title, theme, width, dark_mode, and 6 more.
+app/(main-layout)/form-management/[id]/edit/page.tsx(156,19): error TS2345: Argument of type 'properties[] | undefined' is not assignable to parameter of type 'SetStateAction<never[]>'.
+  Type 'undefined' is not assignable to type 'SetStateAction<never[]>'.
+app/(main-layout)/form-management/[id]/edit/page.tsx(157,27): error TS2345: Argument of type '{ id: number; title: string; slug: string; created_at: string; updated_at: string; description: string; submit_button_text: string; re_fillable: boolean; re_fill_button_text: string; color: string; ... 58 more ...; max_file_size: number; } | {}' is not assignable to parameter of type 'SetStateAction<{ tags: string; visibility: string; }>'.
+  Type '{ id: number; title: string; slug: string; created_at: string; updated_at: string; description: string; submit_button_text: string; re_fillable: boolean; re_fill_button_text: string; color: string; ... 58 more ...; max_file_size: number; }' is not assignable to type 'SetStateAction<{ tags: string; visibility: string; }>'.
+    Type '{ id: number; title: string; slug: string; created_at: string; updated_at: string; description: string; submit_button_text: string; re_fillable: boolean; re_fill_button_text: string; color: string; ... 58 more ...; max_file_size: number; }' is not assignable to type '{ tags: string; visibility: string; }'.
+      Types of property 'tags' are incompatible.
+        Type 'string[] | null' is not assignable to type 'string'.
+          Type 'null' is not assignable to type 'string'.
+app/(main-layout)/form-management/[id]/edit/page.tsx(163,9): error TS2739: Type '{ sectionType: string; child: { id: string; label: string; fieldType: string; fieldName: string; variant: string; isDisabled: boolean; showLabel: boolean; }[]; }[]' is missing the following properties from type 'button': id, fieldName
+app/(main-layout)/form-management/[id]/edit/page.tsx(169,8): error TS2741: Property 'nesting' is missing in type '{ formJson: { sectionType: string; rowClassName: string; child: ({ placeholder: string; fieldName: string; showLabel: boolean; fieldType: string; required: boolean; validation: (data: string) => { ...; }; ... 5 more ...; child?: undefined; } | { ...; } | { ...; })[]; }[]; ... 4 more ...; onChangeSelect: (e: ChangeEv...' but required in type 'Props'.
+app/(main-layout)/form-management/[id]/edit/page.tsx(183,8): error TS2741: Property 'nesting' is missing in type '{ formJson: { sectionType: string; child: { label: string; fieldType: string; fieldName: string; imageWidth: string; imageHeight: string; imageClassName: string; className: string; imagePosition: string; ... 4 more ...; showLabel: boolean; }[]; }[]; fieldData: {}; onClickField: (e: MouseEvent<...>, field: button) =>...' but required in type 'Props'.
+app/(main-layout)/form-management/add/page.tsx(132,21): error TS2345: Argument of type '(prev: never[]) => any[]' is not assignable to parameter of type 'SetStateAction<never[]>'.
+  Type '(prev: never[]) => any[]' is not assignable to type '(prevState: never[]) => never[]'.
+    Type 'any[]' is not assignable to type 'never[]'.
+      Type 'any' is not assignable to type 'never'.
+app/(main-layout)/form-management/add/page.tsx(134,9): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{ text: { type: string; name: string; id: string; hidden: boolean; help_position: string; width: string; align: string; show_char_limit: boolean; src: boolean; logic: { conditions: null; actions: never[]; }; max_char_limit: number; }; ... 13 more ...; "nf-divider": { ...; }; }'.
+app/(main-layout)/form-management/add/page.tsx(159,19): error TS2345: Argument of type '(prev: any) => any[]' is not assignable to parameter of type 'SetStateAction<never[]>'.
+  Type '(prev: any) => any[]' is not assignable to type '(prevState: never[]) => never[]'.
+    Type 'any[]' is not assignable to type 'never[]'.
+      Type 'any' is not assignable to type 'never'.
+app/(main-layout)/form-management/add/page.tsx(179,21): error TS2345: Argument of type '(prev: any) => any[]' is not assignable to parameter of type 'SetStateAction<never[]>'.
+  Type '(prev: any) => any[]' is not assignable to type '(prevState: never[]) => never[]'.
+    Type 'any[]' is not assignable to type 'never[]'.
+      Type 'any' is not assignable to type 'never'.
+app/(main-layout)/form-management/add/page.tsx(185,21): error TS2345: Argument of type '(prev: any) => any[]' is not assignable to parameter of type 'SetStateAction<never[]>'.
+  Type '(prev: any) => any[]' is not assignable to type '(prevState: never[]) => never[]'.
+    Type 'any[]' is not assignable to type 'never[]'.
+      Type 'any' is not assignable to type 'never'.
+app/(main-layout)/form-management/add/page.tsx(200,19): error TS2345: Argument of type '(prev: any) => any[]' is not assignable to parameter of type 'SetStateAction<never[]>'.
+  Type '(prev: any) => any[]' is not assignable to type '(prevState: never[]) => never[]'.
+    Type 'any[]' is not assignable to type 'never[]'.
+      Type 'any' is not assignable to type 'never'.
+app/(main-layout)/form-management/add/page.tsx(239,29): error TS2345: Argument of type '{ properties: never[]; tags: string; visibility: string; workspace_id: number; notifies: boolean; slack_notifies: boolean; send_submission_confirmation: boolean; webhook_url: null; notification_settings: {}; ... 29 more ...; database_fields_update: null; }' is not assignable to parameter of type 'CreateForm'.
+  Property 'title' is missing in type '{ properties: never[]; tags: string; visibility: string; workspace_id: number; notifies: boolean; slack_notifies: boolean; send_submission_confirmation: boolean; webhook_url: null; notification_settings: {}; ... 29 more ...; database_fields_update: null; }' but required in type 'CreateForm'.
+app/(main-layout)/form-management/add/page.tsx(243,57): error TS2339: Property 'properties' does not exist on type '{ tags: string; visibility: string; workspace_id: number; notifies: boolean; slack_notifies: boolean; send_submission_confirmation: boolean; webhook_url: null; notification_settings: {}; ... 29 more ...; database_fields_update: null; }'.
+app/(main-layout)/form-management/add/page.tsx(247,19): error TS2345: Argument of type '({ type: string; name: string; id: string; hidden: boolean; help_position: string; width: string; align: string; logic: { conditions: null; actions: never[]; }; required: boolean; placeholder: null; prefill: null; ... 18 more ...; max_char_limit?: undefined; } | ... 5 more ... | { ...; })[]' is not assignable to parameter of type 'SetStateAction<never[]>'.
+  Type '({ type: string; name: string; id: string; hidden: boolean; help_position: string; width: string; align: string; logic: { conditions: null; actions: never[]; }; required: boolean; placeholder: null; prefill: null; ... 18 more ...; max_char_limit?: undefined; } | ... 5 more ... | { ...; })[]' is not assignable to type 'never[]'.
+    Type '{ type: string; name: string; id: string; hidden: boolean; help_position: string; width: string; align: string; logic: { conditions: null; actions: never[]; }; required: boolean; placeholder: null; prefill: null; ... 18 more ...; max_char_limit?: undefined; } | ... 5 more ... | { ...; }' is not assignable to type 'never'.
+      Type '{ type: string; name: string; id: string; hidden: boolean; help_position: string; width: string; align: string; logic: { conditions: null; actions: never[]; }; required: boolean; placeholder: null; prefill: null; ... 18 more ...; max_char_limit?: undefined; }' is not assignable to type 'never'.
+app/(main-layout)/form-management/add/page.tsx(256,10): error TS2741: Property 'nesting' is missing in type '{ formJson: { sectionType: string; rowClassName: string; child: ({ placeholder: string; fieldName: string; showLabel: boolean; fieldType: string; required: boolean; validation: (data: string) => { ...; }; ... 5 more ...; child?: undefined; } | { ...; } | { ...; })[]; }[]; ... 4 more ...; onChangeSelect: (e: ChangeEv...' but required in type 'Props'.
+app/(main-layout)/form-management/add/page.tsx(267,13): error TS2322: Type '(_: MouseEvent<HTMLButtonElement>, field: any, fieldData: any, fullFieldData: any, configData: any, fieldIndex: number, sectionIndex: number) => void' is not assignable to type 'onClickFieldResolver'.
+  Types of parameters 'sectionIndex' and 'repeatChildIndex' are incompatible.
+    Type 'number | undefined' is not assignable to type 'number'.
+      Type 'undefined' is not assignable to type 'number'.
+app/(main-layout)/form-management/add/page.tsx(272,13): error TS2322: Type '(e: React.ChangeEvent<HTMLInputElement>, field: any, sectionIndex: number) => void' is not assignable to type '(event: ChangeEvent<HTMLInputElement>, field: any) => void'.
+  Target signature provides too few arguments. Expected 3 or more, but got 2.
+app/(main-layout)/form-management/add/page.tsx(275,10): error TS2741: Property 'nesting' is missing in type '{ formJson: { sectionType: string; child: { label: string; fieldType: string; fieldName: string; imageWidth: string; imageHeight: string; imageClassName: string; className: string; imagePosition: string; ... 4 more ...; showLabel: boolean; }[]; }[]; fieldData: {}; onClickField: (e: MouseEvent<...>, field: button) =>...' but required in type 'Props'.
+app/(main-layout)/form-management/page.tsx(70,17): error TS2353: Object literal may only specify known properties, and 'placeholder' does not exist in type 'searchDropdown'.
+app/(main-layout)/form-management/page.tsx(75,17): error TS2353: Object literal may only specify known properties, and 'placeholder' does not exist in type 'searchDropdown'.
+app/(main-layout)/task-master/add/page.tsx(35,31): error TS2304: Cannot find name 'DefaultFunction'.
+app/(main-layout)/task-master/add/page.tsx(143,10): error TS2741: Property 'nesting' is missing in type '{ formJson: { sectionType: string; rowClassName: string; child: ({ sectionType: string; rowClassName: string; child: { fieldType: string; labelText: string; fieldContainerClassName: string; labelClassName: string; }[]; } | { ...; } | { ...; })[]; }[]; ... 6 more ...; isCheckValid: boolean; }' but required in type 'Props'.
+app/(main-layout)/task-master/task-assignment/page.tsx(41,32): error TS2307: Cannot find module '../roles/page' or its corresponding type declarations.
+app/(main-layout)/task-master/task-assignment/page.tsx(147,9): error TS2464: A computed property name must be of type 'string', 'number', 'symbol', or 'any'.
+app/(main-layout)/task-master/task-assignment/page.tsx(299,21): error TS2554: Expected 0 arguments, but got 1.
+app/(main-layout)/task-master/task-assignment/page.tsx(328,33): error TS2304: Cannot find name 'onClickShowMore'.
+app/(main-layout)/task-master/task-assignment/page.tsx(331,30): error TS7006: Parameter 'e' implicitly has an 'any' type.
+app/(main-layout)/task-master/task-assignment/page.tsx(332,27): error TS7006: Parameter 'prev' implicitly has an 'any' type.
+app/(main-layout)/task-master/task-assignment/page.tsx(339,27): error TS7006: Parameter 'prev' implicitly has an 'any' type.
+app/(main-layout)/task-master/task-assignment/page.tsx(344,30): error TS7006: Parameter 'e' implicitly has an 'any' type.
+app/(main-layout)/task-master/task-assignment/page.tsx(345,27): error TS7006: Parameter 'prev' implicitly has an 'any' type.
+app/(main-layout)/task-master/task-assignment/page.tsx(353,27): error TS7006: Parameter 'prev' implicitly has an 'any' type.
+app/(main-layout)/task-master/task-assignment/page.tsx(360,27): error TS7006: Parameter 'prev' implicitly has an 'any' type.
+app/(main-layout)/user-management/roles/[id]/edit/page.tsx(57,9): error TS2464: A computed property name must be of type 'string', 'number', 'symbol', or 'any'.
+app/(main-layout)/user-management/roles/[id]/edit/page.tsx(102,24): error TS2345: Argument of type '(prev: RoleAddPayload | undefined) => RoleAddPayload | { modules: any[] | undefined; role_name?: string | undefined; role_type?: "multi-scoped" | "single-scoped" | undefined; is_facility_visibility_required?: boolean | undefined; is_facility_login_required?: boolean | undefined; is_active?: boolean | undefined; modu...' is not assignable to parameter of type 'SetStateAction<RoleAddPayload | undefined>'.
+  Type '(prev: RoleAddPayload | undefined) => RoleAddPayload | { modules: any[] | undefined; role_name?: string | undefined; role_type?: "multi-scoped" | "single-scoped" | undefined; is_facility_visibility_required?: boolean | undefined; is_facility_login_required?: boolean | undefined; is_active?: boolean | undefined; modu...' is not assignable to type '(prevState: RoleAddPayload | undefined) => RoleAddPayload | undefined'.
+    Type 'RoleAddPayload | { modules: any[] | undefined; role_name?: string | undefined; role_type?: "multi-scoped" | "single-scoped" | undefined; is_facility_visibility_required?: boolean | undefined; is_facility_login_required?: boolean | undefined; is_active?: boolean | undefined; module_action_ids?: number[] | undefined; ...' is not assignable to type 'RoleAddPayload | undefined'.
+      Type '{ modules: any[] | undefined; role_name?: string | undefined; role_type?: "multi-scoped" | "single-scoped" | undefined; is_facility_visibility_required?: boolean | undefined; is_facility_login_required?: boolean | undefined; is_active?: boolean | undefined; module_action_ids?: number[] | undefined; }' is not assignable to type 'RoleAddPayload'.
+        Types of property 'role_name' are incompatible.
+          Type 'string | undefined' is not assignable to type 'string'.
+            Type 'undefined' is not assignable to type 'string'.
+app/(main-layout)/user-management/roles/[id]/edit/page.tsx(109,30): error TS18048: 'prev.modules' is possibly 'undefined'.
+app/(main-layout)/user-management/roles/[id]/edit/page.tsx(109,44): error TS2538: Type 'undefined' cannot be used as an index type.
+app/(main-layout)/user-management/roles/[id]/edit/page.tsx(110,12): error TS7006: Parameter 'sM' implicitly has an 'any' type.
+app/(main-layout)/user-management/roles/[id]/edit/page.tsx(115,28): error TS18048: 'prev.modules' is possibly 'undefined'.
+app/(main-layout)/user-management/roles/[id]/edit/page.tsx(115,42): error TS2538: Type 'undefined' cannot be used as an index type.
+app/(main-layout)/user-management/roles/[id]/edit/page.tsx(118,12): error TS7006: Parameter 'sM' implicitly has an 'any' type.
+app/(main-layout)/user-management/roles/[id]/edit/page.tsx(123,20): error TS18048: 'prev.modules' is possibly 'undefined'.
+app/(main-layout)/user-management/roles/[id]/edit/page.tsx(128,56): error TS7006: Parameter 'subModule' implicitly has an 'any' type.
+app/(main-layout)/user-management/roles/[id]/edit/page.tsx(128,67): error TS7006: Parameter 'sIdx' implicitly has an 'any' type.
+app/(main-layout)/user-management/roles/[id]/edit/page.tsx(134,30): error TS7006: Parameter 'action' implicitly has an 'any' type.
+app/(main-layout)/user-management/roles/[id]/edit/page.tsx(134,38): error TS7006: Parameter 'aIdx' implicitly has an 'any' type.
+app/(main-layout)/user-management/roles/[id]/edit/page.tsx(139,59): error TS7006: Parameter 'actions' implicitly has an 'any' type.
+app/(main-layout)/user-management/roles/[id]/edit/page.tsx(139,68): error TS7006: Parameter 'aIdx' implicitly has an 'any' type.
+app/(main-layout)/user-management/roles/[id]/edit/page.tsx(156,24): error TS2345: Argument of type '(prev: RoleAddPayload | undefined) => RoleAddPayload | { modules: any[] | undefined; role_name?: string | undefined; role_type?: "multi-scoped" | "single-scoped" | undefined; is_facility_visibility_required?: boolean | undefined; is_facility_login_required?: boolean | undefined; is_active?: boolean | undefined; modu...' is not assignable to parameter of type 'SetStateAction<RoleAddPayload | undefined>'.
+  Type '(prev: RoleAddPayload | undefined) => RoleAddPayload | { modules: any[] | undefined; role_name?: string | undefined; role_type?: "multi-scoped" | "single-scoped" | undefined; is_facility_visibility_required?: boolean | undefined; is_facility_login_required?: boolean | undefined; is_active?: boolean | undefined; modu...' is not assignable to type '(prevState: RoleAddPayload | undefined) => RoleAddPayload | undefined'.
+    Type 'RoleAddPayload | { modules: any[] | undefined; role_name?: string | undefined; role_type?: "multi-scoped" | "single-scoped" | undefined; is_facility_visibility_required?: boolean | undefined; is_facility_login_required?: boolean | undefined; is_active?: boolean | undefined; module_action_ids?: number[] | undefined; ...' is not assignable to type 'RoleAddPayload | undefined'.
+      Type '{ modules: any[] | undefined; role_name?: string | undefined; role_type?: "multi-scoped" | "single-scoped" | undefined; is_facility_visibility_required?: boolean | undefined; is_facility_login_required?: boolean | undefined; is_active?: boolean | undefined; module_action_ids?: number[] | undefined; }' is not assignable to type 'RoleAddPayload'.
+        Types of property 'role_name' are incompatible.
+          Type 'string | undefined' is not assignable to type 'string'.
+            Type 'undefined' is not assignable to type 'string'.
+app/(main-layout)/user-management/roles/[id]/edit/page.tsx(163,30): error TS18048: 'prev.modules' is possibly 'undefined'.
+app/(main-layout)/user-management/roles/[id]/edit/page.tsx(163,44): error TS2538: Type 'undefined' cannot be used as an index type.
+app/(main-layout)/user-management/roles/[id]/edit/page.tsx(164,12): error TS7006: Parameter 'sM' implicitly has an 'any' type.
+app/(main-layout)/user-management/roles/[id]/edit/page.tsx(171,20): error TS18048: 'prev.modules' is possibly 'undefined'.
+app/(main-layout)/user-management/roles/[id]/edit/page.tsx(176,56): error TS7006: Parameter 'subModule' implicitly has an 'any' type.
+app/(main-layout)/user-management/roles/[id]/edit/page.tsx(176,67): error TS7006: Parameter 'sIdx' implicitly has an 'any' type.
+app/(main-layout)/user-management/roles/[id]/edit/page.tsx(182,59): error TS7006: Parameter 'action' implicitly has an 'any' type.
+app/(main-layout)/user-management/roles/[id]/edit/page.tsx(196,22): error TS2345: Argument of type '(prev: RoleAddPayload | undefined) => { role_name?: string | undefined; role_type?: "multi-scoped" | "single-scoped" | undefined; is_facility_visibility_required?: boolean | undefined; is_facility_login_required?: boolean | undefined; is_active?: boolean | undefined; module_action_ids?: number[] | undefined; modules...' is not assignable to parameter of type 'SetStateAction<RoleAddPayload | undefined>'.
+  Type '(prev: RoleAddPayload | undefined) => { role_name?: string | undefined; role_type?: "multi-scoped" | "single-scoped" | undefined; is_facility_visibility_required?: boolean | undefined; is_facility_login_required?: boolean | undefined; is_active?: boolean | undefined; module_action_ids?: number[] | undefined; modules...' is not assignable to type '(prevState: RoleAddPayload | undefined) => RoleAddPayload | undefined'.
+    Call signature return types '{ role_name?: string | undefined; role_type?: "multi-scoped" | "single-scoped" | undefined; is_facility_visibility_required?: boolean | undefined; is_facility_login_required?: boolean | undefined; is_active?: boolean | undefined; module_action_ids?: number[] | undefined; modules?: any[] | undefined; }' and 'RoleAddPayload | undefined' are incompatible.
+      The types of 'role_name' are incompatible between these types.
+        Type 'string | undefined' is not assignable to type 'string'.
+          Type 'undefined' is not assignable to type 'string'.
+app/(main-layout)/user-management/roles/[id]/edit/page.tsx(227,26): error TS2345: Argument of type 'RoleModule[]' is not assignable to parameter of type 'SetStateAction<never[]>'.
+  Type 'RoleModule[]' is not assignable to type 'never[]'.
+    Type 'RoleModule' is not assignable to type 'never'.
+app/(main-layout)/user-management/roles/[id]/edit/page.tsx(228,22): error TS2345: Argument of type '(prev: RoleAddPayload | undefined) => { modules: RoleModule[]; }' is not assignable to parameter of type 'SetStateAction<RoleAddPayload | undefined>'.
+  Type '(prev: RoleAddPayload | undefined) => { modules: RoleModule[]; }' is not assignable to type '(prevState: RoleAddPayload | undefined) => RoleAddPayload | undefined'.
+    Type '{ modules: RoleModule[]; }' is missing the following properties from type 'RoleAddPayload': role_name, role_type, is_facility_visibility_required, is_facility_login_required, and 2 more.
+app/(main-layout)/user-management/roles/[id]/edit/page.tsx(254,12): error TS2741: Property 'nesting' is missing in type '{ formJson: { sectionType: string; rowClassName: string; child: ({ sectionType: string; rowClassName: string; child: ({ fieldType: string; labelText: string; fieldContainerClassName: string; ... 5 more ...; imagePosition?: undefined; } | { ...; })[]; } | { ...; } | { ...; } | { ...; } | { ...; })[]; }[]; ... 7 more ...' but required in type 'Props'.
+app/(main-layout)/user-management/roles/[id]/edit/page.tsx(263,13): error TS17001: JSX elements cannot have multiple attributes with the same name.
+app/(main-layout)/user-management/roles/[id]/view/page.tsx(74,33): error TS2345: Argument of type 'number' is not assignable to parameter of type '{ facilityId: string | number; }'.
+app/(main-layout)/user-management/roles/[id]/view/page.tsx(84,15): error TS2339: Property 'details' does not exist on type 'Facility | Record<string, never>'.
+app/(main-layout)/user-management/roles/[id]/view/page.tsx(92,11): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{ facility_id: number; facility_slug: string; latitude: string; longitude: string; role_id: number; } | { [x: string]: never; }'.
+app/(main-layout)/user-management/roles/[id]/view/page.tsx(104,12): error TS2741: Property 'nesting' is missing in type '{ formJson: { sectionType: string; rowClassName: string; child: ({ sectionType: string; rowClassName: string; child: ({ fieldType: string; labelText: () => string; fieldContainerClassName: string; labelClassName: string; ... 4 more ...; imagePosition?: undefined; } | { ...; })[]; ... 5 more ...; hiddenFor?: undefine...' but required in type 'Props'.
+app/(main-layout)/user-management/roles/add/page.tsx(57,9): error TS2464: A computed property name must be of type 'string', 'number', 'symbol', or 'any'.
+app/(main-layout)/user-management/roles/add/page.tsx(102,24): error TS2345: Argument of type '(prev: RoleAddPayload | undefined) => RoleAddPayload | { modules: any[] | undefined; role_name?: string | undefined; role_type?: "multi-scoped" | "single-scoped" | undefined; is_facility_visibility_required?: boolean | undefined; is_facility_login_required?: boolean | undefined; is_active?: boolean | undefined; modu...' is not assignable to parameter of type 'SetStateAction<RoleAddPayload | undefined>'.
+  Type '(prev: RoleAddPayload | undefined) => RoleAddPayload | { modules: any[] | undefined; role_name?: string | undefined; role_type?: "multi-scoped" | "single-scoped" | undefined; is_facility_visibility_required?: boolean | undefined; is_facility_login_required?: boolean | undefined; is_active?: boolean | undefined; modu...' is not assignable to type '(prevState: RoleAddPayload | undefined) => RoleAddPayload | undefined'.
+    Type 'RoleAddPayload | { modules: any[] | undefined; role_name?: string | undefined; role_type?: "multi-scoped" | "single-scoped" | undefined; is_facility_visibility_required?: boolean | undefined; is_facility_login_required?: boolean | undefined; is_active?: boolean | undefined; module_action_ids?: number[] | undefined; ...' is not assignable to type 'RoleAddPayload | undefined'.
+      Type '{ modules: any[] | undefined; role_name?: string | undefined; role_type?: "multi-scoped" | "single-scoped" | undefined; is_facility_visibility_required?: boolean | undefined; is_facility_login_required?: boolean | undefined; is_active?: boolean | undefined; module_action_ids?: number[] | undefined; }' is not assignable to type 'RoleAddPayload'.
+        Types of property 'role_name' are incompatible.
+          Type 'string | undefined' is not assignable to type 'string'.
+            Type 'undefined' is not assignable to type 'string'.
+app/(main-layout)/user-management/roles/add/page.tsx(109,30): error TS18048: 'prev.modules' is possibly 'undefined'.
+app/(main-layout)/user-management/roles/add/page.tsx(109,44): error TS2538: Type 'undefined' cannot be used as an index type.
+app/(main-layout)/user-management/roles/add/page.tsx(110,12): error TS7006: Parameter 'sM' implicitly has an 'any' type.
+app/(main-layout)/user-management/roles/add/page.tsx(115,28): error TS18048: 'prev.modules' is possibly 'undefined'.
+app/(main-layout)/user-management/roles/add/page.tsx(115,42): error TS2538: Type 'undefined' cannot be used as an index type.
+app/(main-layout)/user-management/roles/add/page.tsx(118,12): error TS7006: Parameter 'sM' implicitly has an 'any' type.
+app/(main-layout)/user-management/roles/add/page.tsx(123,20): error TS18048: 'prev.modules' is possibly 'undefined'.
+app/(main-layout)/user-management/roles/add/page.tsx(128,56): error TS7006: Parameter 'subModule' implicitly has an 'any' type.
+app/(main-layout)/user-management/roles/add/page.tsx(128,67): error TS7006: Parameter 'sIdx' implicitly has an 'any' type.
+app/(main-layout)/user-management/roles/add/page.tsx(134,30): error TS7006: Parameter 'action' implicitly has an 'any' type.
+app/(main-layout)/user-management/roles/add/page.tsx(134,38): error TS7006: Parameter 'aIdx' implicitly has an 'any' type.
+app/(main-layout)/user-management/roles/add/page.tsx(139,59): error TS7006: Parameter 'actions' implicitly has an 'any' type.
+app/(main-layout)/user-management/roles/add/page.tsx(139,68): error TS7006: Parameter 'aIdx' implicitly has an 'any' type.
+app/(main-layout)/user-management/roles/add/page.tsx(156,24): error TS2345: Argument of type '(prev: RoleAddPayload | undefined) => RoleAddPayload | { modules: any[] | undefined; role_name?: string | undefined; role_type?: "multi-scoped" | "single-scoped" | undefined; is_facility_visibility_required?: boolean | undefined; is_facility_login_required?: boolean | undefined; is_active?: boolean | undefined; modu...' is not assignable to parameter of type 'SetStateAction<RoleAddPayload | undefined>'.
+  Type '(prev: RoleAddPayload | undefined) => RoleAddPayload | { modules: any[] | undefined; role_name?: string | undefined; role_type?: "multi-scoped" | "single-scoped" | undefined; is_facility_visibility_required?: boolean | undefined; is_facility_login_required?: boolean | undefined; is_active?: boolean | undefined; modu...' is not assignable to type '(prevState: RoleAddPayload | undefined) => RoleAddPayload | undefined'.
+    Type 'RoleAddPayload | { modules: any[] | undefined; role_name?: string | undefined; role_type?: "multi-scoped" | "single-scoped" | undefined; is_facility_visibility_required?: boolean | undefined; is_facility_login_required?: boolean | undefined; is_active?: boolean | undefined; module_action_ids?: number[] | undefined; ...' is not assignable to type 'RoleAddPayload | undefined'.
+      Type '{ modules: any[] | undefined; role_name?: string | undefined; role_type?: "multi-scoped" | "single-scoped" | undefined; is_facility_visibility_required?: boolean | undefined; is_facility_login_required?: boolean | undefined; is_active?: boolean | undefined; module_action_ids?: number[] | undefined; }' is not assignable to type 'RoleAddPayload'.
+        Types of property 'role_name' are incompatible.
+          Type 'string | undefined' is not assignable to type 'string'.
+            Type 'undefined' is not assignable to type 'string'.
+app/(main-layout)/user-management/roles/add/page.tsx(163,30): error TS18048: 'prev.modules' is possibly 'undefined'.
+app/(main-layout)/user-management/roles/add/page.tsx(163,44): error TS2538: Type 'undefined' cannot be used as an index type.
+app/(main-layout)/user-management/roles/add/page.tsx(164,12): error TS7006: Parameter 'sM' implicitly has an 'any' type.
+app/(main-layout)/user-management/roles/add/page.tsx(171,20): error TS18048: 'prev.modules' is possibly 'undefined'.
+app/(main-layout)/user-management/roles/add/page.tsx(176,56): error TS7006: Parameter 'subModule' implicitly has an 'any' type.
+app/(main-layout)/user-management/roles/add/page.tsx(176,67): error TS7006: Parameter 'sIdx' implicitly has an 'any' type.
+app/(main-layout)/user-management/roles/add/page.tsx(182,59): error TS7006: Parameter 'action' implicitly has an 'any' type.
+app/(main-layout)/user-management/roles/add/page.tsx(196,22): error TS2345: Argument of type '(prev: RoleAddPayload | undefined) => { role_name?: string | undefined; role_type?: "multi-scoped" | "single-scoped" | undefined; is_facility_visibility_required?: boolean | undefined; is_facility_login_required?: boolean | undefined; is_active?: boolean | undefined; module_action_ids?: number[] | undefined; modules...' is not assignable to parameter of type 'SetStateAction<RoleAddPayload | undefined>'.
+  Type '(prev: RoleAddPayload | undefined) => { role_name?: string | undefined; role_type?: "multi-scoped" | "single-scoped" | undefined; is_facility_visibility_required?: boolean | undefined; is_facility_login_required?: boolean | undefined; is_active?: boolean | undefined; module_action_ids?: number[] | undefined; modules...' is not assignable to type '(prevState: RoleAddPayload | undefined) => RoleAddPayload | undefined'.
+    Call signature return types '{ role_name?: string | undefined; role_type?: "multi-scoped" | "single-scoped" | undefined; is_facility_visibility_required?: boolean | undefined; is_facility_login_required?: boolean | undefined; is_active?: boolean | undefined; module_action_ids?: number[] | undefined; modules?: any[] | undefined; }' and 'RoleAddPayload | undefined' are incompatible.
+      The types of 'role_name' are incompatible between these types.
+        Type 'string | undefined' is not assignable to type 'string'.
+          Type 'undefined' is not assignable to type 'string'.
+app/(main-layout)/user-management/roles/add/page.tsx(227,26): error TS2345: Argument of type 'RoleModule[]' is not assignable to parameter of type 'SetStateAction<never[]>'.
+  Type 'RoleModule[]' is not assignable to type 'never[]'.
+    Type 'RoleModule' is not assignable to type 'never'.
+app/(main-layout)/user-management/roles/add/page.tsx(228,22): error TS2345: Argument of type '(prev: RoleAddPayload | undefined) => { modules: RoleModule[]; }' is not assignable to parameter of type 'SetStateAction<RoleAddPayload | undefined>'.
+  Type '(prev: RoleAddPayload | undefined) => { modules: RoleModule[]; }' is not assignable to type '(prevState: RoleAddPayload | undefined) => RoleAddPayload | undefined'.
+    Type '{ modules: RoleModule[]; }' is missing the following properties from type 'RoleAddPayload': role_name, role_type, is_facility_visibility_required, is_facility_login_required, and 2 more.
+app/(main-layout)/user-management/roles/add/page.tsx(254,12): error TS2741: Property 'nesting' is missing in type '{ formJson: { sectionType: string; rowClassName: string; child: ({ sectionType: string; rowClassName: string; child: ({ fieldType: string; labelText: string; fieldContainerClassName: string; ... 5 more ...; imagePosition?: undefined; } | { ...; })[]; } | { ...; } | { ...; } | { ...; } | { ...; })[]; }[]; ... 7 more ...' but required in type 'Props'.
+app/(main-layout)/user-management/roles/add/page.tsx(263,13): error TS17001: JSX elements cannot have multiple attributes with the same name.
+app/(main-layout)/user-management/roles/page.tsx(95,7): error TS2345: Argument of type 'Record<string, any>' is not assignable to parameter of type '{ field: string; isMillieSearch?: boolean | undefined; requestValue?: string | undefined; customSearch?: boolean | undefined; }'.
+  Property 'field' is missing in type 'Record<string, any>' but required in type '{ field: string; isMillieSearch?: boolean | undefined; requestValue?: string | undefined; customSearch?: boolean | undefined; }'.
+app/(main-layout)/user-management/roles/page.tsx(127,7): error TS2554: Expected 1 arguments, but got 0.
+app/(main-layout)/user-management/roles/page.tsx(152,30): error TS7006: Parameter 'e' implicitly has an 'any' type.
+app/(main-layout)/user-management/roles/page.tsx(156,26): error TS2345: Argument of type '(prev: ListQueryState) => { sort: { type: string; val: string; }; page: number; search: string; filters: Record<string, any>; column: Record<string, any>; }' is not assignable to parameter of type 'SetStateAction<ListQueryState>'.
+  Type '(prev: ListQueryState) => { sort: { type: string; val: string; }; page: number; search: string; filters: Record<string, any>; column: Record<string, any>; }' is not assignable to type '(prevState: ListQueryState) => ListQueryState'.
+    Call signature return types '{ sort: { type: string; val: string; }; page: number; search: string; filters: Record<string, any>; column: Record<string, any>; }' and 'ListQueryState' are incompatible.
+      The types of 'sort.type' are incompatible between these types.
+        Type 'string' is not assignable to type '"desc" | "asc"'.
+app/(main-layout)/user-management/roles/page.tsx(179,15): error TS2554: Expected 1 arguments, but got 0.
+app/(main-layout)/user-management/roles/page.tsx(186,39): error TS2345: Argument of type 'false' is not assignable to parameter of type 'SetStateAction<{ type: "role-delete"; show: boolean; data: any; } | undefined>'.
+app/(main-layout)/user-management/users/page.tsx(112,7): error TS2345: Argument of type 'Record<string, any>' is not assignable to parameter of type '{ field: string; isMillieSearch?: boolean | undefined; requestValue?: string | undefined; customSearch?: boolean | undefined; }'.
+  Property 'field' is missing in type 'Record<string, any>' but required in type '{ field: string; isMillieSearch?: boolean | undefined; requestValue?: string | undefined; customSearch?: boolean | undefined; }'.
+app/(main-layout)/user-management/users/page.tsx(180,9): error TS2464: A computed property name must be of type 'string', 'number', 'symbol', or 'any'.
+app/(main-layout)/user-management/users/page.tsx(524,21): error TS2554: Expected 0 arguments, but got 1.
+app/(main-layout)/user-management/users/page.tsx(558,13): error TS2739: Type 'Record<string, any>' is missing the following properties from type 'searchDropdown': title, field
+app/(main-layout)/user-management/users/page.tsx(559,30): error TS7006: Parameter 'e' implicitly has an 'any' type.
+app/(main-layout)/user-management/users/page.tsx(572,30): error TS7006: Parameter 'e' implicitly has an 'any' type.
+app/(main-layout)/user-management/users/page.tsx(581,26): error TS2345: Argument of type '(prev: ListQueryState) => { sort: { type: string; val: string; }; page: number; search: string; filters: Record<string, any>; column: Record<string, any>; }' is not assignable to parameter of type 'SetStateAction<ListQueryState>'.
+  Type '(prev: ListQueryState) => { sort: { type: string; val: string; }; page: number; search: string; filters: Record<string, any>; column: Record<string, any>; }' is not assignable to type '(prevState: ListQueryState) => ListQueryState'.
+    Call signature return types '{ sort: { type: string; val: string; }; page: number; search: string; filters: Record<string, any>; column: Record<string, any>; }' and 'ListQueryState' are incompatible.
+      The types of 'sort.type' are incompatible between these types.
+        Type 'string' is not assignable to type '"desc" | "asc"'.
+commonJson/roles-master/list.tsx(42,30): error TS2339: Property 'created_by' does not exist on type 'RoleListItem'.
+commonJson/roles-master/list.tsx(43,30): error TS2339: Property 'created_at' does not exist on type 'RoleListItem'.
+commonJson/roles-master/list.tsx(60,30): error TS2339: Property 'updated_by' does not exist on type 'RoleListItem'.
+commonJson/roles-master/list.tsx(61,30): error TS2339: Property 'updated_at' does not exist on type 'RoleListItem'.
+commonJson/task-assignment/add.tsx(62,20): error TS2304: Cannot find name 'mobileNumber_Regex'.
+commonJson/task-assignment/add.tsx(113,42): error TS2339: Property 'id' does not exist on type 'string'.
+commonJson/task-assignment/add.tsx(135,42): error TS2339: Property 'id' does not exist on type 'string'.
+commonJson/task-assignment/add.tsx(213,36): error TS2304: Cannot find name 'button'.
+commonJson/task-assignment/add.tsx(226,32): error TS2304: Cannot find name 'button'.
+commonJson/user-master/list.tsx(342,42): error TS2339: Property 'id' does not exist on type 'string'.
+commonJson/user-master/list.tsx(364,42): error TS2339: Property 'id' does not exist on type 'string'.
+components/ActionComponent/ActionComponent.tsx(409,31): error TS2554: Expected 4 arguments, but got 2.
+components/ActionComponent/ActionComponent.tsx(437,29): error TS2554: Expected 4 arguments, but got 3.
+components/CommonForm/CommonForm.tsx(291,50): error TS7006: Parameter 'data' implicitly has an 'any' type.
+components/CommonMasterModal/CommonMasterModal.tsx(90,12): error TS2741: Property 'nesting' is missing in type '{ formJson: any[]; fieldData: any; fullFieldData: any; configData: any; onChangeInput: any; onBlurInput: any; onClickField: any; onChangeSelect: any; onSelectDate: any; onChangeSearch: any; onSearchSelect: any; isCheckValid: boolean | undefined; onRemoveSelect: any; }' but required in type 'Props'.
+components/CommonMasterModal/CommonMasterModal.tsx(109,78): error TS2322: Type 'onClickFieldResolver | undefined' is not assignable to type 'onClickFieldResolver'.
+  Type 'undefined' is not assignable to type 'onClickFieldResolver'.
+components/CommonMasterModal/CommonMasterModal.tsx(110,78): error TS2322: Type 'onClickFieldResolver | undefined' is not assignable to type 'onClickFieldResolver'.
+  Type 'undefined' is not assignable to type 'onClickFieldResolver'.
+components/ConfimationModal/ConfimationModal.tsx(63,48): error TS2322: Type 'onClickFieldResolver | undefined' is not assignable to type 'onClickFieldResolver'.
+  Type 'undefined' is not assignable to type 'onClickFieldResolver'.
+components/ConfimationModal/ConfimationModal.tsx(66,48): error TS2322: Type 'onClickFieldResolver | undefined' is not assignable to type 'onClickFieldResolver'.
+  Type 'undefined' is not assignable to type 'onClickFieldResolver'.
+components/DNDKit/DraggableItem.tsx(9,3): error TS7031: Binding element 'id' implicitly has an 'any' type.
+components/DNDKit/DraggableItem.tsx(10,3): error TS7031: Binding element 'children' implicitly has an 'any' type.
+components/ExpandComponent/ExpandComponent.tsx(54,42): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+components/ExpandComponent/ExpandComponent.tsx(65,45): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+components/FormManagement/QuestionCard.tsx(70,49): error TS7006: Parameter 'field' implicitly has an 'any' type.
+components/FormManagement/QuestionCard.tsx(70,56): error TS7006: Parameter 'value' implicitly has an 'any' type.
+components/FormManagement/QuestionCard.tsx(212,36): error TS2345: Argument of type 'string' is not assignable to parameter of type 'SetStateAction<"medium" | "low" | "high">'.
+components/FormManagement/QuestionCardWrapper.tsx(83,14): error TS2741: Property 'nesting' is missing in type '{ formJson: { sectionType: string; rowClassName: string; child: { fieldType: string; fieldName: string; fieldContainerClassName: string; showLabel: boolean; label: string; }[]; }[]; fieldData: any; onChangeSwitch: ((event: ChangeEvent<...>, field: any) => void) | undefined; }' but required in type 'Props'.
+components/FormManagement/QuestionCardWrapper.tsx(93,15): error TS2322: Type '((value: Option) => void) | undefined' is not assignable to type '(option: Option) => void'.
+  Type 'undefined' is not assignable to type '(option: Option) => void'.
+components/FormManagement/QuestionCardWrapper.tsx(96,12): error TS2741: Property 'nesting' is missing in type '{ formJson: { sectionType: string; rowClassName: string; child: { fieldType: string; fieldName: string; imageWidth: string; imageHeight: string; imagePosition: string; url: string; }[]; }[]; fieldData: any; onClickField: onClickFieldResolver; }' but required in type 'Props'.
+components/ListingComponents/ListingComponents.tsx(258,25): error TS7015: Element implicitly has an 'any' type because index expression is not of type 'number'.
+components/ListingComponents/ListingComponents.tsx(261,34): error TS7015: Element implicitly has an 'any' type because index expression is not of type 'number'.
+components/ListingComponents/ListingComponents.tsx(300,13): error TS2322: Type 'Function | undefined' is not assignable to type '((pageNo: number) => void) | undefined'.
+  Type 'Function' is not assignable to type '(pageNo: number) => void'.
+    Type 'Function' provides no match for the signature '(pageNo: number): void'.
+components/modules/auth/FacilitySelection.tsx(17,41): error TS2345: Argument of type 'number | undefined' is not assignable to parameter of type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+components/modules/auth/FacilitySelection.tsx(29,17): error TS2345: Argument of type '(prev: { facility: Facility; } | undefined) => { facility?: Facility | undefined; }' is not assignable to parameter of type 'SetStateAction<{ facility: Facility; } | undefined>'.
+  Type '(prev: { facility: Facility; } | undefined) => { facility?: Facility | undefined; }' is not assignable to type '(prevState: { facility: Facility; } | undefined) => { facility: Facility; } | undefined'.
+    Call signature return types '{ facility?: Facility | undefined; }' and '{ facility: Facility; } | undefined' are incompatible.
+      The types of 'facility' are incompatible between these types.
+        Type 'Facility | undefined' is not assignable to type 'Facility'.
+          Type 'undefined' is not assignable to type 'Facility'.
+components/modules/auth/FacilitySelection.tsx(53,11): error TS2322: Type '{ fieldName: string; as: string; optionKey: string; id: string; placeholder: string; searchbleClass: string; }' is not assignable to type 'SearchableSelectFieldProps'.
+  Types of property 'as' are incompatible.
+    Type 'string' is not assignable to type '"select" | "search-select" | "multi-select" | "multi-search-select" | ((field: any, fieldData?: any, fullFieldData?: any, configData?: any) => string)'.
+components/modules/auth/FacilitySelection.tsx(56,11): error TS2322: Type '(item: Facility, field: any) => void' is not assignable to type '(item: value, field: SearchableSelectFieldProps) => void'.
+  Types of parameters 'item' and 'item' are incompatible.
+    Type 'value' is not assignable to type 'Facility'.
+      Type 'string' is not assignable to type 'Facility'.
+components/modules/auth/ForgotPassword.tsx(25,11): error TS2353: Object literal may only specify known properties, and 'mobile_number' does not exist in type 'SendRestLinkPayload'.
+components/modules/auth/ForgotPassword.tsx(31,17): error TS2345: Argument of type '(prev: ResetPasswordData | undefined) => { mobile_number?: string | undefined; }' is not assignable to parameter of type 'SetStateAction<ResetPasswordData | undefined>'.
+  Type '(prev: ResetPasswordData | undefined) => { mobile_number?: string | undefined; }' is not assignable to type '(prevState: ResetPasswordData | undefined) => ResetPasswordData | undefined'.
+    Call signature return types '{ mobile_number?: string | undefined; }' and 'ResetPasswordData | undefined' are incompatible.
+      The types of 'mobile_number' are incompatible between these types.
+        Type 'string | undefined' is not assignable to type 'string'.
+          Type 'undefined' is not assignable to type 'string'.
+components/modules/auth/LoginForm.tsx(26,27): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+components/modules/auth/LoginForm.tsx(28,23): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+components/modules/auth/LoginForm.tsx(28,47): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+components/modules/auth/LoginForm.tsx(33,23): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+components/modules/auth/LoginForm.tsx(33,47): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+components/modules/auth/LoginForm.tsx(39,17): error TS2345: Argument of type '(prev: userLoginData | undefined) => { email?: string | undefined; password?: string | undefined; }' is not assignable to parameter of type 'SetStateAction<userLoginData | undefined>'.
+  Type '(prev: userLoginData | undefined) => { email?: string | undefined; password?: string | undefined; }' is not assignable to type '(prevState: userLoginData | undefined) => userLoginData | undefined'.
+    Call signature return types '{ email?: string | undefined; password?: string | undefined; }' and 'userLoginData | undefined' are incompatible.
+      The types of 'email' are incompatible between these types.
+        Type 'string | undefined' is not assignable to type 'string'.
+          Type 'undefined' is not assignable to type 'string'.
+components/modules/auth/SetPassword.tsx(35,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+components/modules/auth/SetPassword.tsx(36,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+components/modules/auth/SetPassword.tsx(37,13): error TS2322: Type 'string | null' is not assignable to type 'string'.
+  Type 'null' is not assignable to type 'string'.
+components/modules/auth/SetPassword.tsx(43,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+components/modules/auth/SetPassword.tsx(44,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+components/modules/auth/SetPassword.tsx(51,17): error TS2345: Argument of type '(prev: userLoginData | undefined) => { password?: string | undefined; cpassword?: string | undefined; }' is not assignable to parameter of type 'SetStateAction<userLoginData | undefined>'.
+  Type '(prev: userLoginData | undefined) => { password?: string | undefined; cpassword?: string | undefined; }' is not assignable to type '(prevState: userLoginData | undefined) => userLoginData | undefined'.
+    Call signature return types '{ password?: string | undefined; cpassword?: string | undefined; }' and 'userLoginData | undefined' are incompatible.
+      The types of 'password' are incompatible between these types.
+        Type 'string | undefined' is not assignable to type 'string'.
+          Type 'undefined' is not assignable to type 'string'.
+components/PageHeader/PageHeader.tsx(50,13): error TS2322: Type 'any[] | undefined' is not assignable to type 'any[]'.
+  Type 'undefined' is not assignable to type 'any[]'.
+components/RenderEngine/RenderEngine.tsx(99,17): error TS2322: Type 'string | null | undefined' is not assignable to type 'string | undefined'.
+  Type 'null' is not assignable to type 'string | undefined'.
+components/RenderEngine/RenderEngine.tsx(458,17): error TS2322: Type 'Option[] | undefined' is not assignable to type 'Option[]'.
+  Type 'undefined' is not assignable to type 'Option[]'.
+components/Tables/GridTable.tsx(283,35): error TS2322: Type 'Function | undefined' is not assignable to type '((rowValue: any, showMore: boolean, expandKey: string, actionField: any, rowIdx: number) => void) | undefined'.
+  Type 'Function' is not assignable to type '(rowValue: any, showMore: boolean, expandKey: string, actionField: any, rowIdx: number) => void'.
+    Type 'Function' provides no match for the signature '(rowValue: any, showMore: boolean, expandKey: string, actionField: any, rowIdx: number): void'.
+components/Tables/GridTable.tsx(394,43): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+components/Tables/GridTable.tsx(397,43): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+hooks/useCheckValidation.tsx(8,5): error TS2322: Type 'Promise<boolean>[] | undefined' is not assignable to type 'any[]'.
+  Type 'undefined' is not assignable to type 'any[]'.
+hooks/useCheckValidation.tsx(46,5): error TS2322: Type 'Promise<boolean>[] | undefined' is not assignable to type 'any[]'.
+  Type 'undefined' is not assignable to type 'any[]'.
+hooks/useCheckValidation.tsx(178,65): error TS2554: Expected 2 arguments, but got 3.
+redux/apiWrapper.tsx(9,41): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'ContentType | undefined'.
+  Type 'string' is not assignable to type 'ContentType | undefined'.
+redux/apiWrapper.tsx(23,41): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'ContentType | undefined'.
+  Type 'string' is not assignable to type 'ContentType | undefined'.
+redux/apiWrapper.tsx(37,41): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'ContentType | undefined'.
+  Type 'string' is not assignable to type 'ContentType | undefined'.
+redux/apiWrapper.tsx(52,41): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'ContentType | undefined'.
+  Type 'string' is not assignable to type 'ContentType | undefined'.

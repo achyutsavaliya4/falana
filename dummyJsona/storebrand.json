@@ -1,0 +1,5156 @@
+[
+  {
+    "type": "select",
+    "name": "Select store Name",
+    "id": "b3da1546-1664-4583-a11e-1a5e1c3c2da1",
+    "hidden": false,
+    "select": {
+      "options": []
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "store",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "Field_Name": "store_name",
+    "Field_Id": "store_id",
+    "required": true,
+    "placeholder": "Select the value",
+    "prefill": null,
+    "help": null,
+    "disabled": false,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false
+  },
+  {
+    "type": "select",
+    "name": "Store Name Until Geo Login",
+    "id": "8d7fc146-147d-4ae3-8681-4d31de8e91dd",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "select": {
+      "options": [
+        {
+          "name": "Ahmedabad",
+          "id": "Ahmedabad"
+        },
+        {
+          "name": "Baroda",
+          "id": "Baroda"
+        },
+        {
+          "name": "Anand",
+          "id": "Anand"
+        },
+        {
+          "name": "Jaipur",
+          "id": "Jaipur"
+        }
+      ]
+    },
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "multi_select",
+    "name": "Jaipur",
+    "id": "f7959144-df23-45cd-b124-3f23e8a38bd7",
+    "hidden": false,
+    "multi_select": {
+      "options": [
+        {
+          "name": "MEDKART J BANIPARK",
+          "id": "MEDKART J BANIPARK"
+        },
+        {
+          "name": "MEDKART J MURLIPURA",
+          "id": "MEDKART J MURLIPURA"
+        },
+        {
+          "name": "MEDKART J RAJAPARK 2",
+          "id": "MEDKART J RAJAPARK 2"
+        },
+        {
+          "name": "MEDKART J ROOP VIHAR",
+          "id": "MEDKART J ROOP VIHAR"
+        },
+        {
+          "name": "MEDKART J VAISHALINAGAR",
+          "id": "MEDKART J VAISHALINAGAR"
+        },
+        {
+          "name": "MEDKART J VIDYADHARNAGAR",
+          "id": "MEDKART J VIDYADHARNAGAR"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "8d7fc146-147d-4ae3-8681-4d31de8e91dd",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "8d7fc146-147d-4ae3-8681-4d31de8e91dd",
+                "type": "select"
+              },
+              "value": "Jaipur"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Ahmedabad",
+    "id": "0521e9b6-c90b-48fe-97d0-ab34414a778c",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "8d7fc146-147d-4ae3-8681-4d31de8e91dd",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "8d7fc146-147d-4ae3-8681-4d31de8e91dd",
+                "type": "select"
+              },
+              "value": "Ahmedabad"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "select": {
+      "options": [
+        {
+          "name": "MEDKART A BAPA SITARAM CHOWK",
+          "id": "MEDKART A BAPA SITARAM CHOWK"
+        },
+        {
+          "name": "MEDKART A BAVLA NAVRANGPURA 2",
+          "id": "MEDKART A BAVLA NAVRANGPURA 2"
+        },
+        {
+          "name": "MEDKART A BOPAL 2",
+          "id": "MEDKART A BOPAL 2"
+        },
+        {
+          "name": "MEDKART A BPCL SHASHTRINAGAR",
+          "id": "MEDKART A BPCL SHASHTRINAGAR"
+        },
+        {
+          "name": "MEDKART A CITY CENTER",
+          "id": "MEDKART A CITY CENTER"
+        },
+        {
+          "name": "MEDKART A GREEN CITY",
+          "id": "MEDKART A GREEN CITY"
+        },
+        {
+          "name": "MEDKART A GULAB TOWER",
+          "id": "MEDKART A GULAB TOWER"
+        },
+        {
+          "name": "MEDKART A GURUKUL 2",
+          "id": "MEDKART A GURUKUL 2"
+        },
+        {
+          "name": "MEDKART A IOC ROAD",
+          "id": "MEDKART A IOC ROAD"
+        },
+        {
+          "name": "MEDKART A ISANPUR",
+          "id": "MEDKART A ISANPUR"
+        },
+        {
+          "name": "MEDKART A JIVRAJPARK",
+          "id": "MEDKART A JIVRAJPARK"
+        },
+        {
+          "name": "MEDKART A KANKARIA",
+          "id": "MEDKART A KANKARIA"
+        },
+        {
+          "name": "MEDKART A MANINAGAR 2",
+          "id": "MEDKART A MANINAGAR 2"
+        },
+        {
+          "name": "MEDKART A MANINAGAR1",
+          "id": "MEDKART A MANINAGAR1"
+        },
+        {
+          "name": "MEDKART A MANSI",
+          "id": "MEDKART A MANSI"
+        },
+        {
+          "name": "MEDKART A MARUTI PLAZA",
+          "id": "MEDKART A MARUTI PLAZA"
+        },
+        {
+          "name": "MEDKART A NEW CG ROAD",
+          "id": "MEDKART A NEW CG ROAD"
+        },
+        {
+          "name": "MEDKART A PARIMAL",
+          "id": "MEDKART A PARIMAL"
+        },
+        {
+          "name": "MEDKART A PRERNATIRTH",
+          "id": "MEDKART A PRERNATIRTH"
+        },
+        {
+          "name": "MEDKART A RAMDEV NAGAR",
+          "id": "MEDKART A RAMDEV NAGAR"
+        },
+        {
+          "name": "MEDKART A SATTADHAR",
+          "id": "MEDKART A SATTADHAR"
+        },
+        {
+          "name": "MEDKART A SHAHIBAUG",
+          "id": "MEDKART A SHAHIBAUG"
+        },
+        {
+          "name": "MEDKART A STADIUM",
+          "id": "MEDKART A STADIUM"
+        },
+        {
+          "name": "MEDKART A TOI ROAD",
+          "id": "MEDKART A TOI ROAD"
+        },
+        {
+          "name": "MEDKART A VANDEMATARAM",
+          "id": "MEDKART A VANDEMATARAM"
+        },
+        {
+          "name": "MEDKART A VASTRAL",
+          "id": "MEDKART A VASTRAL"
+        },
+        {
+          "name": "MEDKART A VEJALPUR 2",
+          "id": "MEDKART A VEJALPUR 2"
+        },
+        {
+          "name": "MEDKART A VEJALPUR 3",
+          "id": "MEDKART A VEJALPUR 3"
+        },
+        {
+          "name": "MEDKART A BPCL DRIVE IN ROAD",
+          "id": "MEDKART A BPCL DRIVE IN ROAD"
+        },
+        {
+          "name": "MEDKART G KUDASAN",
+          "id": "MEDKART G KUDASAN"
+        }
+      ]
+    },
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "multi_select",
+    "name": "Anand",
+    "id": "6ab0d759-c94d-449d-803d-397e01b18c51",
+    "hidden": false,
+    "multi_select": {
+      "options": [
+        {
+          "name": "MEDKART AN 100FEET ROAD",
+          "id": "MEDKART AN 100FEET ROAD"
+        },
+        {
+          "name": "MEDKART AN 80FEET ROAD",
+          "id": "MEDKART AN 80FEET ROAD"
+        },
+        {
+          "name": "MEDKART AN BAKROL",
+          "id": "MEDKART AN BAKROL"
+        },
+        {
+          "name": "MEDKART AN JITODIA",
+          "id": "MEDKART AN JITODIA"
+        },
+        {
+          "name": "MEDKART AN MOHINI CORNER",
+          "id": "MEDKART AN MOHINI CORNER"
+        },
+        {
+          "name": "MEDKART AN STATION ROAD",
+          "id": "MEDKART AN STATION ROAD"
+        },
+        {
+          "name": "MEDKART AN VV NAGAR",
+          "id": "MEDKART AN VV NAGAR"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "8d7fc146-147d-4ae3-8681-4d31de8e91dd",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "8d7fc146-147d-4ae3-8681-4d31de8e91dd",
+                "type": "select"
+              },
+              "value": "Anand"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "multi_select",
+    "name": "Baroda",
+    "id": "a9474b1c-c456-46e6-91a5-8d5d5c6f6d95",
+    "hidden": false,
+    "multi_select": {
+      "options": [
+        {
+          "name": "MEDKART B AJWA 2",
+          "id": "MEDKART B AJWA 2"
+        },
+        {
+          "name": "MEDKART B AKOTA",
+          "id": "MEDKART B AKOTA"
+        },
+        {
+          "name": "MEDKART B ANANTA",
+          "id": "MEDKART B ANANTA"
+        },
+        {
+          "name": "MEDKART B ARUNACHAL",
+          "id": "MEDKART B ARUNACHAL"
+        },
+        {
+          "name": "MEDKART B CHHANI JAKATNAKA",
+          "id": "MEDKART B CHHANI JAKATNAKA"
+        },
+        {
+          "name": "MEDKART B ELLORA PARK",
+          "id": "MEDKART B ELLORA PARK"
+        },
+        {
+          "name": "MEDKART B GOTRI 2",
+          "id": "MEDKART B GOTRI 2"
+        },
+        {
+          "name": "MEDKART B IPCL SUBHANPURA2",
+          "id": "MEDKART B IPCL SUBHANPURA2"
+        },
+        {
+          "name": "MEDKART B KARELIBAG",
+          "id": "MEDKART B KARELIBAG"
+        },
+        {
+          "name": "MEDKART B KARELIBAUG2",
+          "id": "MEDKART B KARELIBAUG2"
+        },
+        {
+          "name": "MEDKART B MAKARPURA",
+          "id": "MEDKART B MAKARPURA"
+        },
+        {
+          "name": "MEDKART B MANJALPUR",
+          "id": "MEDKART B MANJALPUR"
+        },
+        {
+          "name": "MEDKART B MUNJMAHUDA",
+          "id": "MEDKART B MUNJMAHUDA"
+        },
+        {
+          "name": "MEDKART B NAVAPURA",
+          "id": "MEDKART B NAVAPURA"
+        },
+        {
+          "name": "MEDKART B NIZAMPURA",
+          "id": "MEDKART B NIZAMPURA"
+        },
+        {
+          "name": "MEDKART B SAMA",
+          "id": "MEDKART B SAMA"
+        },
+        {
+          "name": "MEDKART B SUBHANPURA",
+          "id": "MEDKART B SUBHANPURA"
+        },
+        {
+          "name": "MEDKART B SUN PHARMA",
+          "id": "MEDKART B SUN PHARMA"
+        },
+        {
+          "name": "MEDKART B SUSEN CIRCLE",
+          "id": "MEDKART B SUSEN CIRCLE"
+        },
+        {
+          "name": "MEDKART B SUSEN CIRCLE 2",
+          "id": "MEDKART B SUSEN CIRCLE 2"
+        },
+        {
+          "name": "MEDKART B VALLABHCHOWK",
+          "id": "MEDKART B VALLABHCHOWK"
+        },
+        {
+          "name": "MEDKART B VASNA1",
+          "id": "MEDKART B VASNA1"
+        },
+        {
+          "name": "MEDKART B VASNA2",
+          "id": "MEDKART B VASNA2"
+        },
+        {
+          "name": "MEDKART B WARASIYA",
+          "id": "MEDKART B WARASIYA"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "8d7fc146-147d-4ae3-8681-4d31de8e91dd",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "8d7fc146-147d-4ae3-8681-4d31de8e91dd",
+                "type": "select"
+              },
+              "value": "Baroda"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "date",
+    "name": "Date",
+    "id": "372725f5-73d5-4cc7-b1fa-58e62d59b6c5",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "disable_past_dates": false,
+    "disable_future_dates": false,
+    "prefill_today": true,
+    "prefill": "Pre-filled with current date",
+    "date_range": false,
+    "required": true,
+    "placeholder": null,
+    "help": null,
+    "with_time": true
+  },
+  {
+    "type": "select",
+    "name": "Name",
+    "id": "0fad6cad-7b5a-44a3-974f-24fc0ebeffc4",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "Field_Name": "user_name",
+    "Field_Id": "user_id",
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "select": {
+      "options": [
+        {
+          "name": "Punit",
+          "id": "Punit"
+        },
+        {
+          "name": "Guest",
+          "id": "Guest"
+        }
+      ]
+    }
+  },
+  {
+    "type": "nf-page-break",
+    "name": "Page Break",
+    "next_btn_text": "Next",
+    "previous_btn_text": "Previous",
+    "id": "d5bd5af4-fe31-4a6d-ad03-274864f3d7f3",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "nf-text",
+    "name": "Text Block",
+    "content": "BACKLIT BOARDS",
+    "id": "9dc71684-0b46-4932-bfed-dbcc672c4cc6",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Main GSB 1",
+    "id": "ee4bd083-6d5a-4ecb-a998-5eaabc64f78b",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Available",
+          "id": "Available"
+        },
+        {
+          "name": "Not Available",
+          "id": "Not Available"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": "Select the value",
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Backlit of GSB 1",
+    "id": "32bdc874-8f3b-4ed7-b546-10254f3a98e0",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "On",
+          "id": "On"
+        },
+        {
+          "name": "Off",
+          "id": "Off"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "ee4bd083-6d5a-4ecb-a998-5eaabc64f78b",
+            "value": {
+              "operator": "equals",
+              "property_meta": {
+                "id": "ee4bd083-6d5a-4ecb-a998-5eaabc64f78b",
+                "type": "select"
+              },
+              "value": "Not Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "disabled": false,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false
+  },
+  {
+    "type": "files",
+    "name": "Upload the Image Of main GSB 1",
+    "id": "900b3372-123d-4fe2-ac25-57653b133644",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "ee4bd083-6d5a-4ecb-a998-5eaabc64f78b",
+            "value": {
+              "operator": "equals",
+              "property_meta": {
+                "id": "ee4bd083-6d5a-4ecb-a998-5eaabc64f78b",
+                "type": "select"
+              },
+              "value": "Not Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false,
+    "disabled": false
+  },
+  {
+    "type": "select",
+    "name": "Repair Requirement for GSB 1",
+    "id": "3adddcff-6235-4305-935b-25c369ae2a11",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Repair Not Required",
+          "id": "Repair Not Required"
+        },
+        {
+          "name": "Done By Myself",
+          "id": "Done By Myself"
+        },
+        {
+          "name": "Vendor Needed",
+          "id": "Vendor Needed"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "ee4bd083-6d5a-4ecb-a998-5eaabc64f78b",
+            "value": {
+              "operator": "equals",
+              "property_meta": {
+                "id": "ee4bd083-6d5a-4ecb-a998-5eaabc64f78b",
+                "type": "select"
+              },
+              "value": "Not Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "disabled": false,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false
+  },
+  {
+    "type": "select",
+    "name": "Confirm GSB 1 Vendor Needed",
+    "id": "afa4b3c2-b6ee-4b7e-8d3a-5900855d6248",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Yes",
+          "id": "Yes"
+        },
+        {
+          "name": "No",
+          "id": "No"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "3adddcff-6235-4305-935b-25c369ae2a11",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "3adddcff-6235-4305-935b-25c369ae2a11",
+                "type": "select"
+              },
+              "value": "Vendor Needed"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Main GSB 2",
+    "id": "a21545e2-5500-4f71-8edc-156307284912",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Available",
+          "id": "Available"
+        },
+        {
+          "name": "Not Available",
+          "id": "Not Available"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": "Select the value",
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Backlit of GSB 2",
+    "id": "db1eddfc-e1c2-4397-bc68-d8bf8fae7ce5",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "On",
+          "id": "On"
+        },
+        {
+          "name": "Off",
+          "id": "Off"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "a21545e2-5500-4f71-8edc-156307284912",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "a21545e2-5500-4f71-8edc-156307284912",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Upload the Image Of Main GSB 2",
+    "id": "f66cd04c-a915-46e8-b9c0-73f2ae030c54",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "a21545e2-5500-4f71-8edc-156307284912",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "a21545e2-5500-4f71-8edc-156307284912",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Repair Requirement for GSB 2",
+    "id": "b455dea4-27a6-4f6e-a12e-b675f64a3fe7",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Repair Not Required",
+          "id": "Repair Not Required"
+        },
+        {
+          "name": "Done By Myself",
+          "id": "Done By Myself"
+        },
+        {
+          "name": "Vendor Needed",
+          "id": "Vendor Needed"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "a21545e2-5500-4f71-8edc-156307284912",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "a21545e2-5500-4f71-8edc-156307284912",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false,
+    "disabled": false
+  },
+  {
+    "type": "select",
+    "name": "Confirm GSB 2 Vendor Needed",
+    "id": "564402a4-2fca-4224-95cd-08fd729a7b7f",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Yes",
+          "id": "Yes"
+        },
+        {
+          "name": "No",
+          "id": "No"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "b455dea4-27a6-4f6e-a12e-b675f64a3fe7",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "b455dea4-27a6-4f6e-a12e-b675f64a3fe7",
+                "type": "select"
+              },
+              "value": "Vendor Needed"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Secondary GSB",
+    "id": "a362e6ce-e757-4075-9374-8502220d718d",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Available",
+          "id": "Available"
+        },
+        {
+          "name": "Not Available",
+          "id": "Not Available"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": "Select the value",
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Backlit of Secondary GSB",
+    "id": "b72148d8-4993-458e-a3e1-ef3260865d63",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "On",
+          "id": "On"
+        },
+        {
+          "name": "Off",
+          "id": "Off"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "a362e6ce-e757-4075-9374-8502220d718d",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "a362e6ce-e757-4075-9374-8502220d718d",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Upload image from front & Back Side Photo",
+    "id": "78da5694-20de-43ed-bf1e-830464eaedac",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "a362e6ce-e757-4075-9374-8502220d718d",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "a362e6ce-e757-4075-9374-8502220d718d",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "multiple": true
+  },
+  {
+    "type": "select",
+    "name": "Lollypop",
+    "id": "1fab93d6-bc22-47b9-8606-3dbad51190d5",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Available",
+          "id": "Available"
+        },
+        {
+          "name": "Not Available",
+          "id": "Not Available"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": "Select the value",
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Backlit (Lollypop)",
+    "id": "d05d1a0b-fcd8-4e99-b093-49318b51b9fa",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Available",
+          "id": "Available"
+        },
+        {
+          "name": "Not Available",
+          "id": "Not Available"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "d05d1a0b-fcd8-4e99-b093-49318b51b9fa",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "d05d1a0b-fcd8-4e99-b093-49318b51b9fa",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": "Select the value",
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "multi_select",
+    "name": "Backlit",
+    "id": "a2cdd4dd-ff49-4b38-ab1a-c538213060ff",
+    "hidden": false,
+    "multi_select": {
+      "options": [
+        {
+          "name": "On",
+          "id": "On"
+        },
+        {
+          "name": "Off",
+          "id": "Off"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "1fab93d6-bc22-47b9-8606-3dbad51190d5",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "1fab93d6-bc22-47b9-8606-3dbad51190d5",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Upload image from front Side (Lollypop)",
+    "id": "dd0b80c6-1baa-4475-a058-61b742edfd16",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "1fab93d6-bc22-47b9-8606-3dbad51190d5",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "1fab93d6-bc22-47b9-8606-3dbad51190d5",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "multiple": true
+  },
+  {
+    "type": "files",
+    "name": "Upload image from back side (Lollypop)",
+    "id": "180e510c-63bd-4567-a90d-172654dfeffd",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "1fab93d6-bc22-47b9-8606-3dbad51190d5",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "1fab93d6-bc22-47b9-8606-3dbad51190d5",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "multiple": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Upload image from back side(Lollypop)",
+    "id": "d29c4527-1a21-4c8e-ac50-8b268322b036",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "d05d1a0b-fcd8-4e99-b093-49318b51b9fa",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "d05d1a0b-fcd8-4e99-b093-49318b51b9fa",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "multiple": true
+  },
+  {
+    "type": "select",
+    "name": "Repair Requirement (Lollypop)",
+    "id": "a270a4b3-cfe4-4a74-9c70-ac1ac0c918a3",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Repair Not Required",
+          "id": "Repair Not Required"
+        },
+        {
+          "name": "Done By Myself",
+          "id": "Done By Myself"
+        },
+        {
+          "name": "Vendor Needed",
+          "id": "Vendor Needed"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "1fab93d6-bc22-47b9-8606-3dbad51190d5",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "1fab93d6-bc22-47b9-8606-3dbad51190d5",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Confirm Lollypop Vendor Needed",
+    "id": "7693987f-5c47-4031-9905-2b38cbf277fd",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Yes",
+          "id": "Yes"
+        },
+        {
+          "name": "No",
+          "id": "No"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "a270a4b3-cfe4-4a74-9c70-ac1ac0c918a3",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "a270a4b3-cfe4-4a74-9c70-ac1ac0c918a3",
+                "type": "select"
+              },
+              "value": "Vendor Needed"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "text",
+    "name": "Add your comments",
+    "id": "801c7986-9d1f-4c8e-b670-179de6f1e6c1",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "required": false,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Upload Rectification Images",
+    "id": "a0465659-2765-481c-bbd7-3fd3acb99191",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "nf-page-break",
+    "name": "Page Break",
+    "next_btn_text": "Next",
+    "previous_btn_text": "Previous",
+    "id": "df47f590-1c2c-459a-9bfc-f5ed0f993c5d",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "nf-text",
+    "name": "Text Block",
+    "content": "NONLIT BOARDS",
+    "id": "bec6f215-f91e-4370-a6d8-dd426428770b",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "NON LIT BOARD",
+    "id": "69549dac-75d1-408c-b9a0-a79d2f775623",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "help": null,
+    "placeholder": null,
+    "prefill": null,
+    "select": {
+      "options": [
+        {
+          "name": "Available",
+          "id": "Available"
+        },
+        {
+          "name": "Not Available",
+          "id": "Not Available"
+        }
+      ]
+    }
+  },
+  {
+    "type": "files",
+    "name": "Files",
+    "id": "5a41a188-c96a-469a-beb5-dccaf754a5b2",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "69549dac-75d1-408c-b9a0-a79d2f775623",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "69549dac-75d1-408c-b9a0-a79d2f775623",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "multiple": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Repair Requirement Of Nonlit Board",
+    "id": "014a6c59-7156-4fbc-8cdb-c19510f5d552",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "69549dac-75d1-408c-b9a0-a79d2f775623",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "69549dac-75d1-408c-b9a0-a79d2f775623",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "select": {
+      "options": [
+        {
+          "name": "Repair Not Required",
+          "id": "Repair Not Required"
+        },
+        {
+          "name": "Done By Myself",
+          "id": "Done By Myself"
+        },
+        {
+          "name": "Vendor Needed",
+          "id": "Vendor Needed"
+        }
+      ]
+    }
+  },
+  {
+    "type": "select",
+    "name": "Confirm Non Lit Board Vendor Requirement",
+    "id": "07b27b9e-53e8-4d8d-aeb0-4496cfc2bcc0",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Yes",
+          "id": "Yes"
+        },
+        {
+          "name": "No",
+          "id": "No"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "014a6c59-7156-4fbc-8cdb-c19510f5d552",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "014a6c59-7156-4fbc-8cdb-c19510f5d552",
+                "type": "select"
+              },
+              "value": "Vendor Needed"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "RHS Pillar Branding",
+    "id": "b44ac365-a5db-468f-bc92-6bfbd9b80f15",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Available",
+          "id": "Available"
+        },
+        {
+          "name": "Not Available",
+          "id": "Not Available"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": "Select the value",
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Upload the Image of RHS Pillar Branding",
+    "id": "961f7e92-8094-4387-a8e5-94c06035bc4c",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "b44ac365-a5db-468f-bc92-6bfbd9b80f15",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "b44ac365-a5db-468f-bc92-6bfbd9b80f15",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Repair Requirement (RHS Pillar Branding)",
+    "id": "8a1a5c77-0259-4a0d-af27-4c2cd6989e99",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Repair Not Required",
+          "id": "Repair Not Required"
+        },
+        {
+          "name": "Done By Myself",
+          "id": "Done By Myself"
+        },
+        {
+          "name": "Vendor Needed",
+          "id": "Vendor Needed"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "b44ac365-a5db-468f-bc92-6bfbd9b80f15",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "b44ac365-a5db-468f-bc92-6bfbd9b80f15",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Confirm RHS Pillar Vendor Needed",
+    "id": "108e572e-0975-4025-bac2-df40cbd5289a",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Yes",
+          "id": "Yes"
+        },
+        {
+          "name": "No",
+          "id": "No"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "8a1a5c77-0259-4a0d-af27-4c2cd6989e99",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "8a1a5c77-0259-4a0d-af27-4c2cd6989e99",
+                "type": "select"
+              },
+              "value": "Vendor Needed"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "RHS Inside Pillar Branding",
+    "id": "72a0761c-ef9e-47da-a558-2c6369914feb",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Available",
+          "id": "Available"
+        },
+        {
+          "name": "Not Available",
+          "id": "Not Available"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": "Select the value",
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Upload the Image of RHS Inside Pillar Branding",
+    "id": "882d82cc-8c25-4d57-937c-993dd2dc4825",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "72a0761c-ef9e-47da-a558-2c6369914feb",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "72a0761c-ef9e-47da-a558-2c6369914feb",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Repair Requirement RHS Inside Pillar Branding",
+    "id": "237f530b-f6d8-4e73-bca1-c8a8edac3698",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Repair Not Required",
+          "id": "Repair Not Required"
+        },
+        {
+          "name": "Done By Myself",
+          "id": "Done By Myself"
+        },
+        {
+          "name": "Vendor Needed",
+          "id": "Vendor Needed"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "72a0761c-ef9e-47da-a558-2c6369914feb",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "72a0761c-ef9e-47da-a558-2c6369914feb",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Confirms RHS I/s Pillar Vendor Needed",
+    "id": "7f34328e-3f44-4723-b5e8-b913e0af9f9e",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Yes",
+          "id": "Yes"
+        },
+        {
+          "name": "No",
+          "id": "No"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "237f530b-f6d8-4e73-bca1-c8a8edac3698",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "237f530b-f6d8-4e73-bca1-c8a8edac3698",
+                "type": "select"
+              },
+              "value": "Vendor Needed"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "LHS Pillar Branding",
+    "id": "bcf75ab1-f0fa-40db-bc8c-4be3ba75f3ff",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Available",
+          "id": "Available"
+        },
+        {
+          "name": "Not Available",
+          "id": "Not Available"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": "Select the value",
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Upload the Image of LHS Pillar Branding",
+    "id": "c4e89a33-8807-4e8c-9432-a000fd760ae0",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "bcf75ab1-f0fa-40db-bc8c-4be3ba75f3ff",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "bcf75ab1-f0fa-40db-bc8c-4be3ba75f3ff",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Repair Requirement (LHS Pillar Branding)",
+    "id": "41e4dce4-9d0a-477a-b930-bbd54641a004",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Repair Not Required",
+          "id": "Repair Not Required"
+        },
+        {
+          "name": "Done By Myself",
+          "id": "Done By Myself"
+        },
+        {
+          "name": "Vendor Needed",
+          "id": "Vendor Needed"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "bcf75ab1-f0fa-40db-bc8c-4be3ba75f3ff",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "bcf75ab1-f0fa-40db-bc8c-4be3ba75f3ff",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Confirm LHS Pillar Vendor Needed",
+    "id": "ebf1a348-66bd-4e6a-9c31-fee354cab4af",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Yes",
+          "id": "Yes"
+        },
+        {
+          "name": "No",
+          "id": "No"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "41e4dce4-9d0a-477a-b930-bbd54641a004",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "41e4dce4-9d0a-477a-b930-bbd54641a004",
+                "type": "select"
+              },
+              "value": "Vendor Needed"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "LHS Inside Pillar Branding",
+    "id": "361789a9-e8f0-427c-9128-231ddb9aa926",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Available",
+          "id": "Available"
+        },
+        {
+          "name": "Not Available",
+          "id": "Not Available"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": "Select the value",
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Upload the Image of LHS Inside Pillar Branding",
+    "id": "3e4276fd-22a8-431f-a9e5-c96a7465b414",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "361789a9-e8f0-427c-9128-231ddb9aa926",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "361789a9-e8f0-427c-9128-231ddb9aa926",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Repair Requirement LHS Inside Pillar Branding",
+    "id": "f7c606cb-d0bf-4235-b48c-08119c629eb0",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Repair Not Required",
+          "id": "Repair Not Required"
+        },
+        {
+          "name": "Done By Myself",
+          "id": "Done By Myself"
+        },
+        {
+          "name": "Vendor Needed",
+          "id": "Vendor Needed"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "361789a9-e8f0-427c-9128-231ddb9aa926",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "361789a9-e8f0-427c-9128-231ddb9aa926",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Confirm I/s Pillar Vendor Needed",
+    "id": "a53ad2cb-08e9-4ea3-90c4-75a99c6d6eb7",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Yes",
+          "id": "Yes"
+        },
+        {
+          "name": "No",
+          "id": "No"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "f7c606cb-d0bf-4235-b48c-08119c629eb0",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "f7c606cb-d0bf-4235-b48c-08119c629eb0",
+                "type": "select"
+              },
+              "value": "Vendor Needed"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Shutter Box / Long Branding",
+    "id": "76d131f0-e748-42e5-81a9-20f1784dc6cc",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Available",
+          "id": "Available"
+        },
+        {
+          "name": "Not Available",
+          "id": "Not Available"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": "Select the value",
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Upload the Image of Shutter Box / Above Glass/ Long Branding",
+    "id": "87b03c83-ad88-4cf1-9bec-5223f78fe4e2",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "76d131f0-e748-42e5-81a9-20f1784dc6cc",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "76d131f0-e748-42e5-81a9-20f1784dc6cc",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Repair of shutter box / long branding",
+    "id": "26824970-f140-48ee-88c9-c18fe2c4f3ff",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "76d131f0-e748-42e5-81a9-20f1784dc6cc",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "76d131f0-e748-42e5-81a9-20f1784dc6cc",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "select": {
+      "options": [
+        {
+          "name": "Repair Not Required",
+          "id": "Repair Not Required"
+        },
+        {
+          "name": "Done By Myself",
+          "id": "Done By Myself"
+        },
+        {
+          "name": "Vendor Needed",
+          "id": "Vendor Needed"
+        }
+      ]
+    }
+  },
+  {
+    "type": "select",
+    "name": "Confirm ShutterBox/LongBranding Vendor Needed",
+    "id": "adb9b8b3-3ab1-48ea-b20d-a27a5a8e7d8c",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Yes",
+          "id": "Yes"
+        },
+        {
+          "name": "No",
+          "id": "No"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "26824970-f140-48ee-88c9-c18fe2c4f3ff",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "26824970-f140-48ee-88c9-c18fe2c4f3ff",
+                "type": "select"
+              },
+              "value": "Vendor Needed"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Standee",
+    "id": "fd0ab3f3-247b-449c-8e9a-e3d957c1e2a6",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Available",
+          "id": "Available"
+        },
+        {
+          "name": "Not Available",
+          "id": "Not Available"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Upload image from front Side",
+    "id": "0c8c44fc-9fbb-4b81-b743-6c95d0809589",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "fd0ab3f3-247b-449c-8e9a-e3d957c1e2a6",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "fd0ab3f3-247b-449c-8e9a-e3d957c1e2a6",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "multiple": true,
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "upload image from back side",
+    "id": "c8eb1bfb-6481-4096-a428-d7b2342d2796",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "fd0ab3f3-247b-449c-8e9a-e3d957c1e2a6",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "fd0ab3f3-247b-449c-8e9a-e3d957c1e2a6",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Repair Requirement Of Standee",
+    "id": "d6c160ae-571c-44ca-92c0-d2173c00a58f",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Repair Not Required",
+          "id": "Repair Not Required"
+        },
+        {
+          "name": "Done By Myself",
+          "id": "Done By Myself"
+        },
+        {
+          "name": "Vendor Needed",
+          "id": "Vendor Needed"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "fd0ab3f3-247b-449c-8e9a-e3d957c1e2a6",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "fd0ab3f3-247b-449c-8e9a-e3d957c1e2a6",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Confirm Standee Vendor Needed",
+    "id": "06f7675c-ca8f-459f-98aa-a5c2bb7e7f19",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Yes",
+          "id": "Yes"
+        },
+        {
+          "name": "No",
+          "id": "No"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "d6c160ae-571c-44ca-92c0-d2173c00a58f",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "d6c160ae-571c-44ca-92c0-d2173c00a58f",
+                "type": "select"
+              },
+              "value": "Vendor Needed"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "text",
+    "name": "Comment",
+    "id": "00aae16f-29eb-43a3-b99f-93d30bcef941",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "required": false,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Rectification Image",
+    "id": "01e7ed2e-9bd9-4542-adc9-742d12888c36",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "multiple": true
+  },
+  {
+    "type": "select",
+    "name": "Repair Requirement Shutter Box / Above Glass/ Long Branding",
+    "id": "0b7b83fe-f93a-4643-97a4-9898c9ae807c",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Repair Not Required",
+          "id": "Repair Not Required"
+        },
+        {
+          "name": "Done By Myself",
+          "id": "Done By Myself"
+        },
+        {
+          "name": "Vendor Needed",
+          "id": "Vendor Needed"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "76d131f0-e748-42e5-81a9-20f1784dc6cc",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "76d131f0-e748-42e5-81a9-20f1784dc6cc",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "nf-page-break",
+    "name": "Page Break",
+    "next_btn_text": "Next",
+    "previous_btn_text": "Previous",
+    "id": "d601d603-4563-4249-8515-3bd3b09ef902",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "nf-text",
+    "name": "Text Block",
+    "content": "Fixed Glass And Glass Door Branding",
+    "id": "358ed352-81ed-4e7b-9ee3-96f01ccb67bd",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Fixed Glass Long Branding",
+    "id": "f2e0dd1a-d5e9-4025-bfc4-a4f246e87020",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Available",
+          "id": "Available"
+        },
+        {
+          "name": "Not Available",
+          "id": "Not Available"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Upload the image of Fixed glass long branding image",
+    "id": "18a416e2-2776-449c-82e1-defd16c1f526",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "f2e0dd1a-d5e9-4025-bfc4-a4f246e87020",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "f2e0dd1a-d5e9-4025-bfc4-a4f246e87020",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "multiple": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Repair of Fixed Glass Long Branding",
+    "id": "f27aca30-f0cd-4c48-a6f5-dbb3fbca89f0",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Repair Not Required",
+          "id": "Repair Not Required"
+        },
+        {
+          "name": "Done By Myself",
+          "id": "Done By Myself"
+        },
+        {
+          "name": "Vendor Needed",
+          "id": "Vendor Needed"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "f2e0dd1a-d5e9-4025-bfc4-a4f246e87020",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "f2e0dd1a-d5e9-4025-bfc4-a4f246e87020",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Confirm Fixed Glass Long Branding Vendor Needed",
+    "id": "25f40d6b-95a1-4cff-90c0-6d3b0d8d1369",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Yes",
+          "id": "Yes"
+        },
+        {
+          "name": "No",
+          "id": "No"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "f27aca30-f0cd-4c48-a6f5-dbb3fbca89f0",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "f27aca30-f0cd-4c48-a6f5-dbb3fbca89f0",
+                "type": "select"
+              },
+              "value": "Vendor Needed"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Pull/Push Sticker Both Side",
+    "id": "9e7ddd16-822f-43c4-aa0e-50e362020b45",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Available",
+          "id": "Available"
+        },
+        {
+          "name": "Not Available",
+          "id": "Not Available"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": "Select the value",
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Upload Push Image",
+    "id": "e3d41728-e5b2-4f59-9afb-29e6111895e2",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "9e7ddd16-822f-43c4-aa0e-50e362020b45",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "9e7ddd16-822f-43c4-aa0e-50e362020b45",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "multiple": true,
+    "disabled": false,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false
+  },
+  {
+    "type": "files",
+    "name": "Upload Pull Image",
+    "id": "58bb677e-1d4b-498d-aeee-22c6d6debbd1",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "9e7ddd16-822f-43c4-aa0e-50e362020b45",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "9e7ddd16-822f-43c4-aa0e-50e362020b45",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "multiple": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Repair Requirement Pull/Push Sticker",
+    "id": "29b8399b-1410-4034-95d2-14ad45d358f2",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Repair Not Required",
+          "id": "Repair Not Required"
+        },
+        {
+          "name": "Done By Myself",
+          "id": "Done By Myself"
+        },
+        {
+          "name": "Vendor Needed",
+          "id": "Vendor Needed"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "9e7ddd16-822f-43c4-aa0e-50e362020b45",
+            "value": {
+              "operator": "equals",
+              "property_meta": {
+                "id": "9e7ddd16-822f-43c4-aa0e-50e362020b45",
+                "type": "select"
+              },
+              "value": "Not Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "disabled": false,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false
+  },
+  {
+    "type": "select",
+    "name": "Confirm Pull/Push Vendor Needed",
+    "id": "dd2254db-180f-450b-8430-469d2d856537",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Yes",
+          "id": "Yes"
+        },
+        {
+          "name": "No",
+          "id": "No"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "29b8399b-1410-4034-95d2-14ad45d358f2",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "29b8399b-1410-4034-95d2-14ad45d358f2",
+                "type": "select"
+              },
+              "value": "Vendor Needed"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Door Branding Kapiva Diafree",
+    "id": "f091b1f0-f4cd-4308-9b7a-e7947d36cc37",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Available",
+          "id": "Available"
+        },
+        {
+          "name": "Not Available",
+          "id": "Not Available"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": "Select the value",
+    "prefill": null,
+    "help": null,
+    "disabled": false,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false
+  },
+  {
+    "type": "files",
+    "name": "Upload the Image of Door Branding Kapiva Diafree",
+    "id": "6a3b213d-6574-4240-b5b8-1b056812452a",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "f091b1f0-f4cd-4308-9b7a-e7947d36cc37",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "f091b1f0-f4cd-4308-9b7a-e7947d36cc37",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "multiple": true,
+    "disabled": false,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false
+  },
+  {
+    "type": "select",
+    "name": "Repair Requirement Of Door Branding Kapiva Diafree",
+    "id": "c48fae11-3386-43e0-baf8-ce5164ca6f62",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Repair Not Required",
+          "id": "Repair Not Required"
+        },
+        {
+          "name": "Done By Myself",
+          "id": "Done By Myself"
+        },
+        {
+          "name": "Vendor Needed",
+          "id": "Vendor Needed"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "f091b1f0-f4cd-4308-9b7a-e7947d36cc37",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "f091b1f0-f4cd-4308-9b7a-e7947d36cc37",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "disabled": false,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false
+  },
+  {
+    "type": "select",
+    "name": "Confirm Kapiva Diafree Vendor Required",
+    "id": "d4a7703f-97d3-4309-8897-c364d028027d",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Yes",
+          "id": "Yes"
+        },
+        {
+          "name": "No",
+          "id": "No"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "c48fae11-3386-43e0-baf8-ce5164ca6f62",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "c48fae11-3386-43e0-baf8-ce5164ca6f62",
+                "type": "select"
+              },
+              "value": "Vendor Needed"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "6000+ Dr.  Fixed Glass Branding",
+    "id": "6ecb7993-6da6-4323-9d89-2953e5451b85",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Available",
+          "id": "Available"
+        },
+        {
+          "name": "Not Available",
+          "id": "Not Available"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": "Select the value",
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Upload the Image of 6000+ Dr.  Fixed Glass Branding",
+    "id": "0c783023-9312-4977-b1b7-a07e8b735214",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "6ecb7993-6da6-4323-9d89-2953e5451b85",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "6ecb7993-6da6-4323-9d89-2953e5451b85",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "multiple": true,
+    "disabled": false,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false
+  },
+  {
+    "type": "select",
+    "name": "Repair Requirement Of 6000+ Dr.  Fixed Glass Branding",
+    "id": "c94fe6e8-9c83-4d50-aee2-f033364c2e80",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "6ecb7993-6da6-4323-9d89-2953e5451b85",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "6ecb7993-6da6-4323-9d89-2953e5451b85",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "select": {
+      "options": [
+        {
+          "name": "Repair Not Required",
+          "id": "Repair Not Required"
+        },
+        {
+          "name": "Done By Myself",
+          "id": "Done By Myself"
+        },
+        {
+          "name": "Vendor Needed",
+          "id": "Vendor Needed"
+        }
+      ]
+    }
+  },
+  {
+    "type": "select",
+    "name": "Confirm Glass Branding Vendor Needed",
+    "id": "c9f45403-6079-447c-aea8-54cb679ee370",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Yes",
+          "id": "Yes"
+        },
+        {
+          "name": "No",
+          "id": "No"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "c94fe6e8-9c83-4d50-aee2-f033364c2e80",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "c94fe6e8-9c83-4d50-aee2-f033364c2e80",
+                "type": "select"
+              },
+              "value": "Vendor Needed"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "GST sticker",
+    "id": "7050491f-c458-4e82-9b5b-77ccdd42165f",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Available",
+          "id": "Available"
+        },
+        {
+          "name": "Not Available",
+          "id": "Not Available"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Upload image of GST Sticker",
+    "id": "a6380fdb-b2bf-43db-8fd5-ac9032b85711",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "7050491f-c458-4e82-9b5b-77ccdd42165f",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "7050491f-c458-4e82-9b5b-77ccdd42165f",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "multiple": true,
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Repair Requirement for GST Sticker",
+    "id": "75f3bfa2-9382-4e1c-806e-8f334843cae6",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Repair Not Required",
+          "id": "Repair Not Required"
+        },
+        {
+          "name": "Done By Myself",
+          "id": "Done By Myself"
+        },
+        {
+          "name": "Vendor Needed",
+          "id": "Vendor Needed"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "7050491f-c458-4e82-9b5b-77ccdd42165f",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "7050491f-c458-4e82-9b5b-77ccdd42165f",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Confirm GST Sticker Vendor Needed",
+    "id": "31da36fe-da26-4404-8426-9380fe8ab134",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Yes",
+          "id": "Yes"
+        },
+        {
+          "name": "No",
+          "id": "No"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "75f3bfa2-9382-4e1c-806e-8f334843cae6",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "75f3bfa2-9382-4e1c-806e-8f334843cae6",
+                "type": "select"
+              },
+              "value": "Vendor Needed"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "text",
+    "name": "Add Comment",
+    "id": "aa71d3a9-5251-460d-9a47-3c7cd09f169a",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "required": false,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Rectification Images",
+    "id": "c3336e8e-224d-4654-945f-a4ac98a11fad",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": false,
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "multiple": true
+  },
+  {
+    "type": "nf-page-break",
+    "name": "Page Break",
+    "next_btn_text": "Next",
+    "previous_btn_text": "Previous",
+    "id": "0d54da1e-498f-4426-96eb-3643c5754f6a",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "nf-text",
+    "name": "Text Block",
+    "content": "INTERNAL BRANDING",
+    "id": "6e7671c0-563e-4807-82bc-f0543b3a06ae",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Counter Blue Vinyl",
+    "id": "bd6bfadd-32bd-413f-a340-eaa4de1f27df",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Available",
+          "id": "Available"
+        },
+        {
+          "name": "Not Available",
+          "id": "Not Available"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": "Select the value",
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Upload the Image of Counter Blue Vinyl",
+    "id": "2f820214-73ee-4d52-a53a-e811c79b778b",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "bd6bfadd-32bd-413f-a340-eaa4de1f27df",
+            "value": {
+              "operator": "equals",
+              "property_meta": {
+                "id": "bd6bfadd-32bd-413f-a340-eaa4de1f27df",
+                "type": "select"
+              },
+              "value": "Not Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "multiple": true,
+    "disabled": false,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false
+  },
+  {
+    "type": "select",
+    "name": "Repair Requirement Counter Blue Vinyl",
+    "id": "8f83d10c-1651-4cea-867a-f5eb822d5fab",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Repair Not Required",
+          "id": "Repair Not Required"
+        },
+        {
+          "name": "Done By Myself",
+          "id": "Done By Myself"
+        },
+        {
+          "name": "Vendor Needed",
+          "id": "Vendor Needed"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "bd6bfadd-32bd-413f-a340-eaa4de1f27df",
+            "value": {
+              "operator": "equals",
+              "property_meta": {
+                "id": "bd6bfadd-32bd-413f-a340-eaa4de1f27df",
+                "type": "select"
+              },
+              "value": "Not Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "disabled": false,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false
+  },
+  {
+    "type": "select",
+    "name": "Confirm Blue Vinyl Vendor Needed",
+    "id": "49ee21d2-0661-484c-acd6-008a0485ca89",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Yes",
+          "id": "Yes"
+        },
+        {
+          "name": "No",
+          "id": "No"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "8f83d10c-1651-4cea-867a-f5eb822d5fab",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "8f83d10c-1651-4cea-867a-f5eb822d5fab",
+                "type": "select"
+              },
+              "value": "Vendor Needed"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Wall Branding 1 SCHEDULE M",
+    "id": "091e4490-ad6d-400f-8c93-e2a6b3ffe7bc",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Available",
+          "id": "Available"
+        },
+        {
+          "name": "Not Available",
+          "id": "Not Available"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": "Select the value",
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Upload the Image of Wall Branding 1 SCHEDULE M",
+    "id": "4456908f-4d99-44e2-bfd0-569727fb5dab",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "091e4490-ad6d-400f-8c93-e2a6b3ffe7bc",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "091e4490-ad6d-400f-8c93-e2a6b3ffe7bc",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "multiple": true,
+    "disabled": false,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false
+  },
+  {
+    "type": "select",
+    "name": "Repair Requirement Wall Branding 1 SCHEDULE M",
+    "id": "efe6b83f-6ecb-45d3-a68a-c6c41e9c547e",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Repair Not Required",
+          "id": "Repair Not Required"
+        },
+        {
+          "name": "Done By Myself",
+          "id": "Done By Myself"
+        },
+        {
+          "name": "Vendor Needed",
+          "id": "Vendor Needed"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "091e4490-ad6d-400f-8c93-e2a6b3ffe7bc",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "091e4490-ad6d-400f-8c93-e2a6b3ffe7bc",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "disabled": false,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false
+  },
+  {
+    "type": "select",
+    "name": "Confirm Wall Branding 1 Vendor Needed",
+    "id": "48625699-d102-4598-a884-13186c4cde44",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Yes",
+          "id": "Yes"
+        },
+        {
+          "name": "No",
+          "id": "No"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "efe6b83f-6ecb-45d3-a68a-c6c41e9c547e",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "efe6b83f-6ecb-45d3-a68a-c6c41e9c547e",
+                "type": "select"
+              },
+              "value": "Vendor Needed"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Wall Branding 2 Generic Nahi Branded Generic",
+    "id": "7a303070-fc95-49eb-9e71-eee828159fb3",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Available",
+          "id": "Available"
+        },
+        {
+          "name": "Not Available",
+          "id": "Not Available"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": "Select the value",
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Upload the Image of Wall Branding 2 Generic Nahi Branded Generic",
+    "id": "094c9eaf-b2ba-4f70-bd30-797852254737",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "7a303070-fc95-49eb-9e71-eee828159fb3",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "7a303070-fc95-49eb-9e71-eee828159fb3",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "multiple": true,
+    "disabled": false,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false
+  },
+  {
+    "type": "select",
+    "name": "Repair Requirement Wall Branding 2 Generic Nahi Branded Generic",
+    "id": "cd400e8f-59bc-4593-8e20-1e175b0e69f5",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Repair Not Required",
+          "id": "Repair Not Required"
+        },
+        {
+          "name": "Done By Myself",
+          "id": "Done By Myself"
+        },
+        {
+          "name": "Vendor Needed",
+          "id": "Vendor Needed"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "7a303070-fc95-49eb-9e71-eee828159fb3",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "7a303070-fc95-49eb-9e71-eee828159fb3",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "disabled": false,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false
+  },
+  {
+    "type": "select",
+    "name": "Confirm Wall Branding 2 Vendor Needed",
+    "id": "b0edae17-dbb1-4d67-9d5f-6751da8d90b4",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Yes",
+          "id": "Yes"
+        },
+        {
+          "name": "No",
+          "id": "No"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "cd400e8f-59bc-4593-8e20-1e175b0e69f5",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "cd400e8f-59bc-4593-8e20-1e175b0e69f5",
+                "type": "select"
+              },
+              "value": "Vendor Needed"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Suspended Branding",
+    "id": "067b5507-5944-4c47-a3f0-5f56213898f9",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Available",
+          "id": "Available"
+        },
+        {
+          "name": "Not Available",
+          "id": "Not Available"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": "Select the value",
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Upload the Image of Suspended Branding",
+    "id": "a1e913f7-8f5b-48e3-8c08-2290a89b7d60",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "067b5507-5944-4c47-a3f0-5f56213898f9",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "067b5507-5944-4c47-a3f0-5f56213898f9",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "multiple": true,
+    "disabled": false,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false
+  },
+  {
+    "type": "select",
+    "name": "Repair Requirement Suspended Branding",
+    "id": "1f7256ff-2464-47f0-8e2f-addeab6f841c",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Repair Not Required",
+          "id": "Repair Not Required"
+        },
+        {
+          "name": "Done By Myself",
+          "id": "Done By Myself"
+        },
+        {
+          "name": "Vendor Needed",
+          "id": "Vendor Needed"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "067b5507-5944-4c47-a3f0-5f56213898f9",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "067b5507-5944-4c47-a3f0-5f56213898f9",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "disabled": false,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false
+  },
+  {
+    "type": "select",
+    "name": "Confirm Suspended Branding Vendor Needed",
+    "id": "716f30ec-777f-40ac-adee-ae9a26cea659",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Yes",
+          "id": "Yes"
+        },
+        {
+          "name": "No",
+          "id": "No"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "1f7256ff-2464-47f0-8e2f-addeab6f841c",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "1f7256ff-2464-47f0-8e2f-addeab6f841c",
+                "type": "select"
+              },
+              "value": "Vendor Needed"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Confirm Suspended Branding Vendor Needed",
+    "id": "38a1ab02-463e-4a31-a312-6ac686fe2dc3",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Yes",
+          "id": "Yes"
+        },
+        {
+          "name": "No",
+          "id": "No"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "1f7256ff-2464-47f0-8e2f-addeab6f841c",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "1f7256ff-2464-47f0-8e2f-addeab6f841c",
+                "type": "select"
+              },
+              "value": "Done By Myself"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Fridge Branding",
+    "id": "fb81ee94-ea76-4194-a9de-701fca4a6362",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Available",
+          "id": "Available"
+        },
+        {
+          "name": "Not Available",
+          "id": "Not Available"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": "Select the value",
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Upload Image of fridge branding",
+    "id": "ea2ab158-94e6-41f0-bd6f-d367d9830dfa",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "fb81ee94-ea76-4194-a9de-701fca4a6362",
+            "value": {
+              "operator": "equals",
+              "property_meta": {
+                "id": "fb81ee94-ea76-4194-a9de-701fca4a6362",
+                "type": "select"
+              },
+              "value": "Not Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Repair Requirement Of Fridge Branding",
+    "id": "2d179163-2fc4-49ac-812f-078d236e7aa5",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "fb81ee94-ea76-4194-a9de-701fca4a6362",
+            "value": {
+              "operator": "equals",
+              "property_meta": {
+                "id": "fb81ee94-ea76-4194-a9de-701fca4a6362",
+                "type": "select"
+              },
+              "value": "Not Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "select": {
+      "options": [
+        {
+          "name": "Repair Not Required",
+          "id": "Repair Not Required"
+        },
+        {
+          "name": "Done By Myself",
+          "id": "Done By Myself"
+        },
+        {
+          "name": "Vendor Needed",
+          "id": "Vendor Needed"
+        }
+      ]
+    }
+  },
+  {
+    "type": "select",
+    "name": "Confirm Fridge Branding Vendor Needed",
+    "id": "1ffb72ed-96fc-4f03-8d76-2962c696e23a",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Yes",
+          "id": "Yes"
+        },
+        {
+          "name": "No",
+          "id": "No"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "2d179163-2fc4-49ac-812f-078d236e7aa5",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "2d179163-2fc4-49ac-812f-078d236e7aa5",
+                "type": "select"
+              },
+              "value": "Vendor Needed"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "text",
+    "name": "Comment",
+    "id": "d12a9ad8-df2b-4c04-a639-aad95286dad2",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "required": false,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Upload Rectification Image",
+    "id": "75e7f98c-bfae-42ad-a450-895cad7ca7b4",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "multiple": true,
+    "required": false,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "nf-page-break",
+    "name": "Page Break",
+    "next_btn_text": "Next",
+    "previous_btn_text": "Previous",
+    "id": "aea0ff91-b1a7-4543-bc8f-fdd6e92564d0",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Outside Rack Shelf Talker",
+    "id": "e456b7a4-d58a-4301-a85a-11fe82806f8d",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Available",
+          "id": "Available"
+        },
+        {
+          "name": "Not Available",
+          "id": "Not Available"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": "Select the value",
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Upload the Image of Outside Shelf Talker",
+    "id": "8c3a5ed9-30ee-4a3d-84c1-c10f09d8151f",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "e456b7a4-d58a-4301-a85a-11fe82806f8d",
+            "value": {
+              "operator": "equals",
+              "property_meta": {
+                "id": "e456b7a4-d58a-4301-a85a-11fe82806f8d",
+                "type": "select"
+              },
+              "value": "Not Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "multiple": true,
+    "disabled": false,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false
+  },
+  {
+    "type": "select",
+    "name": "Repair Requirement For Outside Shelf Talker",
+    "id": "b3ce5300-f0b7-417e-ab4c-c6658f4fecef",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Repair Not Required",
+          "id": "Repair Not Required"
+        },
+        {
+          "name": "Done By Myself",
+          "id": "Done By Myself"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "e456b7a4-d58a-4301-a85a-11fe82806f8d",
+            "value": {
+              "operator": "equals",
+              "property_meta": {
+                "id": "e456b7a4-d58a-4301-a85a-11fe82806f8d",
+                "type": "select"
+              },
+              "value": "Not Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": false,
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "disabled": false,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false
+  },
+  {
+    "type": "select",
+    "name": "Inside RHS Shelf Talker",
+    "id": "469cdae9-ac3b-42ee-8a01-d61733cafd89",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "placeholder": null,
+    "required": true,
+    "prefill": null,
+    "help": null,
+    "select": {
+      "options": [
+        {
+          "name": "Available",
+          "id": "Available"
+        },
+        {
+          "name": "Not Available",
+          "id": "Not Available"
+        }
+      ]
+    }
+  },
+  {
+    "type": "files",
+    "name": "Upload the Image of Inside RHS Shelf Talker",
+    "id": "fbd09259-18e2-40d4-9b2b-a818d513a8ba",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "469cdae9-ac3b-42ee-8a01-d61733cafd89",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "469cdae9-ac3b-42ee-8a01-d61733cafd89",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Repair Requirement For Inside RHS Shelf Talker",
+    "id": "e9dcb536-9e01-4869-8708-6c84a6b708c3",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "469cdae9-ac3b-42ee-8a01-d61733cafd89",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "469cdae9-ac3b-42ee-8a01-d61733cafd89",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "select": {
+      "options": [
+        {
+          "name": "Repair Not Required",
+          "id": "Repair Not Required"
+        },
+        {
+          "name": "Done By Myself",
+          "id": "Done By Myself"
+        }
+      ]
+    }
+  },
+  {
+    "type": "select",
+    "name": "Inside LHS Shelf Talker",
+    "id": "acd9c02f-8af5-4c3b-b950-5f9798a46c9f",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "select": {
+      "options": [
+        {
+          "name": "Available",
+          "id": "Available"
+        },
+        {
+          "name": "Not Available",
+          "id": "Not Available"
+        }
+      ]
+    }
+  },
+  {
+    "type": "files",
+    "name": "Upload the Image of Inside LHS Shelf Talker",
+    "id": "35b79ebb-2f3c-4b11-a93f-e963104b62d4",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "acd9c02f-8af5-4c3b-b950-5f9798a46c9f",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "acd9c02f-8af5-4c3b-b950-5f9798a46c9f",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "multiple": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Repair Requirement For Inside LHS Shelf Talker",
+    "id": "89af1463-a488-455c-8a8e-b995315ba1d8",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "acd9c02f-8af5-4c3b-b950-5f9798a46c9f",
+            "value": {
+              "operator": "contains",
+              "property_meta": {
+                "id": "acd9c02f-8af5-4c3b-b950-5f9798a46c9f",
+                "type": "multi_select"
+              },
+              "value": "Not Available"
+            }
+          },
+          {
+            "identifier": "acd9c02f-8af5-4c3b-b950-5f9798a46c9f",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "acd9c02f-8af5-4c3b-b950-5f9798a46c9f",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "select": {
+      "options": [
+        {
+          "name": "Repair Not Required",
+          "id": "Repair Not Required"
+        },
+        {
+          "name": "Done By Myself",
+          "id": "Done By Myself"
+        }
+      ]
+    }
+  },
+  {
+    "type": "select",
+    "name": "Offer Display Unit Shelf Talker 2x3",
+    "id": "0a69d5a7-e9c7-4b33-ba76-27a585753684",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "select": {
+      "options": [
+        {
+          "name": "Available",
+          "id": "Available"
+        },
+        {
+          "name": "Not Available",
+          "id": "Not Available"
+        }
+      ]
+    }
+  },
+  {
+    "type": "files",
+    "name": "Upload The Image of ODU Shelf Talker",
+    "id": "bddb5277-58e5-4d35-9d73-d0239539fff8",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "0a69d5a7-e9c7-4b33-ba76-27a585753684",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "0a69d5a7-e9c7-4b33-ba76-27a585753684",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Repair Requirement For ODU Shelf Talker",
+    "id": "ebe1cfc0-2089-4578-b078-0c9076c13c5c",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "0a69d5a7-e9c7-4b33-ba76-27a585753684",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "0a69d5a7-e9c7-4b33-ba76-27a585753684",
+                "type": "select"
+              },
+              "value": "Available"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "select": {
+      "options": [
+        {
+          "name": "Repair Not Required",
+          "id": "Repair Not Required"
+        },
+        {
+          "name": "Done By Myself",
+          "id": "Done By Myself"
+        }
+      ]
+    }
+  },
+  {
+    "type": "text",
+    "name": "Comment",
+    "id": "185a1232-836c-4ed2-8dd1-ddced884215d",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Upload Rectification Images",
+    "id": "4fe1ead3-755c-4779-a31e-56843ec166a4",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "multiple": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "nf-page-break",
+    "name": "Page Break",
+    "next_btn_text": "Next",
+    "previous_btn_text": "Previous",
+    "id": "08e61dce-158e-4379-a284-511d1e1b1ddc",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Glass Cleanliness",
+    "id": "5e00b207-cf85-45af-a551-3cfe7a0f7d99",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Done",
+          "id": "Done"
+        },
+        {
+          "name": "Pending",
+          "id": "Pending"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": "Select the value",
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Upload the Image of Glass Cleanliness",
+    "id": "d5482fe3-e92b-4acb-9207-a4a435e92b5d",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "multiple": true,
+    "disabled": false,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false
+  },
+  {
+    "type": "nf-page-break",
+    "name": "Page Break",
+    "next_btn_text": "Next",
+    "previous_btn_text": "Previous",
+    "id": "22161bcb-4a68-41aa-90a1-e5d83729b965",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "GSB Cleanliness",
+    "id": "872abae7-6c95-44b3-adbb-5c0c1124a6f2",
+    "hidden": false,
+    "select": {
+      "options": [
+        {
+          "name": "Done",
+          "id": "Done"
+        },
+        {
+          "name": "Pending",
+          "id": "Pending"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": "Select the value",
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "files",
+    "name": "Upload the Image of GSB Cleanliness",
+    "id": "5f8dcaeb-0a33-4ccb-ad6a-82eca57ce7e4",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null,
+    "multiple": true,
+    "disabled": false,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false
+  }
+]

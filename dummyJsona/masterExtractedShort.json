@@ -1,0 +1,182 @@
+[
+  {
+    "type": "files",
+    "name": "Upload clear picture of form 20",
+    "id": "a2cbcd26-9100-4139-8810-a32efe31a0ca",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "select",
+    "name": "Select store Name",
+    "id": "b3da1546-1664-4583-a11e-1a5e1c3c2da1",
+    "hidden": false,
+    "select": {
+      "options": []
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "store",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "Field_Name": "store_name",
+    "Field_Id": "store_id",
+    "required": true,
+    "placeholder": "Select the value",
+    "prefill": null,
+    "help": null,
+    "disabled": false,
+    "generates_uuid": false,
+    "generates_auto_increment_id": false
+  },
+  {
+    "type": "multi_select",
+    "name": "Jaipur",
+    "id": "f7959144-df23-45cd-b124-3f23e8a38bd7",
+    "hidden": false,
+    "multi_select": {
+      "options": [
+        {
+          "name": "MEDKART J BANIPARK",
+          "id": "MEDKART J BANIPARK"
+        },
+        {
+          "name": "MEDKART J MURLIPURA",
+          "id": "MEDKART J MURLIPURA"
+        },
+        {
+          "name": "MEDKART J RAJAPARK 2",
+          "id": "MEDKART J RAJAPARK 2"
+        },
+        {
+          "name": "MEDKART J ROOP VIHAR",
+          "id": "MEDKART J ROOP VIHAR"
+        },
+        {
+          "name": "MEDKART J VAISHALINAGAR",
+          "id": "MEDKART J VAISHALINAGAR"
+        },
+        {
+          "name": "MEDKART J VIDYADHARNAGAR",
+          "id": "MEDKART J VIDYADHARNAGAR"
+        }
+      ]
+    },
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "selectedOptionType": "custom",
+    "logic": {
+      "conditions": {
+        "operatorIdentifier": "and",
+        "children": [
+          {
+            "identifier": "8d7fc146-147d-4ae3-8681-4d31de8e91dd",
+            "value": {
+              "operator": "does_not_equal",
+              "property_meta": {
+                "id": "8d7fc146-147d-4ae3-8681-4d31de8e91dd",
+                "type": "select"
+              },
+              "value": "Jaipur"
+            }
+          }
+        ]
+      },
+      "actions": ["hide-block"]
+    },
+    "required": true,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "date",
+    "name": "Date",
+    "id": "372725f5-73d5-4cc7-b1fa-58e62d59b6c5",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "disable_past_dates": false,
+    "disable_future_dates": false,
+    "prefill_today": true,
+    "prefill": "Pre-filled with current date",
+    "date_range": false,
+    "required": true,
+    "placeholder": null,
+    "help": null,
+    "with_time": true
+  },
+  {
+    "type": "nf-page-break",
+    "name": "Page Break",
+    "next_btn_text": "Next",
+    "previous_btn_text": "Previous",
+    "id": "d5bd5af4-fe31-4a6d-ad03-274864f3d7f3",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "nf-text",
+    "name": "Text Block",
+    "content": "BACKLIT BOARDS",
+    "id": "9dc71684-0b46-4932-bfed-dbcc672c4cc6",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  },
+  {
+    "type": "text",
+    "name": "Add your comments",
+    "id": "801c7986-9d1f-4c8e-b670-179de6f1e6c1",
+    "hidden": false,
+    "help_position": "below_input",
+    "width": "full",
+    "align": "left",
+    "show_char_limit": false,
+    "logic": {
+      "conditions": null,
+      "actions": []
+    },
+    "max_char_limit": 2000,
+    "required": false,
+    "placeholder": null,
+    "prefill": null,
+    "help": null
+  }
+]

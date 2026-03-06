@@ -1,0 +1,46 @@
+@use "./../variables" as *;
+
+.select-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: inherit;
+  padding: 0px;
+}
+
+.primary-select {
+  width: 100%;
+  //   min-height: 36px;
+  padding: 7px 12px 7px 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+  background: #fff;
+  color: #808080;
+  cursor: pointer;
+
+  // Hide default browser arrow
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  &:focus {
+    outline: none;
+    border-color: $primary;
+  }
+
+  &:disabled {
+    background: #f2f4f7;
+    color: #98a2b3;
+    cursor: not-allowed;
+  }
+}
+
+.select-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,76 @@
+// Colors
+$primary: #202149;
+$secondary: #6c757d;
+$success: #28a745;
+$danger: #dc3545;
+$warning: #ffc107;
+$info: #17a2b8;
+$light: #f8f9fa;
+$dark: #343a40;
+$default: #808080;
+
+$primary-border: #d0d5dd;
+$secondary-border: rgba(234, 236, 240, 1);
+$text-primary: #202223;
+
+$surface-primary: #ffffff;
+$surface-secondary: #ebeef0;
+$surface-tertiary: #F5F7FF;
+// Spacing
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+);
+
+// Typography
+$font-family-sans-serif:
+  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+  Arial, sans-serif;
+$font-family-monospace:
+  SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+  monospace;
+$font-family-base: $font-family-sans-serif;
+
+// Grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+// status chip colors
+$warning-100: #fef0c7;
+$warning-400: #fdb022;
+$warning-500: #f79009;
+$warning-600: #dc6803;
+$warning-700: #ffcd8c;
+$warning-50: #fffaeb;
+$blue-100: #d1e0ff;
+$red-100: #f4aaaa;
+$green-200: #d3f8df;
+$blue-100: rgba(209, 228, 255, 1);
+$error-100: rgba(254, 228, 226, 1);
+$orange-100: rgba(255, 205, 140, 1);
+$orange-200: #ffcd8c;
+
+$button-disabled: #98a2b3;
+$green-success: #079455;
+
+$card-bg: #fff;
+$navbar-height: 60px;
+$body-color: #202223;
+$border-color: rgba(234, 236, 240, 1);
+$border-radius: 6px;
+$action-transition-duration: 0.2s;
+
+// Bullet points colors
+$green-700 : #007F5F;
+$red-700 : #D72C0D;

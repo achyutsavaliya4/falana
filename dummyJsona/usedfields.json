@@ -1,0 +1,30 @@
+{
+  "used": [
+    "files",
+    "select",
+    "multi_select",
+    "date",
+    "nf-page-break",
+    "nf-text",
+    "text",
+    "number",
+    "location",
+    "email"
+  ],
+  "all": [
+    "nf-text",
+    "nf-page-break",
+    "nf-divider",
+    "text",
+    "files",
+    "email",
+    "date",
+    "checkbox",
+    "url",
+    "select",
+    "multi_select",
+    "phone_number",
+    "number",
+    "location"
+  ]
+}

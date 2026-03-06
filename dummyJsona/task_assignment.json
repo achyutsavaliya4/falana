@@ -1,0 +1,34 @@
+{
+  "task_master_id": 17,
+  "task_assignment_name": "As85t5459 Review156",
+  "frequency_type": "WEEKLY",
+  "schedule_type": "EVENING",
+  "expiry_days": 30,
+  "task_description": "Prompt supervisors for twice-daily QC checks",
+  "criticality_level": "MEDIUM",
+  "assignment_targets": {
+    "assignable_type": "ROLE", //ROLE, FACILITY 
+    "assignable_ids": [],
+    "role_id": 3
+  },
+  "frequency_details": {
+    "frequency_key": "WEEKLY", //weekly, once, daily, monthly
+    "frequency_values": [] //mon, tue, wed  -- weekly        monthly - 4,8      04-08-2002 --once    
+  },
+  "flags": {
+    "role_id": 3
+  },
+  "escalation_levels": [
+    {
+      "esc_level": 1,
+      "role_id": 3,
+      "deadline_hours": 2
+    },
+    {
+      "esc_level": 2,
+      "role_id": 1,
+      "deadline_hours": 6
+    }
+  ],
+  "enable_geo_fencing": true
+}

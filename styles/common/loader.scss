@@ -1,0 +1,42 @@
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.loader--fullscreen {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.75);
+  z-index: 9999;
+}
+
+.loader__spinner {
+  border: 3px solid rgba(0, 0, 0, 0.12);
+  border-top: 3px solid rgba(0, 0, 0, 0.75);
+  border-radius: 50%;
+  animation: loaderSpin 0.8s linear infinite;
+}
+
+.loader__text {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #111827;
+  font-family: Inter, sans-serif;
+}
+
+@keyframes loaderSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.commom-button-loader {
+  &.spinner-border {
+    color: #fff !important;
+    width: 1rem !important;
+    height: 1rem !important;
+  }
+}

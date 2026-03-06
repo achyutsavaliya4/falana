@@ -1,0 +1,23 @@
+@use "./../variables" as *;
+.clear-selection-btn{
+    font-size: 14px;
+    line-height: 22px;
+    border-bottom: 1px solid $primary;
+    color: $primary;
+    font-weight: 500;
+}
+
+.action-component-switch.form-switch
+  .form-check-input[type="checkbox"]:checked {
+  background-color: $primary !important;
+  &:active {
+    box-shadow: none !important;
+  }
+}
+.resend-request{
+  font-size: 14px;
+  font-weight: 400;
+  color: #474AC2;
+  border-bottom: 1px solid #474AC2;
+  cursor: pointer;
+}
