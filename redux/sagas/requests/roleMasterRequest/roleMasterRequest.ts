@@ -2,7 +2,7 @@ import {
   RoleAddPayload,
   RoleUpdatePayload,
 } from "@/redux/actions/roleMasterAction/roleMasterActionInterface";
-import { get, post, put, remove } from "@/redux/apiWrapper";
+import { get, post, put } from "@/redux/apiWrapper";
 export const getRolesListApi = (query?: string) => {
   return get(`/roles${query ? `?${query}` : ""}`);
 };

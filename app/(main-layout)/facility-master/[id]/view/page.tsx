@@ -83,7 +83,7 @@ useEffect(() => {
       const { details, ...rest } = facilityDetails as any;
 
       // set normal fields
-      let updatedState = { ...rest };
+      const updatedState = { ...rest };
 
       // add additional fields directly into form state
       if (Array.isArray(details)) {

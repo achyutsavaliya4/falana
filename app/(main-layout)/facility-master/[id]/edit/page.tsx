@@ -29,7 +29,7 @@ const FacilityMasterEdit = () => {
   const modulePermission = "settings.facility.update";
   const { id: facilityId } = params;
   const getConfig = useMemo(() => {
-    let data: any = {};
+    const data: any = {};
     data.status = [
       { label: "active", value: "active" },
       { label: "Inactive", value: "inactive" },
@@ -171,7 +171,7 @@ const FacilityMasterEdit = () => {
       const { details, ...rest } = facilityDetails as any;
 
       // set normal fields
-      let updatedState = { ...rest };
+      const updatedState = { ...rest };
 
       // add additional fields directly into form state
       if (Array.isArray(details)) {

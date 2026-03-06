@@ -1,6 +1,5 @@
 "use client";
 import {
-  checkArray,
   checkString,
   convertToModuleName,
   hasKeys,
@@ -20,21 +19,16 @@ import PageHeader from "@/components/PageHeader/PageHeader";
 import useCheckValidation from "@/hooks/useCheckValidation";
 import { RootState } from "@/redux";
 import {
-  getFacilityList,
   resetFacilityList,
 } from "@/redux/actions/facilityMasterAction/facilityMasterAction";
-import { setBtnLoaderAction } from "@/redux/actions/loaderAction/loaderAction";
 import {
-  getRolesList,
   resetRoleList,
 } from "@/redux/actions/roleMasterAction/roleMasterAction";
 import { resetUiAction } from "@/redux/actions/uiAction/uiAction";
 import {
   getUserMasterList,
-  inviteUser,
 } from "@/redux/actions/userMasterAction/userMasterAction";
 import { storage } from "@/utils/storage";
-import { clear } from "console";
 import { usePathname, useRouter } from "next/navigation";
 import React, { MouseEvent, useEffect, useMemo, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -99,7 +93,7 @@ const UserList = () => {
   const [filters, setFilters] = useState<ListQueryState>(initialState);
 
   const getConfigData = useMemo(() => {
-    let data: Record<string, any> = {};
+    const data: Record<string, any> = {};
     data.role_id = rolesList;
     data.facility_ids = facilityList;
     return data;

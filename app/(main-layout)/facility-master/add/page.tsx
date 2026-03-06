@@ -11,7 +11,6 @@ import {
   createFacility,
   getFacilityEnums,
   resetFacilityEnums,
-  SET_FACILITY_ENUMS,
 } from "@/redux/actions/facilityMasterAction/facilityMasterAction";
 import { FacilityAddFormData } from "@/redux/actions/facilityMasterAction/facilityMasterInterface";
 import { setBtnLoaderAction } from "@/redux/actions/loaderAction/loaderAction";
@@ -27,7 +26,7 @@ const FacilityMasterAdd = () => {
   const router = useRouter();
   const modulePermission = "settings.facility.create";
   const getConfig = useMemo(() => {
-    let data: any = {};
+    const data: any = {};
     data.status = [
       { label: "active", value: "active" },
       { label: "Inactive", value: "inactive" },

@@ -60,7 +60,7 @@ const ListingSearch: React.FC<ListingSearch> = ({
       "click",
       function handleClickOutsideBox(event: MouseEvent) {
         const box = document.getElementById("box");
-        let target = event.target as HTMLElement;
+        const target = event.target as HTMLElement;
         if (box) {
           if (!box.contains(target) && target.id !== "navbarFormList") {
             box.style.display = "none";

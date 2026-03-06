@@ -8,7 +8,6 @@ import React, {
 } from "react";
 import CommonForm from "@/components/CommonForm/CommonForm";
 import { addTaskJson } from "@/commonJson/task/addTaskJson";
-import axios from "axios";
 import {
   getFormList,
   getTaskList,
@@ -116,7 +115,7 @@ const TaskAdd = () => {
   };
 
   const getConfig = useMemo(() => {
-    let data: any = {};
+    const data: any = {};
     data.type = [
       { label: "quiz", value: "quiz" },
       { label: "form", value: "form" },

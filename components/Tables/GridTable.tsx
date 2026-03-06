@@ -1,6 +1,5 @@
 import { Fragment, useState } from "react";
 import { Spinner, Tooltip } from "react-bootstrap";
-import { useSelector } from "react-redux";
 import Image from "next/image";
 import debounce from "@/utils/debounce";
 import ActionComponent from "../ActionComponent/ActionComponent";

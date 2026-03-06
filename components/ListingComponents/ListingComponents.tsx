@@ -105,7 +105,7 @@ interface ListingComponents {
   statusCountData?: any;
   onBlurSearch?: Function;
   isLoadingTableData?: any;
-  isLoadMoreButton?: Boolean;
+  isLoadMoreButton?: boolean;
   loadMoreButtonOnClick?: any;
   onFilterApplyButton?: Function;
   isEnabledApplyFilterButton?: boolean;

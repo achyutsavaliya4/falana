@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import ToggleSwitch from "../Button/ToggleSwitch";
 import CommonForm from "../CommonForm/CommonForm";
 import {
   questionSettings,
@@ -8,7 +7,6 @@ import {
 } from "@/commonJson/form-management/questionSettings";
 import { onClickFieldResolver } from "../Button/Button";
 import PriorityDropdown, { Option } from "../PriorityDropdown/PriorityDropdown";
-import configOptions from "@/dummyJsona/statics.json";
 
 type QuestionCardWrapperProps = {
   type: "text" | "number" | string;

@@ -11,7 +11,7 @@ class tokenStorage {
   };
   setFilters = (value: any) => {
     const filters = localStorage.getItem("filters");
-    let oldData = filters ? JSON.parse(filters) : {};
+    const oldData = filters ? JSON.parse(filters) : {};
     const newData = { ...oldData, ...value };
     return localStorage.setItem("filters", JSON.stringify(newData));
   };

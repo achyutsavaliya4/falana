@@ -1,4 +1,3 @@
-import { RoleListItem } from "@/redux/sagas/handlers/roleMasterHandler/roleMasterHandlerInterface";
 
 export const rolesListingJson = {
   columns: [

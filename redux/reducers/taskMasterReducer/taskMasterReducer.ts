@@ -1,6 +1,4 @@
 import {
-  GET_TASKFORM_LIST,
-  GET_TASK_LIST,
   SET_TASKFORM_LIST,
   SET_TASK_LIST,
 } from "@/redux/actions/taskMasterAction/taskMasterAction";

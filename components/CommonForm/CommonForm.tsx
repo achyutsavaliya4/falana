@@ -10,7 +10,6 @@ import {
 } from "@/commonJS/commonHelper/commonHelper";
 import { Tab, Tabs } from "react-bootstrap";
 import clsx from "clsx";
-import { wrapperFunction } from "@/utils/helpder_functions";
 
 export type Props = {
   formJson: any[];

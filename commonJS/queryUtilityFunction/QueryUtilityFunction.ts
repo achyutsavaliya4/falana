@@ -56,7 +56,7 @@ function QueryUtilityFunc(
           },
           i: number,
         ) => {
-          let child: any = k.selectValue ?? false;
+          const child: any = k.selectValue ?? false;
 
           if (k?.isCheckBox) {
             if (filterValues[k.field]) {

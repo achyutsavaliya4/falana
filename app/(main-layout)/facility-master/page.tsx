@@ -13,12 +13,9 @@ import {
   addNewFacilityBtnJson,
   facilityListingJson,
 } from "@/commonJson/facility-master/list";
-import { addNewFormJson } from "@/commonJson/form-management/list";
-import { button } from "@/components/Button/Button";
 import ConfirmationModal from "@/components/ConfimationModal/ConfimationModal";
 import ListingComponents from "@/components/ListingComponents/ListingComponents";
 import PageHeader from "@/components/PageHeader/PageHeader";
-import useCheckValidation from "@/hooks/useCheckValidation";
 import { RootState } from "@/redux";
 import {
   deleteFacility,
