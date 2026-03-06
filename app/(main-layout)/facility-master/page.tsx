@@ -83,7 +83,7 @@ const FacilityMaster = () => {
       {} as any,
       selectedSortData,
       page,
-      filterJson,
+      filterJson ?? [],
     );
 
     if (checkString(query)) {

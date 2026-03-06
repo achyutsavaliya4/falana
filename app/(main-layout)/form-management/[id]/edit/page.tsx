@@ -119,7 +119,7 @@ const EditFormPage = () => {
     field: any,
   ) => {
     // console.log("eeetestet", e.target.value, field?.fieldName, field);
-    setFormConfigurations((prev) => ({
+    setFormConfigurations((prev: any) => ({
       ...prev,
       [field?.fieldName]: e.target.value,
     }));
@@ -129,7 +129,7 @@ const EditFormPage = () => {
     field: any,
   ) => {
     // console.log("eeetestet", e.target.value, field?.fieldName, field);
-    setFormConfigurations((prev) => ({
+    setFormConfigurations((prev: any) => ({
       ...prev,
       [field?.fieldName]: e.target.value,
     }));
@@ -160,7 +160,7 @@ const EditFormPage = () => {
     <>
       <BreadCrumbs />
       <Button
-        field={publishFormJson}
+        field={publishFormJson as any}
         fieldData={formConfigurations}
         fullFieldData={{}}
         configData={{}}

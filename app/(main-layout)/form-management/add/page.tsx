@@ -184,7 +184,9 @@ const AddForm = () => {
     } else if (field?.fieldName === "delete_question") {
       setProperties((prev: any) => {
         const updatedProperties = [...prev];
-        updatedProperties.splice(sectionIndex, 1);
+        if (sectionIndex !== undefined) {
+          updatedProperties.splice(sectionIndex, 1);
+        }
         return updatedProperties;
       });
     } else if (field?.fieldName === "settings") {
@@ -199,10 +201,12 @@ const AddForm = () => {
   ) => {
     setProperties((prev: any) => {
       const updated = [...prev];
-      updated[sectionIndex] = {
-        ...updated[sectionIndex],
-        [field?.fieldName]: e?.target?.checked,
-      };
+      if (sectionIndex !== undefined) {
+        updated[sectionIndex] = {
+          ...updated[sectionIndex],
+          [field?.fieldName]: e?.target?.checked,
+        };
+      }
       return updated;
     });
   };
@@ -211,7 +215,7 @@ const AddForm = () => {
     field: any,
   ) => {
     // console.log("eeetestet", e.target.value, field?.fieldName, field);
-    setFormConfigurations((prev) => ({
+    setFormConfigurations((prev: any) => ({
       ...prev,
       [field?.fieldName]: e.target.value,
     }));
@@ -221,7 +225,7 @@ const AddForm = () => {
     field: any,
   ) => {
     // console.log("eeetestet", e.target.value, field?.fieldName, field);
-    setFormConfigurations((prev) => ({
+    setFormConfigurations((prev: any) => ({
       ...prev,
       [field?.fieldName]: e.target.value,
     }));

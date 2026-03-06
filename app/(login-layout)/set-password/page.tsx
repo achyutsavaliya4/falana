@@ -5,7 +5,8 @@ const page = () => {
   return (
     <>
       {/* <ProfileCreatedCard /> */}
-      <SetPassword />
+      {/* <SetPassword /> */}
+      <div></div>
     </>
   );
 };

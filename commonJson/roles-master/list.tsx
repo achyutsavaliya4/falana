@@ -35,7 +35,7 @@ export const rolesListingJson = {
       customField: (
         field: any,
         columnValue: any,
-        rowValue: RoleListItem,
+        rowValue: any,
       ) => {
         return (
           <div>
@@ -53,7 +53,7 @@ export const rolesListingJson = {
       customField: (
         field: any,
         columnValue: any,
-        rowValue: RoleListItem,
+        rowValue: any,
       ) => {
         return (
           <div>

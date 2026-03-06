@@ -109,7 +109,7 @@ const UserList = () => {
   const onChangeQuery = () => {
     const query = QueryUtilityFunc(
       filters.search,
-      filters.column,
+      filters.column as any,
       filters.filters,
       filters?.sort,
       filters?.page,
@@ -177,7 +177,7 @@ const UserList = () => {
     setInviteUserFieldData((prev: any) => {
       return {
         ...prev,
-        [field?.fieldName]: e.target.value,
+        [field?.fieldName as string]: e.target.value,
       };
     });
   };
@@ -373,15 +373,15 @@ const UserList = () => {
   const onClickShowMore = (
     rowValue: any,
     showMore: boolean,
-    expandKey: string,
-    actionField: any,
-    rowIdx: number,
+    expandKey?: string,
+    actionField?: any,
+    rowIdx?: number,
   ) => {
     setUserMasterListData((prevData: any[]) => {
       const updatedData = [...prevData];
-      const currentRow = updatedData[rowIdx];
+      const currentRow = updatedData[rowIdx as number];
 
-      updatedData[rowIdx] = expandKey
+      updatedData[rowIdx as number] = expandKey
         ? {
             ...currentRow,
             _expand: {
@@ -521,7 +521,7 @@ const UserList = () => {
   useEffect(() => {
     if (customPayload?.userInviteSuccess) {
       setShowInviteUserModal(false);
-      onChangeQuery(1);
+      onChangeQuery();
       setInviteUserFieldData({
         roles: [
           {
@@ -555,22 +555,22 @@ const UserList = () => {
             columns={userMasterJson?.columns ?? []}
             expandControlClick={onClickShowMore}
             dropdownData={userMasterJson?.searchColumns ?? []}
-            selectColumnSearch={filters?.column ?? {}}
-            onChangeSearch={(e) => {
-              setFilters((prev) => ({
+            selectColumnSearch={filters?.column as any ?? {}}
+            onChangeSearch={(e: any) => {
+              setFilters((prev: any) => ({
                 ...prev,
                 search: e.target.value,
                 page: 1,
               }));
             }}
             moveTo={(pageNo: number) => {
-              setFilters((prev) => ({
+              setFilters((prev: any) => ({
                 ...prev,
                 page: pageNo,
               }));
             }}
-            onSelectColumn={(e) => {
-              setFilters((prev) => ({
+            onSelectColumn={(e: any) => {
+              setFilters((prev: any) => ({
                 ...prev,
                 column: e || {},
                 search: "",
@@ -578,14 +578,14 @@ const UserList = () => {
             }}
             sortingColumnData={userMasterJson?.sortingColumn ?? []}
             onSelectSortType={(order: string) => {
-              setFilters((prev) => ({
+              setFilters((prev: any) => ({
                 ...prev,
                 sort: { ...prev.sort, type: order },
                 page: 1,
               }));
             }}
             onSelectSortColumn={(e: any) => {
-              setFilters((prev) => ({
+              setFilters((prev: any) => ({
                 ...prev,
                 sort: { ...prev.sort, val: e?.field },
                 page: 1,

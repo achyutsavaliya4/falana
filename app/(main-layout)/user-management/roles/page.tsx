@@ -92,7 +92,7 @@ const RoleMaster = () => {
   const onChangeQuery = () => {
     const query = QueryUtilityFunc(
       filters.search,
-      filters.column,
+      filters.column as any,
       filters.filters,
       filters?.sort,
       filters?.page,
@@ -124,7 +124,7 @@ const RoleMaster = () => {
     if (customPayload?.roleDeleteSuccess) {
       // TODO :== Add toaster for delete confirmation
       onChangeQuery();
-      setConfimationModalData();
+      setConfimationModalData(undefined);
     }
   }, [customPayload]);
 
@@ -149,25 +149,25 @@ const RoleMaster = () => {
             selectedSortColumn={filters?.sort?.val}
             isDisabledFilter={true}
             customPlaceHolder="Search By Role Name..."
-            onChangeSearch={(e) => {
-              setFilters((prev) => ({ ...prev, search: e.target.value }));
+            onChangeSearch={(e: any) => {
+              setFilters((prev: any) => ({ ...prev, search: e.target.value }));
             }}
             onSelectSortType={(order: string) => {
-              setFilters((prev) => ({
+              setFilters((prev: any) => ({
                 ...prev,
                 sort: { ...prev.sort, type: order },
                 page: 1,
               }));
             }}
             onSelectSortColumn={(e: any) => {
-              setFilters((prev) => ({
+              setFilters((prev: any) => ({
                 ...prev,
                 sort: { ...prev.sort, val: e?.field },
                 page: 1,
               }));
             }}
             moveTo={(pageNo: number) => {
-              setFilters((prev) => ({
+              setFilters((prev: any) => ({
                 ...prev,
                 page: pageNo,
               }));
@@ -176,14 +176,14 @@ const RoleMaster = () => {
           <ConfirmationModal
             showModal={confimationModalData?.show}
             handleToggle={() => {
-              setConfimationModalData();
+              setConfimationModalData(undefined);
             }}
             title={"Confimation"}
             message={`Are you sure you want to delete the ${confimationModalData?.data?.name} role?`}
             cancelButtonJson={cancelButtonJson}
             submitButtonJson={confimButtonJson}
             handleCancel={() => {
-              setConfimationModalData(false);
+              setConfimationModalData(undefined);
             }}
             handleSubmit={() => {
               dispatch(
