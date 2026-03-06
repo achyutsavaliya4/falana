@@ -23,7 +23,6 @@ const ExpandComponent = <T,>({
   expandWrapperClassName,
   expandKey
 }: ExpandComponentProps<T>) => {
-  console.log("rowValuerowValue",rowValue);
     const isExpanded = expandKey
     ? rowValue?._expand?.[expandKey] ?? false
     : rowValue?.showMore ?? false;

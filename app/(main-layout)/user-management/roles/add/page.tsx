@@ -66,7 +66,6 @@ const RoleMasterAdd = () => {
     if (field?.id === "save" && hasKeys(roleFieldData)) {
       setIsCheckValid(true);
       const isValid = await checkValidation(roleMasterJson, roleFieldData);
-      console.log("isValid", isValid);
       
       if (isValid) {
         dispatch(
@@ -240,11 +239,6 @@ const RoleMasterAdd = () => {
       dispatch(resetRoleDefinitions());
     };
   }, []);
-  console.log(
-    "roleDefinitionsroleDefinitions",
-    modulePermissions,
-    roleFieldData,
-  );
 
   return (
     <div className="page-content">

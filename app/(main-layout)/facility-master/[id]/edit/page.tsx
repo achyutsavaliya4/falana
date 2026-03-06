@@ -190,9 +190,7 @@ const FacilityMasterEdit = () => {
     }
   }, [customPayload?.facilityUpdateSuccess]);
 
-  // console.log("facilityDetails",facilityFieldData, additionalDetails);
-
-    useEffect(() => {
+useEffect(() => {
       return () => {
         dispatch(resetUiAction());
         dispatch(resetFacilityEnums());

@@ -37,7 +37,6 @@ const FacilitySelection = () => {
       }
     }
   }, [userDetails]);
-  // console.log("facilitiesfacilities", userDetails, facilities);
 
   return (
     <div className="bg-white form-contaniner">

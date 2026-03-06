@@ -18,7 +18,6 @@ export const updateRoleApi = (payload: RoleUpdatePayload) => {
 export const deleteRoleApi = async (roleId: number) => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      console.log("Removing role", `/roles/${roleId}`);
       resolve({status: 200});
     }, 5000);
   });

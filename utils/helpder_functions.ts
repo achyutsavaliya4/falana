@@ -5,8 +5,6 @@ export const wrapperFunction = <T extends AnyFn>(
   scope: Record<string, any>,
 ): T =>
   ((...args: any[]) => {
-    console.log("➡️ Incoming args:", args);
-    console.log("📦 Scope to attach:", scope);
     const lastIndex = args.length - 1;
     const lastArg = args[lastIndex];
 

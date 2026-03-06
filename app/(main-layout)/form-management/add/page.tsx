@@ -174,7 +174,6 @@ const AddForm = () => {
     fieldIndex?: number,
     sectionIndex?: number,
   ) => {
-    console.log("fieldIndex", field, fieldData, fieldIndex, sectionIndex);
     if (field?.fieldName === "copy_question") {
       setProperties((prev: any) => {
         const updatedProperties = [...prev];
@@ -214,7 +213,6 @@ const AddForm = () => {
     e: ChangeEvent<HTMLInputElement>,
     field: any,
   ) => {
-    // console.log("eeetestet", e.target.value, field?.fieldName, field);
     setFormConfigurations((prev: any) => ({
       ...prev,
       [field?.fieldName]: e.target.value,
@@ -224,7 +222,6 @@ const AddForm = () => {
     e: ChangeEvent<HTMLSelectElement>,
     field: any,
   ) => {
-    // console.log("eeetestet", e.target.value, field?.fieldName, field);
     setFormConfigurations((prev: any) => ({
       ...prev,
       [field?.fieldName]: e.target.value,
@@ -235,7 +232,6 @@ const AddForm = () => {
     field: any,
   ) => {
     if (field?.id === "publish-form") {
-      console.log("publishform");
       const isValid = await checkValidation(addFormJson, formConfigurations);
       setIsCheckValid(true);
       if (isValid) {
@@ -244,9 +240,6 @@ const AddForm = () => {
       }
     }
   };
-  console.log("formConfigurations", formConfigurations?.properties);
-  console.log("propertiesproperties", properties);
-  console.log("configModalFieldData", configModalFieldData);
   useEffect(() => {
     setProperties(forms);
   }, []);

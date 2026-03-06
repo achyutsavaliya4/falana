@@ -9,7 +9,6 @@ import { useSelector } from "react-redux";
 const LoginPage = () => {
   const router = useRouter();
   const { userDetails } = useSelector((state: RootState) => state.auth);
-  // console.log("userDetails", userDetails);
   useEffect(() => {
     if (hasKeys(userDetails)) {
       const tenant = userDetails.tenants[0];

@@ -38,9 +38,8 @@ const FacilityMaster = () => {
   const pathname = usePathname();
   const moduleName = useMemo(() => convertToModuleName(pathname), [pathname]);
   const modulePermission = "settings.facility.view";
-  
 
-  // redux states
+// redux states
   const { facilityList, facilityMetadata } = useSelector(
     (state: RootState) => state.facility,
   );
@@ -60,9 +59,8 @@ const FacilityMaster = () => {
     type: "asc",
   });
   const [pageNo, setPageNo] = useState<number>(1);
-  
 
-  // Functions
+// Functions
   const onClickActionField = async (
     fieldId: string,
     rowValue: FacilityItem,
@@ -154,10 +152,7 @@ const FacilityMaster = () => {
     }
   }, [customPayload?.facilityDeleteSuccess]);
 
-  // console.log("moduleName", userRolePermission,userRolePermission?.["settings.facility.create"]);
-  
-
-  return (
+return (
     <div className="page-content">
       <PageHeader
         formJson={addNewFacilityBtnJson}

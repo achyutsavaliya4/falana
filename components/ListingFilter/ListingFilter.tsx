@@ -26,7 +26,6 @@ const ListingFilter: React.FC<ListingFilter> = ({
   isEnabledApplyFilterButton,
   onFilterApplyButton,
 }) => {
-  // console.log("selectedSortType",selectedSortType);
   return (
     <div className="d-flex justify-content-end filterSorting position-relative1">
       {!isDisabledFilter && (

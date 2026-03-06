@@ -170,7 +170,6 @@ export const addTaskJson = [
             labelClassName: "col-2 field-label p-0",
             placeholder: "Select Form",
             validation: (data: string) => {
-              // console.log(data);
               if (!data)
                 return { isValid: false, message: "Department is required" };
               return { isValid: true, message: "" };
