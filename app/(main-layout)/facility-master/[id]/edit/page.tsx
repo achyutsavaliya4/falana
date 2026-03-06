@@ -78,7 +78,7 @@ const FacilityMasterEdit = () => {
       updateAdditionalDetails(field?.fieldName as string, value);
     }
     setFacilityFieldData((prev: any) => {
-      return {
+      return {      
         ...prev,
         [field?.fieldName as string]: value
       };
